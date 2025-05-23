@@ -1,0 +1,24 @@
+---
+title: "Surface Current - Bay of Bengal"
+date: "2025-05-17"
+categories: [R, Data Visualization, Oceanographic Data Analysis]
+image: bob_current.png
+editor_options: 
+  chunk_output_type: inline
+format:
+  html:
+    theme:
+      light: flatly
+      dark: [flatly, darkly]
+    code-link: false
+    code-tools: False
+    toc: false
+---
+
+![](BOB_CURRENT_animation_2025_2.gif){fig-align="center" width="951"}
+
+Ocean Surface Current Map
+
+This map displays the surface currents of the Bay of Bengal (BOB) for 2025, derived from Near Real-Time Geostrophic Currents data. The dataset is provided by NOAA's CoastWatch Caribbean and Atlantic Oceanographic and Meteorological Laboratory (AOML) and has been publicly available since 2016. It offers global ocean current information at a spatial resolution of 0.2° (\~22 km).
+
+💻 Data processed and visualized using R

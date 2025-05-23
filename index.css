@@ -1,0 +1,41 @@
+/* Force about social links to always be in a fixed horizontal row */
+.about-links {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1em !important;
+  margin-top: 1.5em !important;
+}
+
+/* Style individual social link buttons */
+.about-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 3em !important;
+  height: 3em !important;
+  border: 1px solid #999 !important;
+  border-radius: 6px !important;
+  text-align: center !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  flex-shrink: 0 !important;
+}
+
+/* Prevent any media query from overriding on mobile */
+@media (max-width: 768px) {
+  .about-links {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+  }
+
+  .about-link {
+    width: 3em !important;
+    height: 3em !important;
+    display: inline-flex !important;
+  }
+}

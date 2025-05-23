@@ -1,0 +1,40 @@
+---
+title: "SST Anomalies in April, 2025 - Bay of Bengal"
+date: "2025-05-19"
+categories: [R, Data Visualization, Oceanographic Data Analysis]
+image: bob_anom.png
+editor_options: 
+  chunk_output_type: inline
+format:
+  html:
+    theme:
+      light: flatly
+      dark: [flatly, darkly]
+    code-link: false
+    code-tools: False
+    toc: false
+---
+
+![](april_2025_sst_anomalies.gif){fig-align="center"}
+
+![](april2025_sst_anomaly_trend.gif)
+
+This SST anomaly map shows how much warmer or cooler the Bay of Bengal’s surface was in April 2025 compared to the long-term average (based on a 2015–2024 climatological baseline).
+
+🌊 What happened in April 2025?
+
+Using daily SST data from NOAA at 0.25° resolution, I calculated and visualized anomalies across the Bay of Bengal using R.
+
+-   ✅ April 1 started slightly warm: +0.13°C
+
+-   📉 By April 12, anomalies dropped to -0.57°C
+
+-   📆 From April 8–29, the ocean stayed consistently cooler than normal
+
+-   📈 Mean Daily Anomalies ranged from+0.18°C → -0.57°C over the month.
+
+-   🛠️ Tools: R programming
+
+-   📡 Data: NOAA OISST
+
+-   🗺️ Resolution: 0.25°

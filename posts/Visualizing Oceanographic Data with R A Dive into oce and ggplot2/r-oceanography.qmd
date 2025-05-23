@@ -1,0 +1,186 @@
+---
+title: "Visualizing Oceanographic Data with R: A Dive into oce and ggplot2"
+date: "2025-04-20"
+categories: [R, Oceanography, Data Analysis, Data Visualization]
+image: ocean_data_analysis.png
+editor_options: 
+  chunk_output_type: inline
+format:
+  html:
+    theme:
+      light: flatly
+      dark: [flatly, darkly]
+    code-link: true
+    code-fold: show
+    code-tools: true
+    toc: true
+---
+
+# 🌊 Visualizing Oceanographic Data with R: A Dive into `oce` and `ggplot2`
+
+Oceanographic data, such as measurements from Conductivity-Temperature-Depth (CTD) instruments, are vital for understanding marine environments. In this post, we'll explore how to use R's `oce` package to handle such data and employ `ggplot2` for insightful visualizations.​
+
+## 📦 Getting Started
+
+First, ensure that the necessary packages are installed and loaded:
+
+```{r}
+
+# Load the libraries
+library(oce)
+library(ggplot2)
+
+```
+
+## 📥 Loading Sample CTD Data
+
+The `oce` package comes with built-in datasets, including a sample CTD dataset. Let's load and inspect it:
+
+```{r}
+# Load the sample CTD dataset
+data(ctd)
+
+# View a summary of the dataset
+summary(ctd)
+
+```
+
+This dataset contains measurements like salinity, temperature, and pressure collected at various depths.​
+
+## 🔍 Exploring the Data
+
+To understand the structure of the CTD data, we can extract specific parameters:
+
+```{r}
+# Extract salinity, temperature, and pressure
+salinity <- ctd[["salinity"]]
+temperature <- ctd[["temperature"]]
+pressure <- ctd[["pressure"]]
+
+```
+
+## 📊 Visualizing with `ggplot2`
+
+While `oce` provides its own plotting functions, integrating with `ggplot2` offers enhanced customization. To use `ggplot2`, we'll convert the CTD object into a data frame:
+
+```{r}
+# Convert CTD object to a data frame
+ctd_df <- as.data.frame(ctd[["data"]])
+```
+
+### 🌡️ Temperature vs. Depth
+
+Let's plot temperature against depth:
+
+```{r}
+ggplot(ctd_df, aes(x = temperature, y = pressure)) +
+  geom_line(color = "blue") +
+  scale_y_reverse() +  # Depth increases with pressure
+  labs(title = "Temperature Profile",
+       x = "Temperature (°C)",
+       y = "Pressure (dbar)") +
+  theme_minimal()
+
+```
+
+### 🧂 Salinity vs. Depth
+
+Similarly, plot salinity against depth:
+
+```{r}
+ggplot(ctd_df, aes(x = salinity, y = pressure)) +
+  geom_line(color = "darkgreen") +
+  scale_y_reverse() +
+  labs(title = "Salinity Profile",
+       x = "Salinity (PSU)",
+       y = "Pressure (dbar)") +
+  theme_minimal()
+
+```
+
+### 🔁 Temperature-Salinity Diagram
+
+A Temperature-Salinity (T-S) diagram is essential in oceanography:​
+
+```{r}
+ggplot(ctd_df, aes(x = salinity, y = temperature, color = pressure)) +
+  geom_point() +
+  #geom_line() + # uncomment the line and run again to see what happen
+  scale_color_viridis_c() +
+  labs(title = "Temperature-Salinity Diagram",
+       x = "Salinity (PSU)",
+       y = "Temperature (°C)",
+       color = "Pressure (dbar)") +
+  theme_minimal()
+
+```
+
+## 🧪 Calculating Derived Parameters
+
+The `oce` package allows computation of derived oceanographic parameters. For instance, potential temperature:​
+
+```{r}
+# Extract salinity, temperature, and pressure from the CTD object
+salinity <- ctd[["salinity"]]
+temperature <- ctd[["temperature"]]
+pressure <- ctd[["pressure"]]
+
+# Calculate potential temperature referenced to the surface (0 dbar)
+theta <- swTheta(salinity, temperature, pressure, referencePressure = 0)
+
+# Add the calculated potential temperature to the CTD object
+ctd <- oceSetData(ctd, name = "theta", value = theta)
+
+# Now you can access the potential temperature from the CTD object
+ctd[["theta"]]
+
+
+
+```
+
+## 🗺️ Mapping CTD Cast Locations
+
+If you have multiple CTD casts with geographic coordinates, you can map their locations. Assuming you have a data frame `ctd_locations` with `longitude` and `latitude`:​
+
+```{r}
+# Sample data frame of CTD locations
+ctd_locations <- data.frame(
+  longitude = c(91.8, 91.9, 92.0),
+  latitude = c(22.3, 22.4, 22.5)
+)
+
+# Plot locations
+ggplot(ctd_locations, aes(x = longitude, y = latitude)) +
+  geom_point(color = "red", size = 3) +
+  labs(title = "CTD Cast Locations",
+       x = "Longitude",
+       y = "Latitude") +
+  theme_minimal()
+
+```
+
+🧠 Bonus: Create a Combined Profile Plot
+
+```{r}
+library(gridExtra)
+
+p1 <- ggplot(ctd_df, aes(x = temperature, y = pressure)) +
+  geom_line(color = "blue") +
+  scale_y_reverse() +
+  labs(
+    title = "Temperature Profile (Saanich Inlet)",
+    x = "Temperature (°C)",
+    y = "Depth (dbar)"
+  ) +
+  theme_minimal()
+
+
+p2 <- ggplot(ctd_df, aes(x = salinity, y = pressure)) +
+  geom_line(color = "green4") +
+  scale_y_reverse() +
+  labs(title = "Salinity", x = "PSU", y = "Depth") +
+  theme_minimal()
+
+gridExtra::grid.arrange(p1, p2, ncol = 2)
+
+```

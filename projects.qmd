@@ -1,0 +1,15 @@
+---
+title: "Projects"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
+    fontsize: 1.1em
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+---

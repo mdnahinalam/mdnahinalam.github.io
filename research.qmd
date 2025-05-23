@@ -1,0 +1,22 @@
+---
+title: "Research"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    code-link: false
+    code-tools: false
+    css:
+      - research.css
+---
+
+
+## 2024
+
+<div class="publication">
+Mehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, <b>Nahin Alam</b>, Ataher Ali (2024). Human intervention caused massive destruction of the second largest mangrove forest, Chakaria Sundarbans, Bangladesh.  
+<em>Environmental Science and Pollution Research</em>, 31, 25329–25341 (2024).  
+<a href="https://www.researchgate.net/publication/378860079_Human_intervention_caused_massive_destruction_of_the_second_largest_mangrove_forest_Chakaria_Sundarbans_Bangladesh" target="_blank">PDF</a>
+</div>
+

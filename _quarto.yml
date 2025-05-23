@@ -1,0 +1,46 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Md Nahin Alam"
+  favicon: "nahin.png"
+  
+  page-footer:
+    center: |
+      [Contact Md Nahin Alam](mailto:nahinalam29@gmail.com)
+    left: |
+      All rights reserved &copy; 2024 Md Nahin Alam
+    right: |
+      [Github](https://github.com/mdnahinalam)
+    background: "#2C3E50"
+    
+  navbar:
+    left:
+      - href: index.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: projects.qmd
+        text: Projects
+      - href: Teaching.qmd
+        text: Teaching
+      - href: Courses.qmd
+        text: Courses
+      - href: cv.qmd
+        text: CV
+    right:
+      - icon: linkedin
+        href: www.linkedin.com/in/md-nahin-alam
+      - icon: github
+        href: https://github.com/mdnahinalam
+      - text: "<img src='/images/researchgate.svg' alt='ResearchGate' style='height:1.2em; margin-top:-0.2em;'>"
+        href: https://www.researchgate.net/profile/Md-Nahin-Alam
+    
+format:
+  html:
+    theme:
+      light: flatly
+      dark: [flatly, darkly]
+    toc: true
+

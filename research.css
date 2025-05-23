@@ -1,0 +1,83 @@
+/* Research section background */
+#research {
+  background: linear-gradient(to bottom right, #f9f9f9, #fdfdfd);
+  padding: 3rem 1rem;
+  border-radius: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* Section title */
+#research h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  border-bottom: 2px solid #e2e2e2;
+  padding-bottom: 0.5rem;
+}
+
+/* Year header */
+#research h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0077b6;
+  background-color: #e0f3ff;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Individual publication card */
+.publication {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  border-left: 5px solid #0077b6;
+}
+
+.publication:hover {
+  transform: translateY(-4px);
+  background-color: #f8fcff;
+}
+
+/* Author & citation styling */
+.publication p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #2a2a2a;
+  margin: 0;
+}
+
+.publication em {
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  color: #555;
+}
+
+/* Highlight your name */
+.publication b,
+.publication strong {
+  color: #000;
+  font-weight: 600;
+}
+
+/* PDF link style */
+.publication a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077b6;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.publication a:hover {
+  border-bottom: 2px solid #0077b6;
+}

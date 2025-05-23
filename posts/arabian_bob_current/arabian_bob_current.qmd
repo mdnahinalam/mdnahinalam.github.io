@@ -1,0 +1,24 @@
+---
+title: "Surface Current - Arabian Sea and Bay of Bengal"
+date: "2025-05-18"
+categories: [R, Data Visualization, Oceanographic Data Analysis]
+image: as_bob_current.png
+editor_options: 
+  chunk_output_type: inline
+format:
+  html:
+    theme:
+      light: flatly
+      dark: [flatly, darkly]
+    code-link: false
+    code-tools: False
+    toc: false
+---
+
+![](arabian_bob_current.gif){fig-align="center"}
+
+Ocean Surface Current Map
+
+This map displays the surface currents of the Bay of Bengal (BOB) and Arabian Sea (AS) for 2025, derived from Near Real-Time Geostrophic Currents data by NOAA
+
+💻 Data processed and visualized using R

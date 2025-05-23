@@ -1,0 +1,39 @@
+---
+title: "Mapping the Seven Sisters of India Using R"
+date: "2025-05-01"
+categories: [R, Data Visualization]
+image: seven_sisters.png
+editor_options: 
+  chunk_output_type: inline
+format:
+  html:
+    theme:
+      light: flatly
+      dark: [flatly, darkly]
+    code-link: true
+    code-fold: show
+    code-tools: true
+    toc: true
+    css:
+      - seven_sisters.css
+---
+
+![Seven Sisters of India](seven_sisters.png){fig-alt="Seven Sisters of India" fig-align="center" width="443"}
+
+The map shown above beautifully visualizes the **Seven Sister States of Northeast India** along with their **state capitals**. Created using the R programming language, this map offers a simple yet informative geographic representation that is both educational and visually appealing.
+
+| State             | Capital  |
+|-------------------|----------|
+| Arunachal Pradesh | Itanagar |
+| Assam             | Dispur   |
+| Nagaland          | Kohima   |
+| Manipur           | Imphal   |
+| Mizoram           | Aizawl   |
+| Tripura           | Agartala |
+| Meghalaya         | Shillong |
+
+::: test
+This map highlights the power of data visualization tools in R, particularly using libraries like `ggplot2`, `sf`. These packages allow us to render geographical boundaries and annotate features like state names and capital cities efficiently.
+:::
+
+Such visualizations are crucial in education, research, and policy planning, especially for regions like Northeast India, which often receive less mainstream focus. By leveraging tools in R, we can bring such regions into clearer geographic and socio-political context.

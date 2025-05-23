@@ -1,0 +1,58 @@
+---
+format: 
+   html:
+     theme:
+       light: flatly
+       dark: [flatly, darkly]
+     code-link: false
+     code-tools: false
+---
+
+## Education
+
+**Bachelor of Science in Oceanography**  
+University of Chittagong
+
+## Research Experience
+
+**Research Assistant**  
+Center for Advanced Research and Innovation (CARI)  
+November 2024 – Present  
+
+**Research Assistant**  
+Ministry of Science and Technology (MoST)  
+National Oceanographic and Maritime Institute (NOAMI)  
+April 2024 – Present  
+*Project:* Comprehensive Assessment of Marine Biodiversity Vulnerability in Bangladesh's Coastal Regions  
+*Project Investigator:* Dr. Samarendra Karmakar (Ex. Director, BMD)
+
+## Publications
+
+**Co-authored Article**  
+Mehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, **Md Nahin Alam**, Ataher Ali (2024).  
+"Human intervention caused massive destruction of the second largest mangrove forest, Chakaria Sundarbans, Bangladesh."  
+*Environ Sci Pollut Res* 31, 25329–25341 (2024).  
+DOI: [10.1007/s11356-024-32792-2](https://link.springer.com/article/10.1007/s11356-024-32792-2)
+
+## Technical Skills
+
+**Programming:** R, Python, Google Earth Engine  
+**GIS/Remote Sensing:** SeaDAS, QGIS, ArcGIS, ArcGIS Pro  
+**Languages:** Bengali (Native), English (Intermediate)
+
+## Achievements
+
+**USAID Climate Action Campaign**  
+Team Leader (Team-CUNC) | February 2023 – June 2023  
+- Led conservation project: *"Saving Mother Nature, Saving Us: Youth Leadership in Conservation"*  
+- Produced thematic maps and presentations on climate resilience  
+
+**Intra CU Blog Writing Competition 2020**  
+5th Position | August 2020  
+- Topic: *Aqua-Fi: Underwater Wireless Optical Communication System*
+
+## Leadership
+
+**Chittagong University Nature Club (CUNC)**  
+General Secretary | November 2023 – Present  
+
