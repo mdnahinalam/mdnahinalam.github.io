@@ -23,9 +23,18 @@ The `oce` package includes a built-in coastlineWorld dataset, which we can use t
 ```{r}
 #| fig-alt: "World coastline map"  
 #| fig-cap: "Global coastline data from the oce package."  
+#| context: setup
+#| warning: false
+#| message: false
 
 library(oce)  
 
+```
+
+
+## Load data
+
+```{r}
 # Load built-in coastline data  
 data("coastlineWorld")  
 
@@ -33,13 +42,16 @@ data("coastlineWorld")
 plot(coastlineWorld, col = "darkblue", main = "Global Coastline")  
 ```
 
+
 ## Adding Bathymetry (Optional)
 
 If you have bathymetry data (e.g., from ETOPO1), you can overlay it:
 
 ```{r}
 #| fig-alt: "World map with bathymetry contours"  
-#| fig-cap: "Global map with simplified bathymetry contours."  
+#| fig-cap: "Global map with simplified bathymetry contours." 
+#| warning: false
+#| message: false 
 
 # Example: Simulated depth data (in practice, load real bathymetry)  
 lon <- seq(-180, 180, by = 5)  
@@ -62,6 +74,8 @@ A. Plotting Coastlines with ggplot2
 ```{r}
 #| fig-alt: "World coastline in ggplot2"  
 #| fig-cap: "Global coastline plotted using ggplot2."  
+#| warning: false
+#| message: false
 
 library(ggplot2)  
 
@@ -86,6 +100,8 @@ If you have a temperature dataset (e.g., from a CSV or NetCDF file), you can vis
 ```{r}
 #| fig-alt: "Simulated SST map with ggplot2"
 #| fig-cap: "Example temperature gradient visualization."
+#| warning: false
+#| message: false
 
 # Create simulated temperature data
 set.seed(123)

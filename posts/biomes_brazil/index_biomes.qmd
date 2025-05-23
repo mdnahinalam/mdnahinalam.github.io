@@ -23,6 +23,10 @@ This post walks through the creation of a detailed map highlighting Brazil's bio
 We start by loading the essential R packages:
 
 ```{r}
+#| context: setup
+#| warning: false
+#| message: false
+
 library(sf)
 library(tidyverse)
 library(rnaturalearth)
