@@ -8,7 +8,7 @@ format:
       dark: darkly
 about:
   template: trestles
-  image: nahin.png
+  image: the sun fall.jpg
   image-width: 10em
   image-shape: round
   links:
