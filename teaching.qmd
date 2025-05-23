@@ -1,0 +1,38 @@
+---
+title: "Teaching"
+format: html
+page-layout: article
+toc: false
+css: teaching.css
+---
+
+## Teaching Profile
+
+I enjoy teaching technical subjects that blend theory with real-world applications. My focus is on creating accessible, interactive learning experiences for diverse learners—whether in the classroom or across continents.
+
+## Workshops & Trainings
+
+### 📍 R Workshop at Chattogram Veterinary and Animal Sciences University (CVASU)  
+**Topic**: Data Analysis and Data Visualization in R  
+**Format**: 2-day intensive hands-on workshop  
+**Audience**: Undergraduate and graduate students  
+**Focus**: Tidyverse, ggplot2, real datasets, project-based learning
+
+### 🌍 GIS, Remote Sensing & R Training  
+**Topic**: Integrating Spatial Data with Analytical Techniques  
+**Format**: Professional training series  
+**Audience**: Undergraduate and graduate students  
+**Focus**: ArcGIS, raster/vector processing, data analysis in R
+
+### 🌐 Online International Teaching  
+**Topic**: R for Beginners, Data Cleaning, and Visual Communication  
+**Format**: Online sessions with international participants  
+**Audience**: Learners from Europe, Southeast Asia, and North America  
+**Focus**: Personalized training, live coding, reproducibility
+
+## Teaching Philosophy
+
+I believe teaching is most impactful when it’s interactive, inclusive, and built on clear communication. My goal is to empower learners to not just use tools, but to understand the thinking behind them.
+
+
+

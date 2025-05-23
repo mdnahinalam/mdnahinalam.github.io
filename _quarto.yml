@@ -23,9 +23,9 @@ website:
         text: Research
       - href: projects.qmd
         text: Projects
-      - href: Teaching.qmd
+      - href: teaching.qmd
         text: Teaching
-      - href: Courses.qmd
+      - href: courses.qmd
         text: Courses
       - href: cv.qmd
         text: CV

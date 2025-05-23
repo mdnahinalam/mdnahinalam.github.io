@@ -299,5 +299,40 @@
     "title": "Basic Mapping in R",
     "section": "",
     "text": "Code# Load built-in coastline data  \ndata(\"coastlineWorld\")  \n\n# Plot the world coastline  \nplot(coastlineWorld, col = \"darkblue\", main = \"Global Coastline\")"
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "I enjoy teaching technical subjects that blend theory with real-world applications. My focus is on creating accessible, interactive learning experiences for diverse learners—whether in the classroom or across continents."
+  },
+  {
+    "objectID": "teaching.html#teaching-profile",
+    "href": "teaching.html#teaching-profile",
+    "title": "Teaching",
+    "section": "",
+    "text": "I enjoy teaching technical subjects that blend theory with real-world applications. My focus is on creating accessible, interactive learning experiences for diverse learners—whether in the classroom or across continents."
+  },
+  {
+    "objectID": "teaching.html#workshops-trainings",
+    "href": "teaching.html#workshops-trainings",
+    "title": "Teaching",
+    "section": "Workshops & Trainings",
+    "text": "Workshops & Trainings\n\n📍 R Workshop at Chattogram Veterinary and Animal Sciences University (CVASU)\nTopic: Data Analysis and Data Visualization in R\nFormat: 2-day intensive hands-on workshop\nAudience: Undergraduate and graduate students\nFocus: Tidyverse, ggplot2, real datasets, project-based learning\n\n\n🌍 GIS, Remote Sensing & R Training\nTopic: Integrating Spatial Data with Analytical Techniques\nFormat: Professional training series\nAudience: Undergraduate and graduate students\nFocus: ArcGIS, raster/vector processing, data analysis in R\n\n\n🌐 Online International Teaching\nTopic: R for Beginners, Data Cleaning, and Visual Communication\nFormat: Online sessions with international participants\nAudience: Learners from Europe, Southeast Asia, and North America\nFocus: Personalized training, live coding, reproducibility"
+  },
+  {
+    "objectID": "teaching.html#teaching-philosophy",
+    "href": "teaching.html#teaching-philosophy",
+    "title": "Teaching",
+    "section": "Teaching Philosophy",
+    "text": "Teaching Philosophy\nI believe teaching is most impactful when it’s interactive, inclusive, and built on clear communication. My goal is to empower learners to not just use tools, but to understand the thinking behind them."
+  },
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Md Nahin Alam",
+    "section": "",
+    "text": "Upcoming Course: Spatial Analysis in R"
   }
 ]
