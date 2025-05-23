@@ -21,8 +21,6 @@ format:
 The `oce` package includes a built-in coastlineWorld dataset, which we can use to create a basic global map.
 
 ```{r}
-#| fig-alt: "World coastline map"  
-#| fig-cap: "Global coastline data from the oce package."  
 #| context: setup
 #| warning: false
 #| message: false
