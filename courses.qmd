@@ -1,9 +1,50 @@
-<iframe width="800" height="800" src="courses/Module-R-Programming.pdf">
+---
+title: Courses
+description: "Courses"
+published-title: Courses
+engine: knitr
+freeze: false
+cv:
+  course_1: "courses/Module-R-Programming.pdf"
+  course_2: "courses/Storytelling Through Visualization with R Programming.pdf"
+---
 
-</iframe>
+```{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
+```
 
-<iframe width="800" height="800" src="courses/Storytelling Through Visualization with R Programming.pdf">
 
-</iframe>
+```{css, echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
 
-**Upcoming Course:** **Spatial Analysis in R**
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+```
+
+
+<!-- CV Viewer -->
+<h2 class="text-center">Basic R Programming</h2>
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$cv$course_1`" style="border: 0.5px"></iframe>
+</div>
+
+<!-- Research Portfolio Viewer -->
+<h2 class="text-center">Storytelling Through Visualization with R</h2>
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$cv$course_2`" style="border: 0.5px"></iframe>
+</div>
