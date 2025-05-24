@@ -1,5 +1,8 @@
 ---
 title: Courses
+format:
+  html:
+    output-file: courses.html
 description: "Courses"
 engine: knitr
 freeze: false
