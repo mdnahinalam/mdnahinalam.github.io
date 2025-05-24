@@ -1,7 +1,6 @@
 ---
 title: Courses
 description: "Courses"
-published-title: Courses
 engine: knitr
 freeze: false
 cv:
@@ -36,18 +35,25 @@ cv:
 }
 ```
 
+# Basic R Programming
+
 ```{=html}
 <!-- CV Viewer -->
-<h2 class="text-center">Basic R Programming</h2>
 <div class="embed-container">
   <iframe src="`r rmarkdown::metadata$cv$course_1`" style="border: 0.5px"></iframe>
 </div>
+```
 
+# Storytelling Through Visualization with R
+
+```{=html}
 <!-- Research Portfolio Viewer -->
-<h2 class="text-center">Storytelling Through Visualization with R</h2>
 <div class="embed-container">
   <iframe src="`r rmarkdown::metadata$cv$course_2`" style="border: 0.5px"></iframe>
 </div>
 ```
+
+
+
 
 
