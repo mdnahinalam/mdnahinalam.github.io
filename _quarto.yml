@@ -1,6 +1,16 @@
 project:
   type: website
-  output-dir: docs
+
+preview: 
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+render:
+    - "*.qmd"
+    - "*.md"
+    - "!etc/"
 
 website:
   title: "Md Nahin Alam"

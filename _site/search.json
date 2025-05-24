@@ -1,0 +1,345 @@
+[
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Courses",
+    "section": "",
+    "text": "Basic R Programming\n\n\n  \n\n\n\nStorytelling Through Visualization with R"
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "I enjoy teaching technical subjects that blend theory with real-world applications. My focus is on creating accessible, interactive learning experiences for diverse learners—whether in the classroom or across continents."
+  },
+  {
+    "objectID": "teaching.html#teaching-profile",
+    "href": "teaching.html#teaching-profile",
+    "title": "Teaching",
+    "section": "",
+    "text": "I enjoy teaching technical subjects that blend theory with real-world applications. My focus is on creating accessible, interactive learning experiences for diverse learners—whether in the classroom or across continents."
+  },
+  {
+    "objectID": "teaching.html#workshops-trainings",
+    "href": "teaching.html#workshops-trainings",
+    "title": "Teaching",
+    "section": "Workshops & Trainings",
+    "text": "Workshops & Trainings\n\n📍 R Workshop at Chattogram Veterinary and Animal Sciences University (CVASU)\nTopic: Data Analysis and Data Visualization in R\nFormat: 2-day intensive hands-on workshop\nAudience: Undergraduate and graduate students\nFocus: Tidyverse, ggplot2, real datasets, project-based learning\n\n\n🌍 GIS, Remote Sensing & R Training at Faculty of Marine Sciences and Fisheries (FMSF), University of Chittagong\nTopic: Integrating Spatial Data with Analytical Techniques\nFormat: Professional training series\nAudience: Undergraduate and graduate students\nFocus: ArcGIS, raster/vector processing, data analysis in R\n\n\n🌐 Online International Teaching\nTopic: R for Beginners, Data Cleaning, and Visual Communication\nFormat: Online sessions with international participants\nAudience: Learners from Europe, Southeast Asia, and North America\nFocus: Personalized training, live coding, reproducibility"
+  },
+  {
+    "objectID": "teaching.html#teaching-philosophy",
+    "href": "teaching.html#teaching-philosophy",
+    "title": "Teaching",
+    "section": "Teaching Philosophy",
+    "text": "Teaching Philosophy\nI believe teaching is most impactful when it’s interactive, inclusive, and built on clear communication. My goal is to empower learners to not just use tools, but to understand the thinking behind them."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "SST Anomalies in April, 2025 - Bay of Bengal\n\n\n\nR\n\nData Visualization\n\nOceanographic Data Analysis\n\n\n\n\n\n\n\n\n\nMay 19, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurface Current - Arabian Sea and Bay of Bengal\n\n\n\nR\n\nData Visualization\n\nOceanographic Data Analysis\n\n\n\n\n\n\n\n\n\nMay 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurface Current - Bay of Bengal\n\n\n\nR\n\nData Visualization\n\nOceanographic Data Analysis\n\n\n\n\n\n\n\n\n\nMay 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMapping the Seven Sisters of India Using R\n\n\n\nR\n\nData Visualization\n\n\n\n\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n🗺️ Biogeographic Domains and Bocaina de Minas\n\n\n\nR\n\nEcology\n\nData Analysis\n\nData Visualization\n\n\n\n\n\n\n\n\n\nApr 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBasic Mapping in R\n\n\n\nR\n\nOceanography\n\nData Visualization\n\n\n\n\n\n\n\n\n\nApr 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nVisualizing Oceanographic Data with R: A Dive into oce and ggplot2\n\n\n\nR\n\nOceanography\n\nData Analysis\n\nData Visualization\n\n\n\n\n\n\n\n\n\nApr 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Importance of R Programming in Oceanography\n\n\n\nR\n\nOceanography\n\nData Analysis\n\n\n\n\n\n\n\n\n\nJan 20, 2024\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/seven_sisters/seven_sisters.html",
+    "href": "posts/seven_sisters/seven_sisters.html",
+    "title": "Mapping the Seven Sisters of India Using R",
+    "section": "",
+    "text": "Seven Sisters of India\n\n\nThe map shown above beautifully visualizes the Seven Sister States of Northeast India along with their state capitals. Created using the R programming language, this map offers a simple yet informative geographic representation that is both educational and visually appealing.\n\n\n\nState\nCapital\n\n\n\n\nArunachal Pradesh\nItanagar\n\n\nAssam\nDispur\n\n\nNagaland\nKohima\n\n\nManipur\nImphal\n\n\nMizoram\nAizawl\n\n\nTripura\nAgartala\n\n\nMeghalaya\nShillong\n\n\n\n\nThis map highlights the power of data visualization tools in R, particularly using libraries like ggplot2, sf. These packages allow us to render geographical boundaries and annotate features like state names and capital cities efficiently.\n\nSuch visualizations are crucial in education, research, and policy planning, especially for regions like Northeast India, which often receive less mainstream focus. By leveraging tools in R, we can bring such regions into clearer geographic and socio-political context."
+  },
+  {
+    "objectID": "posts/bob_sst_anomalies_april_2025/bob_sst_anomalies_april_2025.html",
+    "href": "posts/bob_sst_anomalies_april_2025/bob_sst_anomalies_april_2025.html",
+    "title": "SST Anomalies in April, 2025 - Bay of Bengal",
+    "section": "",
+    "text": "This SST anomaly map shows how much warmer or cooler the Bay of Bengal’s surface was in April 2025 compared to the long-term average (based on a 2015–2024 climatological baseline).\n🌊 What happened in April 2025?\nUsing daily SST data from NOAA at 0.25° resolution, I calculated and visualized anomalies across the Bay of Bengal using R.\n\n✅ April 1 started slightly warm: +0.13°C\n📉 By April 12, anomalies dropped to -0.57°C\n📆 From April 8–29, the ocean stayed consistently cooler than normal\n📈 Mean Daily Anomalies ranged from+0.18°C → -0.57°C over the month.\n🛠️ Tools: R programming\n📡 Data: NOAA OISST\n🗺️ Resolution: 0.25°"
+  },
+  {
+    "objectID": "posts/biomes_brazil/index_biomes.html",
+    "href": "posts/biomes_brazil/index_biomes.html",
+    "title": "🗺️ Biogeographic Domains and Bocaina de Minas",
+    "section": "",
+    "text": "This post walks through the creation of a detailed map highlighting Brazil’s biogeographic domains with a focus on the state of Minas Gerais and a specific location, Bocaina de Minas. The workflow leverages R’s geospatial packages including sf, geobr, and ggplot2, and demonstrates how to combine multiple maps using patchwork.\n\nWe start by loading the essential R packages:\n\nCodelibrary(sf)\nlibrary(tidyverse)\nlibrary(rnaturalearth)\nlibrary(rnaturalearthdata)\nlibrary(geobr)\nlibrary(ggspatial)\nlibrary(patchwork)\n\n\n\n\nCodebiomes &lt;- read_biomes()\n\nUsing year/date 2019\n\nCodestates &lt;- read_state()\n\nUsing year/date 2010\n\nCodemg_state &lt;- states %&gt;% filter(abbrev_state == \"MG\")\n\n\n\n\nCodebocaina &lt;- data.frame(\n  name = \"Bocaina de Minas\",\n  lon = -44.5242,\n  lat = -22.1694\n) %&gt;%\n  st_as_sf(coords = c(\"lon\", \"lat\"), crs = 4326)\n\n\n\n\nCoderectangle &lt;- st_as_sf(\n  st_sfc(\n    st_polygon(list(rbind(\n      c(-53, -25), c(-38, -25),\n      c(-38, -13), c(-53, -13),\n      c(-53, -25)\n    )))\n  ),\n  crs = 4326\n)\n\n\n\n\nCode# Map A: Brazil with biomes, MG state, and study area rectangle\nmap_a &lt;- ggplot() +\n  # Plot all Brazilian states\n  geom_sf(data = states, fill = \"gray90\", color = \"black\", size = 0.3) +\n  \n  # Overlay biomes with specific gray scale fill colors\n  geom_sf(data = biomes, aes(fill = name_biome), color = NA) +\n  \n  # Highlight Minas Gerais with a bold border\n  geom_sf(data = mg_state, fill = NA, color = \"black\", size = 0.9) +\n  \n  # Draw rectangle for study area\n  geom_sf(data = rectangle, fill = NA, color = \"black\", size = 1.2) +\n  \n  # Set manual fill colors for biomes (greyscale palette)\n  scale_fill_manual(\n    values = c(\n      \"Amazônia\" = \"#bdbdbd\",\n      \"Caatinga\" = \"#636363\",\n      \"Cerrado\" = \"#969696\",\n      \"Mata Atlântica\" = \"#d9d9d9\",\n      \"Pampa\" = \"#252525\",\n      \"Pantanal\" = \"#737373\"\n    )\n  ) +\n  \n  # Set map coordinates to zoom out over all Brazil\n  coord_sf(xlim = c(-75, -30), ylim = c(-35, 5)) +\n  \n  # Use minimal theme\n  theme_minimal() +\n  \n  # Customize plot appearance\n  theme(\n    legend.position = \"none\",\n    panel.background = element_rect(fill = NA, color = \"black\", linewidth = 0.5),\n    panel.grid.minor = element_blank(),\n    panel.grid.major = element_line(color = \"grey90\", linewidth = 0.5, linetype = \"dashed\"),\n    axis.ticks = element_line(color = \"black\"),\n    legend.title = element_text(face = \"bold\")\n  )\n\nmap_a\n\n\n\n\n\n\n\n\n\nCode# Map B: Focused view with cartographic elements\nmap_b &lt;- ggplot() +\n  # Plot biomes\n  geom_sf(data = biomes, aes(fill = name_biome), color = NA) +\n  \n  # Highlight MG state\n  geom_sf(data = mg_state, fill = NA, color = \"black\", size = 0.9) +\n  \n  # Optional: highlight Bocaina de Minas as a red point\n  # geom_sf(data = bocaina, color = \"red\", size = 3) +\n  \n  # Focus the map view over southeastern Brazil\n  coord_sf(xlim = c(-55, -35), ylim = c(-25, -14)) +\n  \n  # Set biome color palette again\n  scale_fill_manual(\n    name = \"Biomes\",\n    values = c(\n      \"Amazônia\" = \"#bdbdbd\",\n      \"Caatinga\" = \"#636363\",\n      \"Cerrado\" = \"#969696\",\n      \"Mata Atlântica\" = \"#d9d9d9\",\n      \"Pampa\" = \"#252525\",\n      \"Pantanal\" = \"#737373\"\n    )\n  ) +\n  \n  # Add north arrow and scale bar\n  annotation_north_arrow(location = \"tr\", which_north = \"true\",\n                         style = north_arrow_fancy_orienteering()) +\n  annotation_scale(location = \"bl\", width_hint = 0.3,\n                   text_cex = 0.8, line_width = 0.7) +\n  \n  # Apply clean theme\n  theme_minimal() +\n  \n  # Customize plot appearance\n  theme(\n    panel.background = element_rect(fill = NA, color = \"black\", linewidth = 0.5),\n    plot.title = element_text(hjust = 0.5, size = 14, face = \"bold\"),\n    legend.title = element_text(size = 12, face = \"bold\"),\n    legend.text = element_text(size = 9),\n    legend.position = \"right\",\n    panel.grid.minor = element_blank(),\n    panel.grid.major = element_line(color = \"grey90\", linewidth = 0.4, linetype = \"dashed\"),\n    axis.ticks = element_line(color = \"black\")\n  ) +\n  \n  # Title for the plot\n  labs(title = \"Biogeographic Domains and Bocaina de Minas\")\n\nmap_b\n\n\n\n\n\n\n\n\n\nCodebiomes_brazil = map_a + map_b + plot_layout(ncol = 2)\n\n\n\n\nCodebiomes_brazil"
+  },
+  {
+    "objectID": "posts/biomes_brazil/index_biomes.html#loading-required-libraries",
+    "href": "posts/biomes_brazil/index_biomes.html#loading-required-libraries",
+    "title": "🗺️ Biogeographic Domains and Bocaina de Minas",
+    "section": "",
+    "text": "We start by loading the essential R packages:\n\nCodelibrary(sf)\nlibrary(tidyverse)\nlibrary(rnaturalearth)\nlibrary(rnaturalearthdata)\nlibrary(geobr)\nlibrary(ggspatial)\nlibrary(patchwork)"
+  },
+  {
+    "objectID": "posts/biomes_brazil/index_biomes.html#loading-and-filtering-spatial-data",
+    "href": "posts/biomes_brazil/index_biomes.html#loading-and-filtering-spatial-data",
+    "title": "🗺️ Biogeographic Domains and Bocaina de Minas",
+    "section": "",
+    "text": "Codebiomes &lt;- read_biomes()\n\nUsing year/date 2019\n\nCodestates &lt;- read_state()\n\nUsing year/date 2010\n\nCodemg_state &lt;- states %&gt;% filter(abbrev_state == \"MG\")"
+  },
+  {
+    "objectID": "posts/biomes_brazil/index_biomes.html#geocoding-bocaina-de-minas",
+    "href": "posts/biomes_brazil/index_biomes.html#geocoding-bocaina-de-minas",
+    "title": "🗺️ Biogeographic Domains and Bocaina de Minas",
+    "section": "",
+    "text": "Codebocaina &lt;- data.frame(\n  name = \"Bocaina de Minas\",\n  lon = -44.5242,\n  lat = -22.1694\n) %&gt;%\n  st_as_sf(coords = c(\"lon\", \"lat\"), crs = 4326)"
+  },
+  {
+    "objectID": "posts/biomes_brazil/index_biomes.html#creating-a-study-area-rectangle",
+    "href": "posts/biomes_brazil/index_biomes.html#creating-a-study-area-rectangle",
+    "title": "🗺️ Biogeographic Domains and Bocaina de Minas",
+    "section": "",
+    "text": "Coderectangle &lt;- st_as_sf(\n  st_sfc(\n    st_polygon(list(rbind(\n      c(-53, -25), c(-38, -25),\n      c(-38, -13), c(-53, -13),\n      c(-53, -25)\n    )))\n  ),\n  crs = 4326\n)"
+  },
+  {
+    "objectID": "posts/biomes_brazil/index_biomes.html#map-a-brazil-with-biomes-and-rectangle",
+    "href": "posts/biomes_brazil/index_biomes.html#map-a-brazil-with-biomes-and-rectangle",
+    "title": "🗺️ Biogeographic Domains and Bocaina de Minas",
+    "section": "",
+    "text": "Code# Map A: Brazil with biomes, MG state, and study area rectangle\nmap_a &lt;- ggplot() +\n  # Plot all Brazilian states\n  geom_sf(data = states, fill = \"gray90\", color = \"black\", size = 0.3) +\n  \n  # Overlay biomes with specific gray scale fill colors\n  geom_sf(data = biomes, aes(fill = name_biome), color = NA) +\n  \n  # Highlight Minas Gerais with a bold border\n  geom_sf(data = mg_state, fill = NA, color = \"black\", size = 0.9) +\n  \n  # Draw rectangle for study area\n  geom_sf(data = rectangle, fill = NA, color = \"black\", size = 1.2) +\n  \n  # Set manual fill colors for biomes (greyscale palette)\n  scale_fill_manual(\n    values = c(\n      \"Amazônia\" = \"#bdbdbd\",\n      \"Caatinga\" = \"#636363\",\n      \"Cerrado\" = \"#969696\",\n      \"Mata Atlântica\" = \"#d9d9d9\",\n      \"Pampa\" = \"#252525\",\n      \"Pantanal\" = \"#737373\"\n    )\n  ) +\n  \n  # Set map coordinates to zoom out over all Brazil\n  coord_sf(xlim = c(-75, -30), ylim = c(-35, 5)) +\n  \n  # Use minimal theme\n  theme_minimal() +\n  \n  # Customize plot appearance\n  theme(\n    legend.position = \"none\",\n    panel.background = element_rect(fill = NA, color = \"black\", linewidth = 0.5),\n    panel.grid.minor = element_blank(),\n    panel.grid.major = element_line(color = \"grey90\", linewidth = 0.5, linetype = \"dashed\"),\n    axis.ticks = element_line(color = \"black\"),\n    legend.title = element_text(face = \"bold\")\n  )\n\nmap_a"
+  },
+  {
+    "objectID": "posts/biomes_brazil/index_biomes.html#map-b-zoomed-biomes-and-labelled-region",
+    "href": "posts/biomes_brazil/index_biomes.html#map-b-zoomed-biomes-and-labelled-region",
+    "title": "🗺️ Biogeographic Domains and Bocaina de Minas",
+    "section": "",
+    "text": "Code# Map B: Focused view with cartographic elements\nmap_b &lt;- ggplot() +\n  # Plot biomes\n  geom_sf(data = biomes, aes(fill = name_biome), color = NA) +\n  \n  # Highlight MG state\n  geom_sf(data = mg_state, fill = NA, color = \"black\", size = 0.9) +\n  \n  # Optional: highlight Bocaina de Minas as a red point\n  # geom_sf(data = bocaina, color = \"red\", size = 3) +\n  \n  # Focus the map view over southeastern Brazil\n  coord_sf(xlim = c(-55, -35), ylim = c(-25, -14)) +\n  \n  # Set biome color palette again\n  scale_fill_manual(\n    name = \"Biomes\",\n    values = c(\n      \"Amazônia\" = \"#bdbdbd\",\n      \"Caatinga\" = \"#636363\",\n      \"Cerrado\" = \"#969696\",\n      \"Mata Atlântica\" = \"#d9d9d9\",\n      \"Pampa\" = \"#252525\",\n      \"Pantanal\" = \"#737373\"\n    )\n  ) +\n  \n  # Add north arrow and scale bar\n  annotation_north_arrow(location = \"tr\", which_north = \"true\",\n                         style = north_arrow_fancy_orienteering()) +\n  annotation_scale(location = \"bl\", width_hint = 0.3,\n                   text_cex = 0.8, line_width = 0.7) +\n  \n  # Apply clean theme\n  theme_minimal() +\n  \n  # Customize plot appearance\n  theme(\n    panel.background = element_rect(fill = NA, color = \"black\", linewidth = 0.5),\n    plot.title = element_text(hjust = 0.5, size = 14, face = \"bold\"),\n    legend.title = element_text(size = 12, face = \"bold\"),\n    legend.text = element_text(size = 9),\n    legend.position = \"right\",\n    panel.grid.minor = element_blank(),\n    panel.grid.major = element_line(color = \"grey90\", linewidth = 0.4, linetype = \"dashed\"),\n    axis.ticks = element_line(color = \"black\")\n  ) +\n  \n  # Title for the plot\n  labs(title = \"Biogeographic Domains and Bocaina de Minas\")\n\nmap_b"
+  },
+  {
+    "objectID": "posts/biomes_brazil/index_biomes.html#combining-the-two-maps",
+    "href": "posts/biomes_brazil/index_biomes.html#combining-the-two-maps",
+    "title": "🗺️ Biogeographic Domains and Bocaina de Minas",
+    "section": "",
+    "text": "Codebiomes_brazil = map_a + map_b + plot_layout(ncol = 2)"
+  },
+  {
+    "objectID": "posts/biomes_brazil/index_biomes.html#final-visualization",
+    "href": "posts/biomes_brazil/index_biomes.html#final-visualization",
+    "title": "🗺️ Biogeographic Domains and Bocaina de Minas",
+    "section": "",
+    "text": "Codebiomes_brazil"
+  },
+  {
+    "objectID": "posts/arabian_bob_current/arabian_bob_current.html",
+    "href": "posts/arabian_bob_current/arabian_bob_current.html",
+    "title": "Surface Current - Arabian Sea and Bay of Bengal",
+    "section": "",
+    "text": "Ocean Surface Current Map\nThis map displays the surface currents of the Bay of Bengal (BOB) and Arabian Sea (AS) for 2025, derived from Near Real-Time Geostrophic Currents data by NOAA\n💻 Data processed and visualized using R"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Md Nahin Alam",
+    "section": "",
+    "text": "Bachelor of Science in Oceanography\nUniversity of Chittagong"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Md Nahin Alam",
+    "section": "",
+    "text": "Bachelor of Science in Oceanography\nUniversity of Chittagong"
+  },
+  {
+    "objectID": "cv.html#research-experience",
+    "href": "cv.html#research-experience",
+    "title": "Md Nahin Alam",
+    "section": "Research Experience",
+    "text": "Research Experience\nResearch Assistant\nCenter for Advanced Research and Innovation (CARI)\nNovember 2024 – Present\nResearch Assistant\nMinistry of Science and Technology (MoST)\nNational Oceanographic and Maritime Institute (NOAMI)\nApril 2024 – Present\nProject: Comprehensive Assessment of Marine Biodiversity Vulnerability in Bangladesh’s Coastal Regions\nProject Investigator: Dr. Samarendra Karmakar (Ex. Director, BMD)"
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "Md Nahin Alam",
+    "section": "Publications",
+    "text": "Publications\nCo-authored Article\nMehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, Md Nahin Alam, Ataher Ali (2024).\n“Human intervention caused massive destruction of the second largest mangrove forest, Chakaria Sundarbans, Bangladesh.”\nEnviron Sci Pollut Res 31, 25329–25341 (2024).\nDOI: 10.1007/s11356-024-32792-2"
+  },
+  {
+    "objectID": "cv.html#technical-skills",
+    "href": "cv.html#technical-skills",
+    "title": "Md Nahin Alam",
+    "section": "Technical Skills",
+    "text": "Technical Skills\nProgramming: R, Python, Google Earth Engine\nGIS/Remote Sensing: SeaDAS, QGIS, ArcGIS, ArcGIS Pro\nLanguages: Bengali (Native), English (Intermediate)"
+  },
+  {
+    "objectID": "cv.html#achievements",
+    "href": "cv.html#achievements",
+    "title": "Md Nahin Alam",
+    "section": "Achievements",
+    "text": "Achievements\nUSAID Climate Action Campaign\nTeam Leader (Team-CUNC) | February 2023 – June 2023\n- Led conservation project: “Saving Mother Nature, Saving Us: Youth Leadership in Conservation”\n- Produced thematic maps and presentations on climate resilience\nIntra CU Blog Writing Competition 2020\n5th Position | August 2020\n- Topic: Aqua-Fi: Underwater Wireless Optical Communication System"
+  },
+  {
+    "objectID": "cv.html#leadership",
+    "href": "cv.html#leadership",
+    "title": "Md Nahin Alam",
+    "section": "Leadership",
+    "text": "Leadership\nChittagong University Nature Club (CUNC)\nGeneral Secretary | November 2023 – Present"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/Basic_mapping_in_R/r-oceanography.html",
+    "href": "posts/Basic_mapping_in_R/r-oceanography.html",
+    "title": "Basic Mapping in R",
+    "section": "",
+    "text": "The oce package includes a built-in coastlineWorld dataset, which we can use to create a basic global map.\n\nCodelibrary(oce)  \n\n\n\n\nCode# Load built-in coastline data  \ndata(\"coastlineWorld\")  \n\n# Plot the world coastline  \nplot(coastlineWorld, col = \"darkblue\", main = \"Global Coastline\")  \n\n\n\n\n\n\n\n\nIf you have bathymetry data (e.g., from ETOPO1), you can overlay it:\n\nCode# Example: Simulated depth data (in practice, load real bathymetry)  \nlon &lt;- seq(-180, 180, by = 5)  \nlat &lt;- seq(-90, 90, by = 5)  \ndepth &lt;- outer(lon, lat, function(x, y) -5000 * cos(x/50) * sin(y/50)) # Mock data  \n\n# Plot  \nimagep(lon, lat, depth, col = oceColorsTurbo,  \n       xlab = \"Longitude\", ylab = \"Latitude\",  \n       main = \"Simulated Ocean Depth (m)\")  \nplot(coastlineWorld, add = TRUE, col = \"black\")  \n\n\n\nGlobal map with simplified bathymetry contours."
+  },
+  {
+    "objectID": "posts/Basic_mapping_in_R/r-oceanography.html#load-data",
+    "href": "posts/Basic_mapping_in_R/r-oceanography.html#load-data",
+    "title": "Basic Mapping in R",
+    "section": "",
+    "text": "Code# Load built-in coastline data  \ndata(\"coastlineWorld\")  \n\n# Plot the world coastline  \nplot(coastlineWorld, col = \"darkblue\", main = \"Global Coastline\")"
+  },
+  {
+    "objectID": "posts/Basic_mapping_in_R/r-oceanography.html#adding-bathymetry-optional",
+    "href": "posts/Basic_mapping_in_R/r-oceanography.html#adding-bathymetry-optional",
+    "title": "Basic Mapping in R",
+    "section": "",
+    "text": "If you have bathymetry data (e.g., from ETOPO1), you can overlay it:\n\nCode# Example: Simulated depth data (in practice, load real bathymetry)  \nlon &lt;- seq(-180, 180, by = 5)  \nlat &lt;- seq(-90, 90, by = 5)  \ndepth &lt;- outer(lon, lat, function(x, y) -5000 * cos(x/50) * sin(y/50)) # Mock data  \n\n# Plot  \nimagep(lon, lat, depth, col = oceColorsTurbo,  \n       xlab = \"Longitude\", ylab = \"Latitude\",  \n       main = \"Simulated Ocean Depth (m)\")  \nplot(coastlineWorld, add = TRUE, col = \"black\")  \n\n\n\nGlobal map with simplified bathymetry contours."
+  },
+  {
+    "objectID": "posts/Basic_mapping_in_R/r-oceanography.html#b.-adding-oceanographic-data-example-temperature-gradient",
+    "href": "posts/Basic_mapping_in_R/r-oceanography.html#b.-adding-oceanographic-data-example-temperature-gradient",
+    "title": "Basic Mapping in R",
+    "section": "B. Adding Oceanographic Data (Example: Temperature Gradient)",
+    "text": "B. Adding Oceanographic Data (Example: Temperature Gradient)\nIf you have a temperature dataset (e.g., from a CSV or NetCDF file), you can visualize it like this:\n\nCode# Create simulated temperature data\nset.seed(123)\ntemp_data &lt;- expand.grid(\n  lon = seq(-180, 180, by = 10),\n  lat = seq(-90, 90, by = 10)\n)\ntemp_data$temp &lt;- with(temp_data, 20 + 10 * cos(lat/30) * sin(lon/30))\n\n# Plot with proper layer separation\nggplot() +\n  geom_tile(data = temp_data, aes(x = lon, y = lat, fill = temp)) +\n  geom_path(data = coast_df, aes(x = lon, y = lat), color = \"black\") +\n  scale_fill_viridis_c(name = \"Temperature (°C)\") +\n  labs(title = \"Simulated Sea Surface Temperature\", \n       x = \"Longitude\", y = \"Latitude\") +\n  theme_minimal()\n\n\n\nExample temperature gradient visualization."
+  },
+  {
+    "objectID": "posts/bob_current/bob_current.html",
+    "href": "posts/bob_current/bob_current.html",
+    "title": "Surface Current - Bay of Bengal",
+    "section": "",
+    "text": "Ocean Surface Current Map\nThis map displays the surface currents of the Bay of Bengal (BOB) for 2025, derived from Near Real-Time Geostrophic Currents data. The dataset is provided by NOAA’s CoastWatch Caribbean and Atlantic Oceanographic and Meteorological Laboratory (AOML) and has been publicly available since 2016. It offers global ocean current information at a spatial resolution of 0.2° (~22 km).\n💻 Data processed and visualized using R"
+  },
+  {
+    "objectID": "posts/Importance_of_R/r-oceanography.html",
+    "href": "posts/Importance_of_R/r-oceanography.html",
+    "title": "The Importance of R Programming in Oceanography",
+    "section": "",
+    "text": "Oceanography is a data-intensive field, involving the collection and analysis of vast amounts of information from satellites, buoys, ship-based sensors, and autonomous underwater vehicles. To make sense of this data, researchers need powerful, flexible, and reproducible tools—and R programming has emerged as one of the most important languages for oceanographic research.\nIn this blog post, we’ll explore why R is indispensable for oceanographers and how it enhances data analysis, visualization, and modeling in marine science.\n\nData Handling and Processing Oceanographic datasets are often large, complex, and messy. R provides powerful packages like:\n\ndplyr and tidyr for efficient data manipulation\nncdf4 and raster for working with NetCDF files (common in satellite and climate data)\noce and seacarb for processing oceanographic data (e.g., CTD profiles, carbonate chemistry)\nThese tools allow researchers to clean, filter, and reshape data with ease, making workflows more efficient.\n\nAdvanced Visualization Effective communication of oceanographic findings relies on high-quality visualizations. R’s ggplot2 package enables the creation of publication-ready plots, while specialized libraries like:\n\noce for oceanographic-specific plots (e.g., TS diagrams, section plots)\nplotly for interactive visualizations\nmarmap for bathymetric mapping\nhelp researchers illustrate complex marine phenomena clearly.\n\nStatistical Modeling and Machine Learning From analyzing trends in sea surface temperature to predicting harmful algal blooms, statistical modeling is crucial. R provides:\n\nmgcv for generalized additive models (GAMs) to study nonlinear relationships\nrandomForest and caret for machine learning applications\nbrms for Bayesian hierarchical modeling\nThese tools help oceanographers uncover patterns and make predictions from observational data.\n\nReproducible Research R integrates seamlessly with Quarto and R Markdown, allowing researchers to combine code, analysis, and text in a single document. This ensures that studies are transparent, reproducible, and easily shareable—a critical aspect of modern scientific research.\nCommunity and Open-Source Advantage R is open-source, meaning oceanographers can access cutting-edge tools without expensive licenses. The R community is also highly active in environmental sciences, with packages constantly being developed for specialized oceanographic applications.\n\nConclusion R programming has become a cornerstone of oceanographic research, enabling efficient data analysis, powerful visualization, and robust statistical modeling. By leveraging R, marine scientists can tackle complex questions about our oceans with greater precision and reproducibility."
+  },
+  {
+    "objectID": "posts/Importance_of_R/r-oceanography.html#why-r-programming-is-essential-for-oceanography",
+    "href": "posts/Importance_of_R/r-oceanography.html#why-r-programming-is-essential-for-oceanography",
+    "title": "The Importance of R Programming in Oceanography",
+    "section": "",
+    "text": "Oceanography is a data-intensive field, involving the collection and analysis of vast amounts of information from satellites, buoys, ship-based sensors, and autonomous underwater vehicles. To make sense of this data, researchers need powerful, flexible, and reproducible tools—and R programming has emerged as one of the most important languages for oceanographic research.\nIn this blog post, we’ll explore why R is indispensable for oceanographers and how it enhances data analysis, visualization, and modeling in marine science.\n\nData Handling and Processing Oceanographic datasets are often large, complex, and messy. R provides powerful packages like:\n\ndplyr and tidyr for efficient data manipulation\nncdf4 and raster for working with NetCDF files (common in satellite and climate data)\noce and seacarb for processing oceanographic data (e.g., CTD profiles, carbonate chemistry)\nThese tools allow researchers to clean, filter, and reshape data with ease, making workflows more efficient.\n\nAdvanced Visualization Effective communication of oceanographic findings relies on high-quality visualizations. R’s ggplot2 package enables the creation of publication-ready plots, while specialized libraries like:\n\noce for oceanographic-specific plots (e.g., TS diagrams, section plots)\nplotly for interactive visualizations\nmarmap for bathymetric mapping\nhelp researchers illustrate complex marine phenomena clearly.\n\nStatistical Modeling and Machine Learning From analyzing trends in sea surface temperature to predicting harmful algal blooms, statistical modeling is crucial. R provides:\n\nmgcv for generalized additive models (GAMs) to study nonlinear relationships\nrandomForest and caret for machine learning applications\nbrms for Bayesian hierarchical modeling\nThese tools help oceanographers uncover patterns and make predictions from observational data.\n\nReproducible Research R integrates seamlessly with Quarto and R Markdown, allowing researchers to combine code, analysis, and text in a single document. This ensures that studies are transparent, reproducible, and easily shareable—a critical aspect of modern scientific research.\nCommunity and Open-Source Advantage R is open-source, meaning oceanographers can access cutting-edge tools without expensive licenses. The R community is also highly active in environmental sciences, with packages constantly being developed for specialized oceanographic applications.\n\nConclusion R programming has become a cornerstone of oceanographic research, enabling efficient data analysis, powerful visualization, and robust statistical modeling. By leveraging R, marine scientists can tackle complex questions about our oceans with greater precision and reproducibility."
+  },
+  {
+    "objectID": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html",
+    "href": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html",
+    "title": "Visualizing Oceanographic Data with R: A Dive into oce and ggplot2",
+    "section": "",
+    "text": "Oceanographic data, such as measurements from Conductivity-Temperature-Depth (CTD) instruments, are vital for understanding marine environments. In this post, we’ll explore how to use R’s oce package to handle such data and employ ggplot2 for insightful visualizations.​\n\nFirst, ensure that the necessary packages are installed and loaded:\n\nCode# Load the libraries\nlibrary(oce)\n\nWarning: package 'oce' was built under R version 4.4.1\n\n\nLoading required package: gsw\n\n\nWarning: package 'gsw' was built under R version 4.4.1\n\nCodelibrary(ggplot2)\n\n\n\nThe oce package comes with built-in datasets, including a sample CTD dataset. Let’s load and inspect it:\n\nCode# Load the sample CTD dataset\ndata(ctd)\n\n# View a summary of the dataset\nsummary(ctd)\n\nCTD Summary\n-----------\n\n* Instrument:          SBE 25\n* Temp. serial no.:    1140\n* Cond. serial no.:    832\n* File:                \"/Users/kelley/git/oce/create_data/ctd/ctd.cnv\"\n* Original file:       c:\\seasoft3\\basin\\bed0302.hex\n* Start time:          2003-10-15 15:38:38\n* Sample interval:     1 s\n* Cruise:              Halifax Harbour\n* Vessel:              Divcom3\n* Station:             Stn 2\n* Mean Location:       44.684N 63.644W\n* Data Overview\n\n                                Min.   Mean   Max. Dim. NAs OriginalName\n    scan                         130    220    310  181   0         scan\n    timeS [s]                    129    219    309  181   0        timeS\n    pressure [dbar]             1.48 22.885 44.141  181   0           pr\n    depth [m]                  1.468 22.698 43.778  181   0         depS\n    temperature [°C, IPTS-68]  2.919 7.5063 14.237  181   0         t068\n    salinity [PSS-78]         29.916 31.219 31.498  181   0        sal00\n    flag                           0      0      0  181   0         flag\n\n* Processing Log\n\n    - 2018-11-14 20:03:47 UTC: `create 'ctd' object`\n    - 2018-11-14 20:03:47 UTC: `read.ctd.sbe(file = file, debug = 10, processingLog = processingLog)`\n    - 2018-11-14 20:03:47 UTC: `oce.edit(x = ctd, item = \"startTime\", value = as.POSIXct(gsub(\"1903\",     \"2003\", format(ctd[[\"startTime\"]])), tz = \"UTC\") + 4 * 3600,     reason = \"file had year=1903, instead of 2003\", person = \"Dan Kelley\")`\n\n\nThis dataset contains measurements like salinity, temperature, and pressure collected at various depths.​\n\nTo understand the structure of the CTD data, we can extract specific parameters:\n\nCode# Extract salinity, temperature, and pressure\nsalinity &lt;- ctd[[\"salinity\"]]\ntemperature &lt;- ctd[[\"temperature\"]]\npressure &lt;- ctd[[\"pressure\"]]\n\n\n\nWhile oce provides its own plotting functions, integrating with ggplot2 offers enhanced customization. To use ggplot2, we’ll convert the CTD object into a data frame:\n\nCode# Convert CTD object to a data frame\nctd_df &lt;- as.data.frame(ctd[[\"data\"]])\n\n\n\nLet’s plot temperature against depth:\n\nCodeggplot(ctd_df, aes(x = temperature, y = pressure)) +\n  geom_line(color = \"blue\") +\n  scale_y_reverse() +  # Depth increases with pressure\n  labs(title = \"Temperature Profile\",\n       x = \"Temperature (°C)\",\n       y = \"Pressure (dbar)\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\nSimilarly, plot salinity against depth:\n\nCodeggplot(ctd_df, aes(x = salinity, y = pressure)) +\n  geom_line(color = \"darkgreen\") +\n  scale_y_reverse() +\n  labs(title = \"Salinity Profile\",\n       x = \"Salinity (PSU)\",\n       y = \"Pressure (dbar)\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\nA Temperature-Salinity (T-S) diagram is essential in oceanography:​\n\nCodeggplot(ctd_df, aes(x = salinity, y = temperature, color = pressure)) +\n  geom_point() +\n  #geom_line() + # uncomment the line and run again to see what happen\n  scale_color_viridis_c() +\n  labs(title = \"Temperature-Salinity Diagram\",\n       x = \"Salinity (PSU)\",\n       y = \"Temperature (°C)\",\n       color = \"Pressure (dbar)\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\nThe oce package allows computation of derived oceanographic parameters. For instance, potential temperature:​\n\nCode# Extract salinity, temperature, and pressure from the CTD object\nsalinity &lt;- ctd[[\"salinity\"]]\ntemperature &lt;- ctd[[\"temperature\"]]\npressure &lt;- ctd[[\"pressure\"]]\n\n# Calculate potential temperature referenced to the surface (0 dbar)\ntheta &lt;- swTheta(salinity, temperature, pressure, referencePressure = 0)\n\n# Add the calculated potential temperature to the CTD object\nctd &lt;- oceSetData(ctd, name = \"theta\", value = theta)\n\n# Now you can access the potential temperature from the CTD object\nctd[[\"theta\"]]\n\n  [1] 14.220882 14.226254 14.224802 14.221876 14.226322 14.232814 14.191678\n  [8] 14.111872 14.139226 14.118798 14.105862 14.099138 14.115020 13.265492\n [15] 13.373063 12.293302 12.109435 12.015314 12.010110 11.791130 11.733629\n [22] 11.629529 11.423749 11.439422 11.385709 11.291219 11.308103 11.236779\n [29] 10.937640 10.933413 10.811601 10.738723 10.541845 10.440554 10.228687\n [36] 10.030628  9.896224  9.697580  9.599891  9.548287  9.501067  9.500346\n [43]  9.459820  9.421607  9.388003  9.285917  9.158529  9.100833  9.109286\n [50]  9.024195  9.015174  8.985669  9.008138  8.964133  8.875720  8.824609\n [57]  8.753615  8.747993  8.678003  8.525725  8.537811  8.432310  8.441089\n [64]  8.316310  8.321895  8.209508  8.146105  8.073727  8.012709  7.942613\n [71]  7.968199  7.837025  7.775626  7.767216  7.732703  7.712471  7.701367\n [78]  7.715844  7.701027  7.699706  7.699588  7.692334  7.684333  7.678513\n [85]  7.682289  7.682671  7.681346  7.626632  7.575341  7.572024  7.542015\n [92]  7.541194  7.464395  7.395298  7.421262  7.387958  7.342857  7.303860\n [99]  7.279137  7.254930  7.262893  7.180320  7.177105  7.080331  7.017626\n[106]  6.872869  6.896322  6.851734  6.842622  6.848199  6.841278  6.750795\n[113]  6.752865  6.638302  6.545537  6.467856  6.450345  6.315282  6.132942\n[120]  6.048359  5.895220  5.680801  5.672788  5.591516  5.564404  5.249339\n[127]  5.092104  4.950961  4.857090  4.784814  4.798983  4.793660  4.745377\n[134]  4.735672  4.676583  4.650886  4.546121  4.490427  4.453034  4.415240\n[141]  4.347563  4.344150  4.314646  4.214080  4.245056  4.169873  4.176963\n[148]  4.170548  4.159642  4.157528  4.163300  4.135806  3.972377  3.675338\n[155]  3.552991  3.419655  3.402448  3.423120  3.370433  3.364525  3.379803\n[162]  3.377899  3.370783  3.371577  3.365853  3.366042  3.374026  3.354032\n[169]  3.263465  3.205088  3.197776  3.144588  3.090510  3.101591  3.061100\n[176]  3.016517  2.999009  2.968614  2.933620  2.915924  2.916311\n\n\n\nIf you have multiple CTD casts with geographic coordinates, you can map their locations. Assuming you have a data frame ctd_locations with longitude and latitude:​\n\nCode# Sample data frame of CTD locations\nctd_locations &lt;- data.frame(\n  longitude = c(91.8, 91.9, 92.0),\n  latitude = c(22.3, 22.4, 22.5)\n)\n\n# Plot locations\nggplot(ctd_locations, aes(x = longitude, y = latitude)) +\n  geom_point(color = \"red\", size = 3) +\n  labs(title = \"CTD Cast Locations\",\n       x = \"Longitude\",\n       y = \"Latitude\") +\n  theme_minimal()\n\n\n\n\n\n\n\n🧠 Bonus: Create a Combined Profile Plot\n\nCodelibrary(gridExtra)\n\np1 &lt;- ggplot(ctd_df, aes(x = temperature, y = pressure)) +\n  geom_line(color = \"blue\") +\n  scale_y_reverse() +\n  labs(\n    title = \"Temperature Profile (Saanich Inlet)\",\n    x = \"Temperature (°C)\",\n    y = \"Depth (dbar)\"\n  ) +\n  theme_minimal()\n\n\np2 &lt;- ggplot(ctd_df, aes(x = salinity, y = pressure)) +\n  geom_line(color = \"green4\") +\n  scale_y_reverse() +\n  labs(title = \"Salinity\", x = \"PSU\", y = \"Depth\") +\n  theme_minimal()\n\ngridExtra::grid.arrange(p1, p2, ncol = 2)"
+  },
+  {
+    "objectID": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#getting-started",
+    "href": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#getting-started",
+    "title": "Visualizing Oceanographic Data with R: A Dive into oce and ggplot2",
+    "section": "",
+    "text": "First, ensure that the necessary packages are installed and loaded:\n\nCode# Load the libraries\nlibrary(oce)\n\nWarning: package 'oce' was built under R version 4.4.1\n\n\nLoading required package: gsw\n\n\nWarning: package 'gsw' was built under R version 4.4.1\n\nCodelibrary(ggplot2)"
+  },
+  {
+    "objectID": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#loading-sample-ctd-data",
+    "href": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#loading-sample-ctd-data",
+    "title": "Visualizing Oceanographic Data with R: A Dive into oce and ggplot2",
+    "section": "",
+    "text": "The oce package comes with built-in datasets, including a sample CTD dataset. Let’s load and inspect it:\n\nCode# Load the sample CTD dataset\ndata(ctd)\n\n# View a summary of the dataset\nsummary(ctd)\n\nCTD Summary\n-----------\n\n* Instrument:          SBE 25\n* Temp. serial no.:    1140\n* Cond. serial no.:    832\n* File:                \"/Users/kelley/git/oce/create_data/ctd/ctd.cnv\"\n* Original file:       c:\\seasoft3\\basin\\bed0302.hex\n* Start time:          2003-10-15 15:38:38\n* Sample interval:     1 s\n* Cruise:              Halifax Harbour\n* Vessel:              Divcom3\n* Station:             Stn 2\n* Mean Location:       44.684N 63.644W\n* Data Overview\n\n                                Min.   Mean   Max. Dim. NAs OriginalName\n    scan                         130    220    310  181   0         scan\n    timeS [s]                    129    219    309  181   0        timeS\n    pressure [dbar]             1.48 22.885 44.141  181   0           pr\n    depth [m]                  1.468 22.698 43.778  181   0         depS\n    temperature [°C, IPTS-68]  2.919 7.5063 14.237  181   0         t068\n    salinity [PSS-78]         29.916 31.219 31.498  181   0        sal00\n    flag                           0      0      0  181   0         flag\n\n* Processing Log\n\n    - 2018-11-14 20:03:47 UTC: `create 'ctd' object`\n    - 2018-11-14 20:03:47 UTC: `read.ctd.sbe(file = file, debug = 10, processingLog = processingLog)`\n    - 2018-11-14 20:03:47 UTC: `oce.edit(x = ctd, item = \"startTime\", value = as.POSIXct(gsub(\"1903\",     \"2003\", format(ctd[[\"startTime\"]])), tz = \"UTC\") + 4 * 3600,     reason = \"file had year=1903, instead of 2003\", person = \"Dan Kelley\")`\n\n\nThis dataset contains measurements like salinity, temperature, and pressure collected at various depths.​"
+  },
+  {
+    "objectID": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#exploring-the-data",
+    "href": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#exploring-the-data",
+    "title": "Visualizing Oceanographic Data with R: A Dive into oce and ggplot2",
+    "section": "",
+    "text": "To understand the structure of the CTD data, we can extract specific parameters:\n\nCode# Extract salinity, temperature, and pressure\nsalinity &lt;- ctd[[\"salinity\"]]\ntemperature &lt;- ctd[[\"temperature\"]]\npressure &lt;- ctd[[\"pressure\"]]"
+  },
+  {
+    "objectID": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#visualizing-with-ggplot2",
+    "href": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#visualizing-with-ggplot2",
+    "title": "Visualizing Oceanographic Data with R: A Dive into oce and ggplot2",
+    "section": "",
+    "text": "While oce provides its own plotting functions, integrating with ggplot2 offers enhanced customization. To use ggplot2, we’ll convert the CTD object into a data frame:\n\nCode# Convert CTD object to a data frame\nctd_df &lt;- as.data.frame(ctd[[\"data\"]])\n\n\n\nLet’s plot temperature against depth:\n\nCodeggplot(ctd_df, aes(x = temperature, y = pressure)) +\n  geom_line(color = \"blue\") +\n  scale_y_reverse() +  # Depth increases with pressure\n  labs(title = \"Temperature Profile\",\n       x = \"Temperature (°C)\",\n       y = \"Pressure (dbar)\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\nSimilarly, plot salinity against depth:\n\nCodeggplot(ctd_df, aes(x = salinity, y = pressure)) +\n  geom_line(color = \"darkgreen\") +\n  scale_y_reverse() +\n  labs(title = \"Salinity Profile\",\n       x = \"Salinity (PSU)\",\n       y = \"Pressure (dbar)\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\nA Temperature-Salinity (T-S) diagram is essential in oceanography:​\n\nCodeggplot(ctd_df, aes(x = salinity, y = temperature, color = pressure)) +\n  geom_point() +\n  #geom_line() + # uncomment the line and run again to see what happen\n  scale_color_viridis_c() +\n  labs(title = \"Temperature-Salinity Diagram\",\n       x = \"Salinity (PSU)\",\n       y = \"Temperature (°C)\",\n       color = \"Pressure (dbar)\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#calculating-derived-parameters",
+    "href": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#calculating-derived-parameters",
+    "title": "Visualizing Oceanographic Data with R: A Dive into oce and ggplot2",
+    "section": "",
+    "text": "The oce package allows computation of derived oceanographic parameters. For instance, potential temperature:​\n\nCode# Extract salinity, temperature, and pressure from the CTD object\nsalinity &lt;- ctd[[\"salinity\"]]\ntemperature &lt;- ctd[[\"temperature\"]]\npressure &lt;- ctd[[\"pressure\"]]\n\n# Calculate potential temperature referenced to the surface (0 dbar)\ntheta &lt;- swTheta(salinity, temperature, pressure, referencePressure = 0)\n\n# Add the calculated potential temperature to the CTD object\nctd &lt;- oceSetData(ctd, name = \"theta\", value = theta)\n\n# Now you can access the potential temperature from the CTD object\nctd[[\"theta\"]]\n\n  [1] 14.220882 14.226254 14.224802 14.221876 14.226322 14.232814 14.191678\n  [8] 14.111872 14.139226 14.118798 14.105862 14.099138 14.115020 13.265492\n [15] 13.373063 12.293302 12.109435 12.015314 12.010110 11.791130 11.733629\n [22] 11.629529 11.423749 11.439422 11.385709 11.291219 11.308103 11.236779\n [29] 10.937640 10.933413 10.811601 10.738723 10.541845 10.440554 10.228687\n [36] 10.030628  9.896224  9.697580  9.599891  9.548287  9.501067  9.500346\n [43]  9.459820  9.421607  9.388003  9.285917  9.158529  9.100833  9.109286\n [50]  9.024195  9.015174  8.985669  9.008138  8.964133  8.875720  8.824609\n [57]  8.753615  8.747993  8.678003  8.525725  8.537811  8.432310  8.441089\n [64]  8.316310  8.321895  8.209508  8.146105  8.073727  8.012709  7.942613\n [71]  7.968199  7.837025  7.775626  7.767216  7.732703  7.712471  7.701367\n [78]  7.715844  7.701027  7.699706  7.699588  7.692334  7.684333  7.678513\n [85]  7.682289  7.682671  7.681346  7.626632  7.575341  7.572024  7.542015\n [92]  7.541194  7.464395  7.395298  7.421262  7.387958  7.342857  7.303860\n [99]  7.279137  7.254930  7.262893  7.180320  7.177105  7.080331  7.017626\n[106]  6.872869  6.896322  6.851734  6.842622  6.848199  6.841278  6.750795\n[113]  6.752865  6.638302  6.545537  6.467856  6.450345  6.315282  6.132942\n[120]  6.048359  5.895220  5.680801  5.672788  5.591516  5.564404  5.249339\n[127]  5.092104  4.950961  4.857090  4.784814  4.798983  4.793660  4.745377\n[134]  4.735672  4.676583  4.650886  4.546121  4.490427  4.453034  4.415240\n[141]  4.347563  4.344150  4.314646  4.214080  4.245056  4.169873  4.176963\n[148]  4.170548  4.159642  4.157528  4.163300  4.135806  3.972377  3.675338\n[155]  3.552991  3.419655  3.402448  3.423120  3.370433  3.364525  3.379803\n[162]  3.377899  3.370783  3.371577  3.365853  3.366042  3.374026  3.354032\n[169]  3.263465  3.205088  3.197776  3.144588  3.090510  3.101591  3.061100\n[176]  3.016517  2.999009  2.968614  2.933620  2.915924  2.916311"
+  },
+  {
+    "objectID": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#mapping-ctd-cast-locations",
+    "href": "posts/Visualizing Oceanographic Data with R A Dive into oce and ggplot2/r-oceanography.html#mapping-ctd-cast-locations",
+    "title": "Visualizing Oceanographic Data with R: A Dive into oce and ggplot2",
+    "section": "",
+    "text": "If you have multiple CTD casts with geographic coordinates, you can map their locations. Assuming you have a data frame ctd_locations with longitude and latitude:​\n\nCode# Sample data frame of CTD locations\nctd_locations &lt;- data.frame(\n  longitude = c(91.8, 91.9, 92.0),\n  latitude = c(22.3, 22.4, 22.5)\n)\n\n# Plot locations\nggplot(ctd_locations, aes(x = longitude, y = latitude)) +\n  geom_point(color = \"red\", size = 3) +\n  labs(title = \"CTD Cast Locations\",\n       x = \"Longitude\",\n       y = \"Latitude\") +\n  theme_minimal()\n\n\n\n\n\n\n\n🧠 Bonus: Create a Combined Profile Plot\n\nCodelibrary(gridExtra)\n\np1 &lt;- ggplot(ctd_df, aes(x = temperature, y = pressure)) +\n  geom_line(color = \"blue\") +\n  scale_y_reverse() +\n  labs(\n    title = \"Temperature Profile (Saanich Inlet)\",\n    x = \"Temperature (°C)\",\n    y = \"Depth (dbar)\"\n  ) +\n  theme_minimal()\n\n\np2 &lt;- ggplot(ctd_df, aes(x = salinity, y = pressure)) +\n  geom_line(color = \"green4\") +\n  scale_y_reverse() +\n  labs(title = \"Salinity\", x = \"PSU\", y = \"Depth\") +\n  theme_minimal()\n\ngridExtra::grid.arrange(p1, p2, ncol = 2)"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Mehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, Nahin Alam, Ataher Ali (2024). Human intervention caused massive destruction of the second largest mangrove forest, Chakaria Sundarbans, Bangladesh.\nEnvironmental Science and Pollution Research, 31, 25329–25341 (2024).\nPDF\n\n\nPoster\nLeion Hassan, Md. Enamul Hoque, Nahin Alam, Md. Ibrahim (2024). Understanding Fishing Prospects: Satellite-Based Evaluation of Phytoplankton Phenology in the Northern Bay of Bengal.\nConference: ICO 2024: International Conference on OceanographyAt: Bangladesh Oceanographic Research Institute, Bangladesh.\nPDF"
+  },
+  {
+    "objectID": "research.html#section",
+    "href": "research.html#section",
+    "title": "Research",
+    "section": "",
+    "text": "Mehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, Nahin Alam, Ataher Ali (2024). Human intervention caused massive destruction of the second largest mangrove forest, Chakaria Sundarbans, Bangladesh.\nEnvironmental Science and Pollution Research, 31, 25329–25341 (2024).\nPDF\n\n\nPoster\nLeion Hassan, Md. Enamul Hoque, Nahin Alam, Md. Ibrahim (2024). Understanding Fishing Prospects: Satellite-Based Evaluation of Phytoplankton Phenology in the Northern Bay of Bengal.\nConference: ICO 2024: International Conference on OceanographyAt: Bangladesh Oceanographic Research Institute, Bangladesh.\nPDF"
+  },
+  {
+    "objectID": "research.html#section-1",
+    "href": "research.html#section-1",
+    "title": "Research",
+    "section": "2022",
+    "text": "2022\n\nConference Paper\nMehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, Nahin Alam, Ataher Ali (2022). Human interaction caused land cover changes of Chakaria Sundarban mangrove forest in Bangladesh: a fifty-years study (2022).\nPDF"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Md Nahin Alam",
+    "section": "",
+    "text": "Hello there! I am Md Nahin Alam, currently pursuing my Master’s degree in the Department of Oceanography at the University of Chittagong.\nI recently completed my B.Sc. (Honors) in Oceanography with an undergraduate thesis focusing on phytoplankton dynamics and their response to marine heatwaves in the Bay of Bengal.\n\n\n\nI serve as a Research Assistant at the Center for Advanced Research and Innovation (CARI), where my responsibilities include: - Conducting data analysis - Preparing research reports - Participating in field work\n\n\n\nMy primary research interests include: - Ocean color remote sensing techniques - Applications of remote sensing in optical oceanography - Phytoplankton dynamics - Marine heatwave impacts\n\n\n\n\nProgramming Languages: R, Python\nRemote Sensing Tools: Google Earth Engine, SEADAS\nGIS Software: ArcGIS Pro, QGIS\nData Visualization: ggplot2, Plotly, Matplotlib\n\n\n\n\nI conduct courses on: - Statistics and Data Science in R - Data Visualization in R - Spatial Data Science in R - Data Analysis with Python - Spatial analysis in ArcGIS Pro/QGIS"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Md Nahin Alam",
+    "section": "",
+    "text": "Hello there! I am Md Nahin Alam, currently pursuing my Master’s degree in the Department of Oceanography at the University of Chittagong.\nI recently completed my B.Sc. (Honors) in Oceanography with an undergraduate thesis focusing on phytoplankton dynamics and their response to marine heatwaves in the Bay of Bengal."
+  },
+  {
+    "objectID": "index.html#professional-experience",
+    "href": "index.html#professional-experience",
+    "title": "Md Nahin Alam",
+    "section": "",
+    "text": "I serve as a Research Assistant at the Center for Advanced Research and Innovation (CARI), where my responsibilities include: - Conducting data analysis - Preparing research reports - Participating in field work"
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Md Nahin Alam",
+    "section": "",
+    "text": "My primary research interests include: - Ocean color remote sensing techniques - Applications of remote sensing in optical oceanography - Phytoplankton dynamics - Marine heatwave impacts"
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Md Nahin Alam",
+    "section": "",
+    "text": "Programming Languages: R, Python\nRemote Sensing Tools: Google Earth Engine, SEADAS\nGIS Software: ArcGIS Pro, QGIS\nData Visualization: ggplot2, Plotly, Matplotlib"
+  },
+  {
+    "objectID": "index.html#teaching-experience",
+    "href": "index.html#teaching-experience",
+    "title": "Md Nahin Alam",
+    "section": "",
+    "text": "I conduct courses on: - Statistics and Data Science in R - Data Visualization in R - Spatial Data Science in R - Data Analysis with Python - Spatial analysis in ArcGIS Pro/QGIS"
+  }
+]
