@@ -18,7 +18,7 @@ I enjoy teaching technical subjects that blend theory with real-world applicatio
 **Audience**: Undergraduate and graduate students  
 **Focus**: Tidyverse, ggplot2, real datasets, project-based learning
 
-### 🌍 GIS, Remote Sensing & R Training  
+### 🌍 GIS, Remote Sensing & R Training at Faculty of Marine Sciences and Fisheries (FMSF), University of Chittagong
 **Topic**: Integrating Spatial Data with Analytical Techniques  
 **Format**: Professional training series  
 **Audience**: Undergraduate and graduate students  
