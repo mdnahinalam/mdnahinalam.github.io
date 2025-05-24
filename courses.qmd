@@ -36,7 +36,7 @@ cv:
 }
 ```
 
-
+```{=html}
 <!-- CV Viewer -->
 <h2 class="text-center">Basic R Programming</h2>
 <div class="embed-container">
@@ -48,3 +48,6 @@ cv:
 <div class="embed-container">
   <iframe src="`r rmarkdown::metadata$cv$course_2`" style="border: 0.5px"></iframe>
 </div>
+```
+
+
