@@ -7,8 +7,8 @@ description: "Courses"
 engine: knitr
 freeze: false
 cv:
-  course_1: "courses/Module-R-Programming.pdf"
-  course_2: "courses/Storytelling Through Visualization with R Programming.pdf"
+  course_1: "/courses/Module-R-Programming.pdf"
+  course_2: "/courses/Storytelling Through Visualization with R Programming.pdf"
 ---
 
 ```{css, echo=FALSE}
@@ -41,18 +41,16 @@ cv:
 # Basic R Programming
 
 ```{=html}
-<!-- Course 1 Viewer -->
 <div class="embed-container">
-  <iframe src="`r rmarkdown::metadata$cv$course_1`" style="border: 0.5px"></iframe>
+  <iframe src="/courses/Module-R-Programming.pdf"></iframe>
 </div>
 ```
 
 # Storytelling Through Visualization with R
 
 ```{=html}
-<!-- Course 2 Viewer -->
 <div class="embed-container">
-  <iframe src="`r rmarkdown::metadata$cv$course_2`" style="border: 0.5px"></iframe>
+  <iframe src="/courses/Storytelling Through Visualization with R Programming.pdf"></iframe>
 </div>
 ```
 

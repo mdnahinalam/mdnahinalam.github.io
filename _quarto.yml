@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 preview: 
     port: 5555
@@ -7,10 +8,6 @@ preview:
     watch-inputs: true
     navigate: true
 
-render:
-    - "*.qmd"
-    - "*.md"
-    - "!etc/"
 
 website:
   title: "Md Nahin Alam"
@@ -52,5 +49,6 @@ format:
     theme:
       light: flatly
       dark: [flatly, darkly]
+    smooth-scroll: true
     toc: true
 
