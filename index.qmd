@@ -16,8 +16,6 @@ about:
       href: mailto:nahinalam29@gmail.com
     - icon: linkedin
       href: https://www.linkedin.com/in/md-nahin-alam/
-    - icon: github
-      href: https://github.com/mdnahinalam
     - text: "<img src='images/researchgate.svg' style='height:1em; vertical-align:middle;'> "
       href: https://www.researchgate.net/profile/Md-Nahin-Alam
 ---
