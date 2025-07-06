@@ -1,0 +1,788 @@
+---
+title: "Hands of Tutorial on Data Cleaning, Data Manipulation in R"
+date: "2025-06-01"
+categories: [R, Data manipulation, Data cleaning, Data Analysis, Data Visualization]
+image: data_manipulation.png
+editor_options: 
+  chunk_output_type: inline
+format:
+  html:
+    theme:
+      light: flatly
+      dark: [flatly, darkly]
+    code-link: true
+    code-fold: show
+    code-tools: true
+    code_folding: hide
+    highlight: tango
+    toc: true
+    toc_float: true
+---
+
+# Interactive Tutorial with Air Quality Data
+
+This document demonstrates the use of `dplyr` functions for manipulating environmental data from the `airquality` dataset, which includes ozone levels, solar radiation, wind speed, temperature, month, and day. It includes separate sections for each core function (`select()`, `filter()`, `mutate()`, `arrange()`, `group_by()`, `summarise()`) with 10+ examples each.
+
+## Setup
+Load the `dplyr` package and view the dataset structure.
+
+```{r setup, message=FALSE, results='hide', eval=FALSE}
+library(dplyr)
+str(airquality)
+```
+
+---
+
+## 1. select(): Column Selection
+
+Choose specific columns by name or pattern.
+
+1. Select `Ozone` and `Temp`.
+```{r, results='hide', eval=FALSE}
+airquality %>% select(Ozone, Temp)
+```
+
+2. Select columns from `Month` to `Wind`.
+```{r, results='hide', eval=FALSE}
+airquality %>% select(Month:Wind)
+```
+
+3. Exclude `Day`.
+```{r, results='hide', eval=FALSE}
+airquality %>% select(-Day)
+```
+
+4. Select columns starting with "T".
+```{r, results='hide', eval=FALSE}
+airquality %>% select(starts_with("T"))
+```
+
+5. Select columns ending with "R".
+```{r, results='hide', eval=FALSE}
+airquality %>% select(ends_with("R"))
+```
+
+6. Select columns containing "o".
+```{r, results='hide', eval=FALSE}
+airquality %>% select(contains("o"))
+```
+
+7. Rename during selection.
+```{r, results='hide', eval=FALSE}
+airquality %>% select(Ozone_Level = Ozone, Solar_Radiation = Solar.R)
+```
+
+8. Select `Month`, `Day`, and everything else.
+```{r, results='hide', eval=FALSE}
+airquality %>% select(Month, Day, everything())
+```
+
+9. Select all numeric columns.
+```{r, results='hide', eval=FALSE}
+airquality %>% select(where(is.numeric))
+```
+
+10. Select columns with mean > 10 (numeric).
+```{r, results='hide', eval=FALSE}
+airquality %>% select(where(~ is.numeric(.x) && mean(.x, na.rm = TRUE) > 10))
+```
+
+---
+
+## 2. filter(): Row Subsetting
+
+Select rows based on conditions.
+
+1. Days with `Temp` > 85°F.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Temp > 85)
+```
+
+2. Days in August.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Month == 8)
+```
+
+3. Days with `Wind` < 5 and `Temp` > 90.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Wind < 5, Temp > 90)
+```
+
+4. Days with missing `Solar.R`.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(is.na(Solar.R))
+```
+
+5. Days with non-missing `Ozone`.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(!is.na(Ozone))
+```
+
+6. Days with `Temp` between 75 and 85.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(between(Temp, 75, 85))
+```
+
+7. Days with `Ozone` > 100 or `Solar.R` > 250.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Ozone > 100 | Solar.R > 250)
+```
+
+8. Days in July after the 15th.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Month == 7, Day > 15)
+```
+
+9. Top 3 days by `Temp`.
+```{r, results='hide', eval=FALSE}
+airquality %>% slice_max(Temp, n = 3)
+```
+
+10. Bottom 5 days by `Wind`.
+```{r, results='hide', eval=FALSE}
+airquality %>% slice_min(Wind, n = 5)
+```
+
+---
+
+## 3. mutate(): Column Creation
+
+Create or modify variables based on existing ones.
+
+1. Convert `Temp` to Celsius.
+```{r, results='hide', eval=FALSE}
+airquality %>% mutate(Temp_C = round((Temp - 32) * 5/9, 1))
+```
+
+2. Flag days with `Temp` > 90.
+```{r, results='hide', eval=FALSE}
+airquality %>% mutate(Heat_Alert = Temp > 90)
+```
+
+3. Categorize wind speed.
+```{r, results='hide', eval=FALSE}
+airquality %>% mutate(Wind_Type = case_when(
+  Wind < 5 ~ "Calm",
+  Wind < 10 ~ "Breeze",
+  TRUE ~ "Windy"
+))
+```
+
+4. Calculate `Ozone` per `Solar.R`.
+```{r, results='hide', eval=FALSE}
+airquality %>% mutate(Ozone_per_Solar = Ozone / Solar.R)
+```
+
+5. Calculate `Temp` deviation from mean.
+```{r, results='hide', eval=FALSE}
+airquality %>% mutate(Temp_Deviation = Temp - mean(Temp, na.rm = TRUE))
+```
+
+6. Multiple transformations: `Temp_C` and `Heat_Index`.
+```{r, results='hide', eval=FALSE}
+airquality %>% mutate(
+  Temp_C = (Temp - 32) * 5/9,
+  Heat_Index = 0.5 * Temp + 0.3 * Solar.R / 10
+)
+```
+
+7. Create a date column.
+```{r, results='hide', eval=FALSE}
+airquality %>% mutate(Date = paste("1973", Month, Day, sep = "-"))
+```
+
+8. Standardize `Ozone` (z-score).
+```{r, results='hide', eval=FALSE}
+airquality %>% mutate(Ozone_std = (Ozone - mean(Ozone, na.rm = TRUE)) / sd(Ozone, na.rm = TRUE))
+```
+
+9. Create a binary flag for high `Wind` (> 10).
+```{r, results='hide', eval=FALSE}
+airquality %>% mutate(High_Wind = Wind > 10)
+```
+
+10. Calculate `Solar.R` to `Temp` ratio.
+```{r, results='hide', eval=FALSE}
+airquality %>% mutate(Solar_per_Temp = Solar.R / Temp)
+```
+
+---
+
+## 4. arrange(): Sorting Rows
+
+Sort rows by column values.
+
+1. Sort by `Ozone` ascending.
+```{r, results='hide', eval=FALSE}
+airquality %>% arrange(Ozone)
+```
+
+2. Sort by `Temp` descending.
+```{r, results='hide', eval=FALSE}
+airquality %>% arrange(desc(Temp))
+```
+
+3. Sort by `Month` ascending, then `Day` descending.
+```{r, results='hide', eval=FALSE}
+airquality %>% arrange(Month, desc(Day))
+```
+
+4. Sort by `Solar.R` descending.
+```{r, results='hide', eval=FALSE}
+airquality %>% arrange(desc(Solar.R))
+```
+
+5. Sort by `Wind` ascending, then `Temp` descending.
+```{r, results='hide', eval=FALSE}
+airquality %>% arrange(Wind, desc(Temp))
+```
+
+6. Sort by `Ozone` deviation from mean.
+```{r, results='hide', eval=FALSE}
+airquality %>% arrange(abs(Ozone - mean(Ozone, na.rm = TRUE)))
+```
+
+7. Sort by `Temp` descending within `Month`.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% arrange(desc(Temp)) %>% ungroup()
+```
+
+8. Sort by `Solar.R` ascending, then `Ozone` descending.
+```{r, results='hide', eval=FALSE}
+airquality %>% arrange(Solar.R, desc(Ozone))
+```
+
+9. Sort by `Wind` descending.
+```{r, results='hide', eval=FALSE}
+airquality %>% arrange(desc(Wind))
+```
+
+10. Sort by `Month` and `Ozone` ascending.
+```{r, results='hide', eval=FALSE}
+airquality %>% arrange(Month, Ozone)
+```
+
+---
+
+## 5. group_by(): Grouping Data
+
+Group data for subsequent operations without immediate summarization.
+
+1. Group by `Month` and calculate within-group `Ozone` rank.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% mutate(Ozone_Rank = rank(Ozone, na.last = "keep")) %>% ungroup()
+```
+
+2. Group by `Month` and select top day by `Temp`.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% slice_max(Temp, n = 1) %>% ungroup()
+```
+
+3. Group by `Month` and filter days with `Wind` < 5.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% filter(Wind < 5) %>% ungroup()
+```
+
+4. Group by `Month` and add row number within each group.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% mutate(Group_Row = row_number()) %>% ungroup()
+```
+
+5. Group by `Month` and calculate `Temp` deviation within groups.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% mutate(Temp_Dev = Temp - mean(Temp, na.rm = TRUE)) %>% ungroup()
+```
+
+6. Group by `Month` and select bottom 3 days by `Ozone`.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% slice_min(Ozone, n = 3, na.rm = TRUE) %>% ungroup()
+```
+
+7. Group by `Month` and flag high `Solar.R` days (> 200).
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% mutate(High_Solar = Solar.R > 200) %>% ungroup()
+```
+
+8. Group by `Month` and sort by `Wind` within groups.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% arrange(Wind) %>% ungroup()
+```
+
+9. Group by `Month` and calculate lagged `Temp` difference.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% mutate(Temp_Diff = Temp - lag(Temp)) %>% ungroup()
+```
+
+10. Group by `Month` and filter non-missing `Ozone` days.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% filter(!is.na(Ozone)) %>% ungroup()
+```
+
+---
+
+## 6. summarise(): Dataset-Wide Summaries
+
+Compute summary statistics across the entire dataset.
+
+1. Mean `Temp` across all data.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(Avg_Temp = mean(Temp, na.rm = TRUE))
+```
+
+2. Median `Ozone`.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(Median_Ozone = median(Ozone, na.rm = TRUE))
+```
+
+3. Standard deviation of `Wind`.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(SD_Wind = sd(Wind, na.rm = TRUE))
+```
+
+4. Min and max `Solar.R`.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(Min_Solar = min(Solar.R, na.rm = TRUE), Max_Solar = max(Solar.R, na.rm = TRUE))
+```
+
+5. Count of non-missing `Ozone` observations.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(Non_Missing_Ozone = sum(!is.na(Ozone)))
+```
+
+6. Number of days with `Temp` > 85.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(Hot_Days = sum(Temp > 85, na.rm = TRUE))
+```
+
+7. Correlation between `Ozone` and `Temp`.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(Corr_Ozone_Temp = cor(Ozone, Temp, use = "complete.obs"))
+```
+
+8. Total number of observations.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(Total_Days = n())
+```
+
+9. Mean of multiple columns.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(across(c(Ozone, Solar.R, Temp), mean, na.rm = TRUE))
+```
+
+10. Proportion of days with `Wind` < 7.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(Prop_Low_Wind = mean(Wind < 7, na.rm = TRUE))
+```
+
+---
+
+## 7. group_by() + summarise(): Aggregations
+
+Group data and compute summary statistics.
+
+1. Mean `Temp` across all data.
+```{r, results='hide', eval=FALSE}
+airquality %>% summarise(Avg_Temp = mean(Temp, na.rm = TRUE))
+```
+
+2. Max `Temp` by `Month`.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% summarise(Max_Temp = max(Temp))
+```
+
+3. Multiple summaries by `Month`.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(
+    Days = n(),
+    Avg_Ozone = mean(Ozone, na.rm = TRUE),
+    High_Ozone_Days = sum(Ozone > 60, na.rm = TRUE)
+  )
+```
+
+4. Mean of `Ozone` and `Solar.R` by `Month`.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(across(c(Ozone, Solar.R), mean, na.rm = TRUE))
+```
+
+5. Count windy days by `Month`.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(Windy_Days = sum(Wind > 10, na.rm = TRUE))
+```
+
+6. Median `Temp` by `Month`.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(Median_Temp = median(Temp))
+```
+
+7. Standard deviation of `Ozone` by `Month`.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(SD_Ozone = sd(Ozone, na.rm = TRUE))
+```
+
+8. Count days with `Solar.R` > 200 by `Month`.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(High_Solar_Days = sum(Solar.R > 200, na.rm = TRUE))
+```
+
+9. Min and max `Wind` by `Month`.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(Min_Wind = min(Wind), Max_Wind = max(Wind))
+```
+
+10. Proportion of hot days by `Month`.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(Prop_Hot = mean(Temp > 85, na.rm = TRUE))
+```
+
+---
+
+## 8. Combined Workflows
+
+Combine multiple `dplyr` functions for complex tasks, grouped by analysis type.
+
+### Temperature Analysis
+1. Hot days in August.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Month == 8, Temp > 90) %>% select(Day, Temp)
+```
+
+2. Temperature conversion.
+```{r, results='hide', eval=FALSE}
+airquality %>% select(Temp) %>% mutate(Temp_C = (Temp - 32) * 5/9)
+```
+
+3. Monthly temperature stats.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% summarise(Avg_Temp = mean(Temp)) %>% arrange(desc(Avg_Temp))
+```
+
+4. Hot days with high wind.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Temp > 85, Wind > 10) %>% select(Month, Day, Temp, Wind)
+```
+
+5. Temperature range analysis.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Temp_Range = cut(Temp, breaks = seq(50, 100, 10))) %>% 
+  group_by(Temp_Range) %>% 
+  summarise(Days = n())
+```
+
+### Ozone Analysis
+6. High ozone days.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Ozone > 100) %>% select(Month, Day, Ozone) %>% arrange(desc(Ozone))
+```
+
+7. Ozone completeness.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(!is.na(Ozone)) %>% group_by(Month) %>% summarise(Complete_Days = n())
+```
+
+8. Ozone-temperature relationship.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Ozone_Level = if_else(Ozone > 50, "High", "Low")) %>% 
+  group_by(Ozone_Level) %>% 
+  summarise(Mean_Temp = mean(Temp, na.rm = TRUE))
+```
+
+9. Ozone by month with sorting.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(Max_Ozone = max(Ozone, na.rm = TRUE)) %>% 
+  arrange(desc(Max_Ozone))
+```
+
+10. Ozone deviation analysis.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Ozone_Dev = Ozone - mean(Ozone, na.rm = TRUE)) %>% 
+  select(Month, Day, Ozone, Ozone_Dev) %>% 
+  arrange(desc(Ozone_Dev))
+```
+
+### Solar Radiation Analysis
+11. Sunny days.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Solar.R > 200) %>% select(Month, Day, Solar.R) %>% arrange(desc(Solar.R))
+```
+
+12. Solar by wind condition.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Windy = Wind > 10) %>% 
+  group_by(Windy) %>% 
+  summarise(Mean_Solar = mean(Solar.R, na.rm = TRUE))
+```
+
+13. Monthly solar averages.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% summarise(Solar_Avg = mean(Solar.R, na.rm = TRUE)) %>% arrange(Month)
+```
+
+14. Solar and temperature correlation.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  filter(!is.na(Solar.R), !is.na(Temp)) %>% 
+  summarise(Corr_Solar_Temp = cor(Solar.R, Temp))
+```
+
+15. High solar days by month.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  filter(Solar.R > 250) %>% 
+  group_by(Month) %>% 
+  summarise(High_Solar_Days = n())
+```
+
+### Wind Analysis
+16. Windiest days.
+```{r, results='hide', eval=FALSE}
+airquality %>% arrange(desc(Wind)) %>% select(Month, Day, Wind) %>% head(10)
+```
+
+17. Calm day temperatures.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Wind < 5) %>% group_by(Month) %>% summarise(Mean_Temp = mean(Temp))
+```
+
+18. Wind speed categories.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Wind_Category = cut(Wind, breaks = c(0, 5, 10, 20))) %>% 
+  group_by(Wind_Category) %>% 
+  summarise(Days = n())
+```
+
+19. Wind and ozone relationship.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  filter(!is.na(Ozone)) %>% 
+  group_by(Month) %>% 
+  summarise(Corr_Wind_Ozone = cor(Wind, Ozone, use = "complete.obs"))
+```
+
+20. Low wind days.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(Wind < 7) %>% select(Month, Day, Wind) %>% arrange(Wind)
+```
+
+### Advanced Metrics
+21. Heat index calculation.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Heat_Index = 0.5 * Temp + 0.3 * Solar.R / 10) %>% 
+  select(Month, Day, Heat_Index) %>% 
+  arrange(desc(Heat_Index))
+```
+
+22. Ozone exposure risk.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Ozone_Risk = Ozone * Temp / 100) %>% 
+  filter(!is.na(Ozone_Risk)) %>% 
+  arrange(desc(Ozone_Risk))
+```
+
+23. Solar efficiency.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  filter(Solar.R > 0) %>% 
+  mutate(Solar_per_Temp = Solar.R / Temp) %>% 
+  select(Month, Day, Solar_per_Temp)
+```
+
+24. Comfort index by month.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Comfort_Index = Temp - Wind * 0.5) %>% 
+  group_by(Month) %>% 
+  summarise(Mean_Comfort = mean(Comfort_Index, na.rm = TRUE))
+```
+
+25. High-risk air quality days.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  filter(Ozone > 80, Temp > 85) %>% 
+  select(Month, Day, Ozone, Temp) %>% 
+  arrange(desc(Ozone))
+```
+
+### Missing Data Handling
+26. Find incomplete records.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(is.na(Ozone) | is.na(Solar.R)) %>% select(Month, Day)
+```
+
+27. Monthly missing ozone count.
+```{r, results='hide', eval=FALSE}
+airquality %>% group_by(Month) %>% summarise(Missing_Ozone = sum(is.na(Ozone)))
+```
+
+28. Complete cases only.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(complete.cases(.)) %>% group_by(Month) %>% summarise(Days = n())
+```
+
+29. Missing solar data analysis.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(is.na(Solar.R)) %>% group_by(Month) %>% summarise(Missing_Solar = n())
+```
+
+30. Complete data subset.
+```{r, results='hide', eval=FALSE}
+airquality %>% filter(complete.cases(.)) %>% select(Ozone, Solar.R, Temp) %>% arrange(Month, Day)
+```
+
+### Multi-Variable Analysis
+31. Weather profiles.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Weather_Type = case_when(
+    Temp > 85 & Wind < 5 ~ "HotStill",
+    Temp > 85 & Wind > 10 ~ "HotWindy",
+    Temp < 70 ~ "Cool",
+    TRUE ~ "Mild"
+  )) %>% 
+  group_by(Weather_Type) %>% 
+  summarise(Days = n())
+```
+
+32. Ozone by temperature ranges.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Temp_Range = cut(Temp, breaks = seq(50, 100, 10))) %>% 
+  group_by(Temp_Range) %>% 
+  summarise(Mean_Ozone = mean(Ozone, na.rm = TRUE))
+```
+
+33. Solar-wind interaction.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Solar_Wind = Solar.R / Wind) %>% 
+  filter(!is.na(Solar_Wind)) %>% 
+  group_by(Month) %>% 
+  summarise(Mean_Solar_Wind = mean(Solar_Wind))
+```
+
+### Time-Based Analysis
+34. Monthly trends.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(across(c(Ozone, Temp), mean, na.rm = TRUE)) %>% 
+  arrange(Month)
+```
+
+35. Mid-month analysis.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(Day_Category = if_else(Day < 15, "Early", "Late")) %>% 
+  group_by(Month, Day_Category) %>% 
+  summarise(Mean_Temp = mean(Temp))
+```
+
+36. Daily fluctuations.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  arrange(Month, Day) %>% 
+  group_by(Month) %>% 
+  mutate(Temp_Change = Temp - lag(Temp)) %>% 
+  select(Month, Day, Temp_Change)
+```
+
+### Data Export Prep
+37. Clean dataset for export.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  filter(complete.cases(.)) %>% 
+  mutate(Temp_C = round((Temp - 32) * 5/9, 1)) %>% 
+  select(Month, Day, Ozone, Solar.R, Temp_F = Temp, Temp_C) %>% 
+  arrange(Month, Day)
+```
+
+38. Monthly report.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(
+    Ozone = mean(Ozone, na.rm = TRUE),
+    Solar.R = mean(Solar.R, na.rm = TRUE),
+    Temp = mean(Temp)
+  ) %>% 
+  arrange(Month)
+```
+
+39. Alert days report.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  mutate(
+    Ozone_Alert = Ozone > 60,
+    Heat_Alert = Temp > 90
+  ) %>% 
+  filter(Ozone_Alert | Heat_Alert) %>% 
+  select(Month, Day, Ozone_Alert, Heat_Alert) %>% 
+  arrange(Month, Day)
+```
+
+---
+
+## 9. Pro Tips for Effective Learning
+
+### Progressive Complexity
+1. Start with one step.
+```{r, results='hide', eval=FALSE}
+airquality %>% select(Ozone)
+```
+
+2. Then two steps.
+```{r, results='hide', eval=FALSE}
+airquality %>% select(Ozone) %>% filter(!is.na(Ozone))
+```
+
+3. Then three steps.
+```{r, results='hide', eval=FALSE}
+airquality %>% 
+  select(Ozone) %>% 
+  filter(!is.na(Ozone)) %>% 
+  mutate(Ozone_Level = if_else(Ozone > 50, "High", "Low"))
+```
+
+### Experiment Systematically
+- Change filter thresholds (e.g., `Temp > 80` → `Temp > 85`).
+- Modify grouping variables (e.g., `group_by(Month)` → `group_by(Month, Day_Category)`).
+- Try different summary functions (e.g., `mean` → `median`).
+
+### Visualize Results
+Visualize data to enhance understanding (requires `ggplot2`).
+
+```{r, results='hide', eval=FALSE}
+library(ggplot2)
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(Avg_Temp = mean(Temp)) %>% 
+  ggplot(aes(Month, Avg_Temp)) + geom_col()
+```
+
+> "In data science, 80% of the work is preparation. Master dplyr and you've mastered the most critical skill!"  
+> **Hadley Wickham** (Chief Scientist at Posit PBC)
+
