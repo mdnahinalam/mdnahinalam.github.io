@@ -1,7 +1,7 @@
 ---
 title: "Hands of Tutorial on Data Cleaning, Data Manipulation in R"
 date: "2025-06-01"
-categories: [R, Data manipulation, Data cleaning, Data Analysis, Data Visualization]
+categories: [R, Data manipulation, Data cleaning, Data Analysis]
 image: data_manipulation.png
 editor_options: 
   chunk_output_type: inline
