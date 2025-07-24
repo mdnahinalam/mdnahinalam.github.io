@@ -336,15 +336,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#part-1-discussing-the-dataset" id="toc-part-1-discussing-the-dataset" class="nav-link" data-scroll-target="#part-1-discussing-the-dataset">Part 1: Discussing the Dataset</a></li>
   <li><a href="#part-2-creating-plots-with-ggplot2" id="toc-part-2-creating-plots-with-ggplot2" class="nav-link" data-scroll-target="#part-2-creating-plots-with-ggplot2">Part 2: Creating Plots with ggplot2</a></li>
   <li>
-<a href="#bar-charts" id="toc-bar-charts" class="nav-link" data-scroll-target="#bar-charts">1. Bar Charts</a>
+<a href="#bar-charts" id="toc-bar-charts" class="nav-link" data-scroll-target="#bar-charts"><strong>1. Bar Charts</strong></a>
   <ul class="collapse">
 <li><a href="#basic-bar-chart" id="toc-basic-bar-chart" class="nav-link" data-scroll-target="#basic-bar-chart">1.1. Basic Bar Chart</a></li>
   <li><a href="#customize-bar-chart" id="toc-customize-bar-chart" class="nav-link" data-scroll-target="#customize-bar-chart">1.2. Customize Bar Chart</a></li>
+  <li><a href="#publication-quality-bar-chart" id="toc-publication-quality-bar-chart" class="nav-link" data-scroll-target="#publication-quality-bar-chart">1.3. Publication quality bar chart</a></li>
   </ul>
 </li>
-  <li><a href="#publication-quality-bar-chart" id="toc-publication-quality-bar-chart" class="nav-link" data-scroll-target="#publication-quality-bar-chart">1.3. Publication quality bar chart</a></li>
   <li>
-<a href="#line-charts" id="toc-line-charts" class="nav-link" data-scroll-target="#line-charts">2. Line Charts</a>
+<a href="#line-charts" id="toc-line-charts" class="nav-link" data-scroll-target="#line-charts"><strong>2. Line Charts</strong></a>
   <ul class="collapse">
 <li><a href="#basic-line-charts" id="toc-basic-line-charts" class="nav-link" data-scroll-target="#basic-line-charts">2.1. Basic Line Charts</a></li>
   <li><a href="#customize-line-chart" id="toc-customize-line-chart" class="nav-link" data-scroll-target="#customize-line-chart">2.2. Customize Line Chart</a></li>
@@ -356,6 +356,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
 <li><a href="#basic-scatter-plot" id="toc-basic-scatter-plot" class="nav-link" data-scroll-target="#basic-scatter-plot">3.1. Basic <strong>Scatter Plot</strong></a></li>
   <li><a href="#customize-scatter-chart" id="toc-customize-scatter-chart" class="nav-link" data-scroll-target="#customize-scatter-chart">3.2. Customize Scatter Chart</a></li>
+  <li><a href="#publication-quality-scatter-chart" id="toc-publication-quality-scatter-chart" class="nav-link" data-scroll-target="#publication-quality-scatter-chart">3.3. Publication quality scatter chart</a></li>
   </ul>
 </li>
   <li>
@@ -481,7 +482,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Heatmap (Matrix Data)</strong></li>
 <li><strong>Box Plot + Violin (Distribution)</strong></li>
 <li><strong>Faceted Plots (Small Multiples)</strong></li>
-</ol></section><section id="bar-charts" class="level1"><h1>1. Bar Charts</h1>
+</ol></section><section id="bar-charts" class="level1"><h1><strong>1. Bar Charts</strong></h1>
 <section id="basic-bar-chart" class="level2"><h2 class="anchored" data-anchor-id="basic-bar-chart">1.1. Basic Bar Chart</h2>
 <div class="cell">
 <details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Monthly ozone averages</span></span>
@@ -530,7 +531,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section></section><section id="publication-quality-bar-chart" class="level1"><h1>1.3. Publication quality bar chart</h1>
+</section><section id="publication-quality-bar-chart" class="level2"><h2 class="anchored" data-anchor-id="publication-quality-bar-chart">1.3. Publication quality bar chart</h2>
 <div class="cell">
 <details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Prepare data</span></span>
 <span><span class="va">monthly_ozone</span> <span class="op">&lt;-</span> <span class="va">airquality</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
@@ -573,7 +574,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section><section id="line-charts" class="level1"><h1>2. Line Charts</h1>
+</section></section><section id="line-charts" class="level1"><h1><strong>2. Line Charts</strong></h1>
 <section id="basic-line-charts" class="level2"><h2 class="anchored" data-anchor-id="basic-line-charts">2.1. Basic Line Charts</h2>
 <div class="cell">
 <details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Create date variable</span></span>
@@ -768,7 +769,7 @@ The following aesthetics were dropped during statistical transformation: size.
 </div>
 </div>
 </div>
-<p>3.3. Publication quality scatter chart</p>
+</section><section id="publication-quality-scatter-chart" class="level2"><h2 class="anchored" data-anchor-id="publication-quality-scatter-chart">3.3. Publication quality scatter chart</h2>
 <div class="cell">
 <details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Publication-ready scatterplot</span></span>
 <span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">airquality</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">Wind</span>, y <span class="op">=</span> <span class="va">Ozone</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
@@ -1511,7 +1512,7 @@ The following aesthetics were dropped during statistical transformation: size.
 <span id="cb38-66"><a href="#cb38-66" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>**Box Plot + Violin (Distribution)**</span>
 <span id="cb38-67"><a href="#cb38-67" aria-hidden="true" tabindex="-1"></a><span class="ss">6.  </span>**Faceted Plots (Small Multiples)**</span>
 <span id="cb38-68"><a href="#cb38-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-69"><a href="#cb38-69" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1. Bar Charts</span></span>
+<span id="cb38-69"><a href="#cb38-69" aria-hidden="true" tabindex="-1"></a><span class="fu"># **1. Bar Charts**</span></span>
 <span id="cb38-70"><a href="#cb38-70" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb38-71"><a href="#cb38-71" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1.1. Basic Bar Chart</span></span>
 <span id="cb38-72"><a href="#cb38-72" aria-hidden="true" tabindex="-1"></a></span>
@@ -1553,7 +1554,7 @@ The following aesthetics were dropped during statistical transformation: size.
 <span id="cb38-112"><a href="#cb38-112" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>, <span class="fu">max</span>(monthly_ozone<span class="sc">$</span>MeanOzone) <span class="sc">*</span> <span class="fl">1.1</span>)</span>
 <span id="cb38-113"><a href="#cb38-113" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb38-114"><a href="#cb38-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-115"><a href="#cb38-115" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1.3. Publication quality bar chart</span></span>
+<span id="cb38-115"><a href="#cb38-115" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1.3. Publication quality bar chart</span></span>
 <span id="cb38-116"><a href="#cb38-116" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb38-119"><a href="#cb38-119" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb38-120"><a href="#cb38-120" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare data</span></span>
@@ -1592,7 +1593,7 @@ The following aesthetics were dropped during statistical transformation: size.
 <span id="cb38-153"><a href="#cb38-153" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb38-154"><a href="#cb38-154" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb38-155"><a href="#cb38-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-156"><a href="#cb38-156" aria-hidden="true" tabindex="-1"></a><span class="fu"># 2. Line Charts</span></span>
+<span id="cb38-156"><a href="#cb38-156" aria-hidden="true" tabindex="-1"></a><span class="fu"># **2. Line Charts**</span></span>
 <span id="cb38-157"><a href="#cb38-157" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb38-158"><a href="#cb38-158" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2.1. Basic Line Charts</span></span>
 <span id="cb38-159"><a href="#cb38-159" aria-hidden="true" tabindex="-1"></a></span>
@@ -1631,252 +1632,253 @@ The following aesthetics were dropped during statistical transformation: size.
 <span id="cb38-196"><a href="#cb38-196" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fu">as.Date</span>(<span class="st">"1973-07-15"</span>), <span class="at">y =</span> <span class="dv">95</span>, </span>
 <span id="cb38-197"><a href="#cb38-197" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="st">"Summer Heat Wave"</span>, <span class="at">color =</span> <span class="st">"#e74c3c"</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>)</span>
 <span id="cb38-198"><a href="#cb38-198" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb38-199"><a href="#cb38-199" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2.3. Publication quality line chart</span></span>
-<span id="cb38-202"><a href="#cb38-202" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb38-203"><a href="#cb38-203" aria-hidden="true" tabindex="-1"></a><span class="co"># Create proper Date using lubridate</span></span>
-<span id="cb38-204"><a href="#cb38-204" aria-hidden="true" tabindex="-1"></a>airquality <span class="ot">&lt;-</span> airquality <span class="sc">%&gt;%</span></span>
-<span id="cb38-205"><a href="#cb38-205" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Date =</span> <span class="fu">ymd</span>(<span class="fu">paste</span>(<span class="dv">1973</span>, Month, Day, <span class="at">sep =</span> <span class="st">"-"</span>)))</span>
-<span id="cb38-206"><a href="#cb38-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-207"><a href="#cb38-207" aria-hidden="true" tabindex="-1"></a><span class="co"># Publication-ready plot</span></span>
-<span id="cb38-208"><a href="#cb38-208" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Temp)) <span class="sc">+</span></span>
-<span id="cb38-209"><a href="#cb38-209" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb38-210"><a href="#cb38-210" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Core plot elements</span></span>
-<span id="cb38-211"><a href="#cb38-211" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">linewidth =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
-<span id="cb38-212"><a href="#cb38-212" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
-<span id="cb38-213"><a href="#cb38-213" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> <span class="sc">~</span> <span class="fu">filter</span>(., Temp <span class="sc">&gt;</span> <span class="dv">90</span>), </span>
-<span id="cb38-214"><a href="#cb38-214" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"red"</span>, </span>
-<span id="cb38-215"><a href="#cb38-215" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="fl">1.5</span>, </span>
-<span id="cb38-216"><a href="#cb38-216" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> <span class="dv">17</span></span>
-<span id="cb38-217"><a href="#cb38-217" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-218"><a href="#cb38-218" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb38-219"><a href="#cb38-219" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Lubridate-powered date formatting</span></span>
-<span id="cb38-220"><a href="#cb38-220" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(</span>
-<span id="cb38-221"><a href="#cb38-221" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="cn">NULL</span>,</span>
-<span id="cb38-222"><a href="#cb38-222" aria-hidden="true" tabindex="-1"></a>    <span class="at">date_breaks =</span> <span class="st">"1 month"</span>,</span>
-<span id="cb38-223"><a href="#cb38-223" aria-hidden="true" tabindex="-1"></a>    <span class="at">date_labels =</span> <span class="st">"%b"</span>,</span>
-<span id="cb38-224"><a href="#cb38-224" aria-hidden="true" tabindex="-1"></a>    <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fl">0.02</span>)</span>
-<span id="cb38-225"><a href="#cb38-225" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-226"><a href="#cb38-226" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb38-227"><a href="#cb38-227" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
-<span id="cb38-228"><a href="#cb38-228" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Temperature (°F)"</span>,</span>
-<span id="cb38-229"><a href="#cb38-229" aria-hidden="true" tabindex="-1"></a>    <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">50</span>, <span class="dv">100</span>),</span>
-<span id="cb38-230"><a href="#cb38-230" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">50</span>, <span class="dv">100</span>, <span class="at">by =</span> <span class="dv">10</span>)</span>
-<span id="cb38-231"><a href="#cb38-231" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-232"><a href="#cb38-232" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb38-233"><a href="#cb38-233" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb38-234"><a href="#cb38-234" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Daily Temperature Record (1973)"</span></span>
-<span id="cb38-235"><a href="#cb38-235" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-236"><a href="#cb38-236" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb38-237"><a href="#cb38-237" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>(<span class="at">base_size =</span> <span class="dv">10</span>) <span class="sc">+</span></span>
-<span id="cb38-238"><a href="#cb38-238" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb38-239"><a href="#cb38-239" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">b =</span> <span class="dv">5</span>)),</span>
-<span id="cb38-240"><a href="#cb38-240" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.line =</span> <span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="fl">0.3</span>),</span>
-<span id="cb38-241"><a href="#cb38-241" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.ticks =</span> <span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="fl">0.3</span>),</span>
-<span id="cb38-242"><a href="#cb38-242" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">9</span>),</span>
-<span id="cb38-243"><a href="#cb38-243" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">5</span>)</span>
-<span id="cb38-244"><a href="#cb38-244" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb38-245"><a href="#cb38-245" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb38-246"><a href="#cb38-246" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-247"><a href="#cb38-247" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-248"><a href="#cb38-248" aria-hidden="true" tabindex="-1"></a><span class="fu"># **3. Scatter Plot**</span></span>
-<span id="cb38-249"><a href="#cb38-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-250"><a href="#cb38-250" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3.1. Basic **Scatter Plot**</span></span>
-<span id="cb38-251"><a href="#cb38-251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-254"><a href="#cb38-254" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb38-255"><a href="#cb38-255" aria-hidden="true" tabindex="-1"></a><span class="co"># Basic scatter plot</span></span>
-<span id="cb38-256"><a href="#cb38-256" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> Wind, <span class="at">y =</span> Ozone)) <span class="sc">+</span></span>
-<span id="cb38-257"><a href="#cb38-257" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb38-258"><a href="#cb38-258" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Ozone vs Wind Speed"</span>, <span class="at">x =</span> <span class="st">"Wind (mph)"</span>, <span class="at">y =</span> <span class="st">"Ozone (ppb)"</span>)</span>
-<span id="cb38-259"><a href="#cb38-259" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb38-260"><a href="#cb38-260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-261"><a href="#cb38-261" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3.2. Customize Scatter Chart</span></span>
-<span id="cb38-262"><a href="#cb38-262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-265"><a href="#cb38-265" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb38-266"><a href="#cb38-266" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> Wind, <span class="at">y =</span> Ozone, <span class="at">color =</span> Temp, <span class="at">size =</span> Solar.R)) <span class="sc">+</span></span>
-<span id="cb38-267"><a href="#cb38-267" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb38-268"><a href="#cb38-268" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"#e74c3c"</span>) <span class="sc">+</span></span>
-<span id="cb38-269"><a href="#cb38-269" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_gradientn</span>(<span class="at">colors =</span> <span class="fu">c</span>(<span class="st">"#3498db"</span>, <span class="st">"#f1c40f"</span>, <span class="st">"#e74c3c"</span>),</span>
-<span id="cb38-270"><a href="#cb38-270" aria-hidden="true" tabindex="-1"></a>                        <span class="at">name =</span> <span class="st">"Temp (°F)"</span>) <span class="sc">+</span></span>
-<span id="cb38-271"><a href="#cb38-271" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_continuous</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">8</span>), <span class="at">name =</span> <span class="st">"Solar Radiation"</span>) <span class="sc">+</span></span>
-<span id="cb38-272"><a href="#cb38-272" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Air Quality Relationships"</span>,</span>
-<span id="cb38-273"><a href="#cb38-273" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Ozone levels vs Wind Speed (Color: Temperature, Size: Solar Radiation)"</span>,</span>
-<span id="cb38-274"><a href="#cb38-274" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Wind Speed (mph)"</span>, <span class="at">y =</span> <span class="st">"Ozone Concentration (ppb)"</span>,</span>
-<span id="cb38-275"><a href="#cb38-275" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Data from May-September 1973 in New York"</span>) <span class="sc">+</span></span>
-<span id="cb38-276"><a href="#cb38-276" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_linedraw</span>() <span class="sc">+</span></span>
-<span id="cb38-277"><a href="#cb38-277" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb38-278"><a href="#cb38-278" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
-<span id="cb38-279"><a href="#cb38-279" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.box =</span> <span class="st">"horizontal"</span>,</span>
-<span id="cb38-280"><a href="#cb38-280" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb38-281"><a href="#cb38-281" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">color =</span> <span class="st">"#2c3e50"</span>),</span>
-<span id="cb38-282"><a href="#cb38-282" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"gray90"</span>),</span>
-<span id="cb38-283"><a href="#cb38-283" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#f9f9f9"</span>)</span>
-<span id="cb38-284"><a href="#cb38-284" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-285"><a href="#cb38-285" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(</span>
-<span id="cb38-286"><a href="#cb38-286" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="fu">guide_colorbar</span>(<span class="at">barwidth =</span> <span class="dv">15</span>, <span class="at">title.position =</span> <span class="st">"top"</span>),</span>
-<span id="cb38-287"><a href="#cb38-287" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="fu">guide_legend</span>(<span class="at">nrow =</span> <span class="dv">1</span>, <span class="at">title.position =</span> <span class="st">"top"</span>)</span>
-<span id="cb38-288"><a href="#cb38-288" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-289"><a href="#cb38-289" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>Month, <span class="at">labeller =</span> <span class="fu">labeller</span>(<span class="at">Month =</span> <span class="fu">setNames</span>(month.abb[<span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>], <span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>)))</span>
-<span id="cb38-290"><a href="#cb38-290" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb38-291"><a href="#cb38-291" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-292"><a href="#cb38-292" aria-hidden="true" tabindex="-1"></a>3.3. Publication quality scatter chart</span>
-<span id="cb38-295"><a href="#cb38-295" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb38-296"><a href="#cb38-296" aria-hidden="true" tabindex="-1"></a><span class="co"># Publication-ready scatterplot</span></span>
-<span id="cb38-297"><a href="#cb38-297" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> Wind, <span class="at">y =</span> Ozone)) <span class="sc">+</span></span>
-<span id="cb38-298"><a href="#cb38-298" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb38-299"><a href="#cb38-299" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Core plot elements</span></span>
-<span id="cb38-300"><a href="#cb38-300" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
-<span id="cb38-301"><a href="#cb38-301" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">color =</span> Temp, <span class="at">size =</span> Solar.R),</span>
-<span id="cb38-302"><a href="#cb38-302" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.7</span>,</span>
-<span id="cb38-303"><a href="#cb38-303" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> <span class="dv">16</span></span>
-<span id="cb38-304"><a href="#cb38-304" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-305"><a href="#cb38-305" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(</span>
-<span id="cb38-306"><a href="#cb38-306" aria-hidden="true" tabindex="-1"></a>    <span class="at">method =</span> <span class="st">"lm"</span>,</span>
-<span id="cb38-307"><a href="#cb38-307" aria-hidden="true" tabindex="-1"></a>    <span class="at">formula =</span> y <span class="sc">~</span> x,</span>
-<span id="cb38-308"><a href="#cb38-308" aria-hidden="true" tabindex="-1"></a>    <span class="at">se =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb38-309"><a href="#cb38-309" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"black"</span>,</span>
-<span id="cb38-310"><a href="#cb38-310" aria-hidden="true" tabindex="-1"></a>    <span class="at">linewidth =</span> <span class="fl">0.5</span>,</span>
-<span id="cb38-311"><a href="#cb38-311" aria-hidden="true" tabindex="-1"></a>    <span class="at">linetype =</span> <span class="st">"dashed"</span></span>
-<span id="cb38-312"><a href="#cb38-312" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-313"><a href="#cb38-313" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb38-314"><a href="#cb38-314" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Clean scaling</span></span>
-<span id="cb38-315"><a href="#cb38-315" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_gradient</span>(</span>
-<span id="cb38-316"><a href="#cb38-316" aria-hidden="true" tabindex="-1"></a>    <span class="at">low =</span> <span class="st">"#0571b0"</span>,</span>
-<span id="cb38-317"><a href="#cb38-317" aria-hidden="true" tabindex="-1"></a>    <span class="at">high =</span> <span class="st">"#ca0020"</span>,</span>
-<span id="cb38-318"><a href="#cb38-318" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Temperature (°F)"</span>,</span>
-<span id="cb38-319"><a href="#cb38-319" aria-hidden="true" tabindex="-1"></a>    <span class="at">guide =</span> <span class="fu">guide_colorbar</span>(</span>
-<span id="cb38-320"><a href="#cb38-320" aria-hidden="true" tabindex="-1"></a>      <span class="at">barwidth =</span> <span class="fu">unit</span>(<span class="dv">3</span>, <span class="st">"cm"</span>),</span>
-<span id="cb38-321"><a href="#cb38-321" aria-hidden="true" tabindex="-1"></a>      <span class="at">title.position =</span> <span class="st">"top"</span></span>
-<span id="cb38-322"><a href="#cb38-322" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb38-323"><a href="#cb38-323" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-324"><a href="#cb38-324" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_continuous</span>(</span>
-<span id="cb38-325"><a href="#cb38-325" aria-hidden="true" tabindex="-1"></a>    <span class="at">range =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">5</span>),</span>
-<span id="cb38-326"><a href="#cb38-326" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Solar Radiation (lang)"</span>,</span>
-<span id="cb38-327"><a href="#cb38-327" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">200</span>, <span class="dv">300</span>),</span>
-<span id="cb38-328"><a href="#cb38-328" aria-hidden="true" tabindex="-1"></a>    <span class="at">guide =</span> <span class="fu">guide_legend</span>(</span>
-<span id="cb38-329"><a href="#cb38-329" aria-hidden="true" tabindex="-1"></a>      <span class="at">title.position =</span> <span class="st">"top"</span>,</span>
-<span id="cb38-330"><a href="#cb38-330" aria-hidden="true" tabindex="-1"></a>      <span class="at">nrow =</span> <span class="dv">1</span></span>
-<span id="cb38-331"><a href="#cb38-331" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb38-332"><a href="#cb38-332" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-333"><a href="#cb38-333" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb38-334"><a href="#cb38-334" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Minimal labels</span></span>
-<span id="cb38-335"><a href="#cb38-335" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb38-336"><a href="#cb38-336" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Wind Speed (mph)"</span>,</span>
-<span id="cb38-337"><a href="#cb38-337" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Ozone Concentration (ppb)"</span>,</span>
-<span id="cb38-338"><a href="#cb38-338" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Ozone-Wind Relationship by Month"</span></span>
-<span id="cb38-339"><a href="#cb38-339" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-340"><a href="#cb38-340" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb38-341"><a href="#cb38-341" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Facet styling</span></span>
-<span id="cb38-342"><a href="#cb38-342" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(</span>
-<span id="cb38-343"><a href="#cb38-343" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>Month,</span>
-<span id="cb38-344"><a href="#cb38-344" aria-hidden="true" tabindex="-1"></a>    <span class="at">ncol =</span> <span class="dv">3</span>,</span>
-<span id="cb38-345"><a href="#cb38-345" aria-hidden="true" tabindex="-1"></a>    <span class="at">labeller =</span> <span class="fu">labeller</span>(<span class="at">Month =</span> <span class="fu">setNames</span>(month.abb[<span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>], <span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>))</span>
-<span id="cb38-346"><a href="#cb38-346" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-347"><a href="#cb38-347" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb38-348"><a href="#cb38-348" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Publication theme</span></span>
-<span id="cb38-349"><a href="#cb38-349" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">10</span>) <span class="sc">+</span></span>
-<span id="cb38-350"><a href="#cb38-350" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb38-351"><a href="#cb38-351" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb38-352"><a href="#cb38-352" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="fl">0.2</span>, <span class="at">color =</span> <span class="st">"grey90"</span>),</span>
-<span id="cb38-353"><a href="#cb38-353" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"grey95"</span>, <span class="at">color =</span> <span class="cn">NA</span>),</span>
-<span id="cb38-354"><a href="#cb38-354" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">9</span>),</span>
-<span id="cb38-355"><a href="#cb38-355" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
-<span id="cb38-356"><a href="#cb38-356" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.box =</span> <span class="st">"horizontal"</span>,</span>
-<span id="cb38-357"><a href="#cb38-357" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.spacing.x =</span> <span class="fu">unit</span>(<span class="fl">0.5</span>, <span class="st">"cm"</span>),</span>
-<span id="cb38-358"><a href="#cb38-358" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="dv">11</span>),</span>
-<span id="cb38-359"><a href="#cb38-359" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">9</span>),</span>
-<span id="cb38-360"><a href="#cb38-360" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.spacing =</span> <span class="fu">unit</span>(<span class="fl">0.8</span>, <span class="st">"lines"</span>)</span>
-<span id="cb38-361"><a href="#cb38-361" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb38-362"><a href="#cb38-362" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb38-363"><a href="#cb38-363" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-364"><a href="#cb38-364" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-365"><a href="#cb38-365" aria-hidden="true" tabindex="-1"></a><span class="fu"># **4. Heatmap**</span></span>
-<span id="cb38-366"><a href="#cb38-366" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-367"><a href="#cb38-367" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4.1. Basic Heatmap</span></span>
-<span id="cb38-368"><a href="#cb38-368" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-371"><a href="#cb38-371" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb38-372"><a href="#cb38-372" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare heatmap data</span></span>
-<span id="cb38-373"><a href="#cb38-373" aria-hidden="true" tabindex="-1"></a>heat_data <span class="ot">&lt;-</span> airquality <span class="sc">%&gt;%</span></span>
-<span id="cb38-374"><a href="#cb38-374" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Month, Day) <span class="sc">%&gt;%</span></span>
-<span id="cb38-375"><a href="#cb38-375" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">MeanTemp =</span> <span class="fu">mean</span>(Temp, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb38-376"><a href="#cb38-376" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-377"><a href="#cb38-377" aria-hidden="true" tabindex="-1"></a><span class="co"># Basic heatmap</span></span>
-<span id="cb38-378"><a href="#cb38-378" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(heat_data, <span class="fu">aes</span>(<span class="at">x =</span> Day, <span class="at">y =</span> <span class="fu">factor</span>(Month), <span class="at">fill =</span> MeanTemp)) <span class="sc">+</span></span>
-<span id="cb38-379"><a href="#cb38-379" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
-<span id="cb38-380"><a href="#cb38-380" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Daily Temperature Heatmap"</span>)</span>
-<span id="cb38-381"><a href="#cb38-381" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb38-382"><a href="#cb38-382" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-383"><a href="#cb38-383" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4.2. Customize Heatmap</span></span>
-<span id="cb38-384"><a href="#cb38-384" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-387"><a href="#cb38-387" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb38-388"><a href="#cb38-388" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(heat_data, <span class="fu">aes</span>(<span class="at">x =</span> Day, <span class="at">y =</span> <span class="fu">factor</span>(Month, <span class="at">labels =</span> month.abb[<span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>]), <span class="at">fill =</span> MeanTemp)) <span class="sc">+</span></span>
-<span id="cb38-389"><a href="#cb38-389" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">linewidth =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
-<span id="cb38-390"><a href="#cb38-390" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradientn</span>(<span class="at">colors =</span> <span class="fu">c</span>(<span class="st">"#4575b4"</span>, <span class="st">"#ffffbf"</span>, <span class="st">"#d73027"</span>), </span>
-<span id="cb38-391"><a href="#cb38-391" aria-hidden="true" tabindex="-1"></a>                      <span class="at">name =</span> <span class="st">"Temp (°F)"</span>) <span class="sc">+</span></span>
-<span id="cb38-392"><a href="#cb38-392" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">31</span>, <span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb38-393"><a href="#cb38-393" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"1973 Temperature Patterns"</span>,</span>
-<span id="cb38-394"><a href="#cb38-394" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Daily temperatures by month"</span>,</span>
-<span id="cb38-395"><a href="#cb38-395" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Day of Month"</span>, <span class="at">y =</span> <span class="st">"Month"</span>) <span class="sc">+</span></span>
-<span id="cb38-396"><a href="#cb38-396" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_fixed</span>(<span class="at">ratio =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb38-397"><a href="#cb38-397" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb38-398"><a href="#cb38-398" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb38-399"><a href="#cb38-399" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">16</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
-<span id="cb38-400"><a href="#cb38-400" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"#7f8c8d"</span>),</span>
-<span id="cb38-401"><a href="#cb38-401" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>),</span>
-<span id="cb38-402"><a href="#cb38-402" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"right"</span>,</span>
-<span id="cb38-403"><a href="#cb38-403" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb38-404"><a href="#cb38-404" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb38-405"><a href="#cb38-405" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb38-406"><a href="#cb38-406" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-407"><a href="#cb38-407" aria-hidden="true" tabindex="-1"></a><span class="fu"># 5. Box Plot + Violin Plot</span></span>
-<span id="cb38-408"><a href="#cb38-408" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-409"><a href="#cb38-409" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5.1. Create Box plot with violin</span></span>
-<span id="cb38-410"><a href="#cb38-410" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-413"><a href="#cb38-413" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb38-414"><a href="#cb38-414" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Month, <span class="at">labels =</span> month.abb[<span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>]), <span class="at">y =</span> Ozone, <span class="at">fill =</span> <span class="fu">factor</span>(Month))) <span class="sc">+</span></span>
-<span id="cb38-415"><a href="#cb38-415" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">trim =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb38-416"><a href="#cb38-416" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">outlier.color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
-<span id="cb38-417"><a href="#cb38-417" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Set2"</span>, <span class="at">name =</span> <span class="st">"Month"</span>) <span class="sc">+</span></span>
-<span id="cb38-418"><a href="#cb38-418" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Ozone Distribution by Month"</span>,</span>
-<span id="cb38-419"><a href="#cb38-419" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Violin plots show distribution density, boxplots show quartiles"</span>,</span>
-<span id="cb38-420"><a href="#cb38-420" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Month"</span>, <span class="at">y =</span> <span class="st">"Ozone (ppb)"</span>) <span class="sc">+</span></span>
-<span id="cb38-421"><a href="#cb38-421" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb38-422"><a href="#cb38-422" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb38-423"><a href="#cb38-423" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">16</span>),</span>
-<span id="cb38-424"><a href="#cb38-424" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
-<span id="cb38-425"><a href="#cb38-425" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb38-426"><a href="#cb38-426" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>, <span class="at">face =</span> <span class="st">"bold"</span>)</span>
-<span id="cb38-427"><a href="#cb38-427" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-428"><a href="#cb38-428" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"point"</span>, <span class="at">shape =</span> <span class="dv">18</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
-<span id="cb38-429"><a href="#cb38-429" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">3</span>, <span class="at">y =</span> <span class="dv">150</span>, <span class="at">label =</span> <span class="st">"Red points = outliers</span><span class="sc">\n</span><span class="st">Diamond = mean"</span>, </span>
-<span id="cb38-430"><a href="#cb38-430" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> <span class="st">"#2c3e50"</span>, <span class="at">size =</span> <span class="fl">3.5</span>)</span>
-<span id="cb38-431"><a href="#cb38-431" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb38-432"><a href="#cb38-432" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-433"><a href="#cb38-433" aria-hidden="true" tabindex="-1"></a><span class="fu"># **6. Faceted Plots**</span></span>
-<span id="cb38-434"><a href="#cb38-434" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-437"><a href="#cb38-437" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb38-438"><a href="#cb38-438" aria-hidden="true" tabindex="-1"></a><span class="co"># Create temperature category</span></span>
-<span id="cb38-439"><a href="#cb38-439" aria-hidden="true" tabindex="-1"></a>airquality <span class="ot">&lt;-</span> airquality <span class="sc">%&gt;%</span></span>
-<span id="cb38-440"><a href="#cb38-440" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">TempCategory =</span> <span class="fu">cut</span>(Temp, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">70</span>, <span class="dv">80</span>, <span class="dv">100</span>),</span>
-<span id="cb38-441"><a href="#cb38-441" aria-hidden="true" tabindex="-1"></a>         <span class="at">TempCategory =</span> <span class="fu">factor</span>(TempCategory, </span>
-<span id="cb38-442"><a href="#cb38-442" aria-hidden="true" tabindex="-1"></a>                              <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Cool (&lt;70°F)"</span>, <span class="st">"Mild (70-80°F)"</span>, <span class="st">"Warm (&gt;80°F)"</span>))))</span>
-<span id="cb38-443"><a href="#cb38-443" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-444"><a href="#cb38-444" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> Wind, <span class="at">y =</span> Solar.R, <span class="at">color =</span> Ozone)) <span class="sc">+</span></span>
-<span id="cb38-445"><a href="#cb38-445" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb38-446"><a href="#cb38-446" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
-<span id="cb38-447"><a href="#cb38-447" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_gradient</span>(<span class="at">low =</span> <span class="st">"blue"</span>, <span class="at">high =</span> <span class="st">"red"</span>, <span class="at">name =</span> <span class="st">"Ozone Level"</span>) <span class="sc">+</span></span>
-<span id="cb38-448"><a href="#cb38-448" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Solar Radiation vs Wind Speed"</span>,</span>
-<span id="cb38-449"><a href="#cb38-449" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Faceted by temperature ranges"</span>,</span>
-<span id="cb38-450"><a href="#cb38-450" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Wind Speed (mph)"</span>, <span class="at">y =</span> <span class="st">"Solar Radiation (lang)"</span>) <span class="sc">+</span></span>
-<span id="cb38-451"><a href="#cb38-451" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>TempCategory, <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb38-452"><a href="#cb38-452" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb38-453"><a href="#cb38-453" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb38-454"><a href="#cb38-454" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#2c3e50"</span>),</span>
-<span id="cb38-455"><a href="#cb38-455" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb38-456"><a href="#cb38-456" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.spacing =</span> <span class="fu">unit</span>(<span class="dv">1</span>, <span class="st">"lines"</span>),</span>
-<span id="cb38-457"><a href="#cb38-457" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span></span>
-<span id="cb38-458"><a href="#cb38-458" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb38-459"><a href="#cb38-459" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_colorbar</span>(<span class="at">barwidth =</span> <span class="dv">15</span>, <span class="at">title.position =</span> <span class="st">"top"</span>))</span>
-<span id="cb38-460"><a href="#cb38-460" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb38-199"><a href="#cb38-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-200"><a href="#cb38-200" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2.3. Publication quality line chart</span></span>
+<span id="cb38-201"><a href="#cb38-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-204"><a href="#cb38-204" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb38-205"><a href="#cb38-205" aria-hidden="true" tabindex="-1"></a><span class="co"># Create proper Date using lubridate</span></span>
+<span id="cb38-206"><a href="#cb38-206" aria-hidden="true" tabindex="-1"></a>airquality <span class="ot">&lt;-</span> airquality <span class="sc">%&gt;%</span></span>
+<span id="cb38-207"><a href="#cb38-207" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Date =</span> <span class="fu">ymd</span>(<span class="fu">paste</span>(<span class="dv">1973</span>, Month, Day, <span class="at">sep =</span> <span class="st">"-"</span>)))</span>
+<span id="cb38-208"><a href="#cb38-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-209"><a href="#cb38-209" aria-hidden="true" tabindex="-1"></a><span class="co"># Publication-ready plot</span></span>
+<span id="cb38-210"><a href="#cb38-210" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Temp)) <span class="sc">+</span></span>
+<span id="cb38-211"><a href="#cb38-211" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-212"><a href="#cb38-212" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Core plot elements</span></span>
+<span id="cb38-213"><a href="#cb38-213" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">linewidth =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb38-214"><a href="#cb38-214" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
+<span id="cb38-215"><a href="#cb38-215" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> <span class="sc">~</span> <span class="fu">filter</span>(., Temp <span class="sc">&gt;</span> <span class="dv">90</span>), </span>
+<span id="cb38-216"><a href="#cb38-216" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"red"</span>, </span>
+<span id="cb38-217"><a href="#cb38-217" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="fl">1.5</span>, </span>
+<span id="cb38-218"><a href="#cb38-218" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> <span class="dv">17</span></span>
+<span id="cb38-219"><a href="#cb38-219" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-220"><a href="#cb38-220" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-221"><a href="#cb38-221" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Lubridate-powered date formatting</span></span>
+<span id="cb38-222"><a href="#cb38-222" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(</span>
+<span id="cb38-223"><a href="#cb38-223" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="cn">NULL</span>,</span>
+<span id="cb38-224"><a href="#cb38-224" aria-hidden="true" tabindex="-1"></a>    <span class="at">date_breaks =</span> <span class="st">"1 month"</span>,</span>
+<span id="cb38-225"><a href="#cb38-225" aria-hidden="true" tabindex="-1"></a>    <span class="at">date_labels =</span> <span class="st">"%b"</span>,</span>
+<span id="cb38-226"><a href="#cb38-226" aria-hidden="true" tabindex="-1"></a>    <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fl">0.02</span>)</span>
+<span id="cb38-227"><a href="#cb38-227" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-228"><a href="#cb38-228" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-229"><a href="#cb38-229" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb38-230"><a href="#cb38-230" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Temperature (°F)"</span>,</span>
+<span id="cb38-231"><a href="#cb38-231" aria-hidden="true" tabindex="-1"></a>    <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">50</span>, <span class="dv">100</span>),</span>
+<span id="cb38-232"><a href="#cb38-232" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">50</span>, <span class="dv">100</span>, <span class="at">by =</span> <span class="dv">10</span>)</span>
+<span id="cb38-233"><a href="#cb38-233" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-234"><a href="#cb38-234" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-235"><a href="#cb38-235" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb38-236"><a href="#cb38-236" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Daily Temperature Record (1973)"</span></span>
+<span id="cb38-237"><a href="#cb38-237" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-238"><a href="#cb38-238" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-239"><a href="#cb38-239" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>(<span class="at">base_size =</span> <span class="dv">10</span>) <span class="sc">+</span></span>
+<span id="cb38-240"><a href="#cb38-240" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb38-241"><a href="#cb38-241" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">b =</span> <span class="dv">5</span>)),</span>
+<span id="cb38-242"><a href="#cb38-242" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.line =</span> <span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="fl">0.3</span>),</span>
+<span id="cb38-243"><a href="#cb38-243" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.ticks =</span> <span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="fl">0.3</span>),</span>
+<span id="cb38-244"><a href="#cb38-244" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">9</span>),</span>
+<span id="cb38-245"><a href="#cb38-245" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">5</span>)</span>
+<span id="cb38-246"><a href="#cb38-246" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb38-247"><a href="#cb38-247" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb38-248"><a href="#cb38-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-249"><a href="#cb38-249" aria-hidden="true" tabindex="-1"></a><span class="fu"># **3. Scatter Plot**</span></span>
+<span id="cb38-250"><a href="#cb38-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-251"><a href="#cb38-251" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3.1. Basic **Scatter Plot**</span></span>
+<span id="cb38-252"><a href="#cb38-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-255"><a href="#cb38-255" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb38-256"><a href="#cb38-256" aria-hidden="true" tabindex="-1"></a><span class="co"># Basic scatter plot</span></span>
+<span id="cb38-257"><a href="#cb38-257" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> Wind, <span class="at">y =</span> Ozone)) <span class="sc">+</span></span>
+<span id="cb38-258"><a href="#cb38-258" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb38-259"><a href="#cb38-259" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Ozone vs Wind Speed"</span>, <span class="at">x =</span> <span class="st">"Wind (mph)"</span>, <span class="at">y =</span> <span class="st">"Ozone (ppb)"</span>)</span>
+<span id="cb38-260"><a href="#cb38-260" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb38-261"><a href="#cb38-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-262"><a href="#cb38-262" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3.2. Customize Scatter Chart</span></span>
+<span id="cb38-263"><a href="#cb38-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-266"><a href="#cb38-266" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb38-267"><a href="#cb38-267" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> Wind, <span class="at">y =</span> Ozone, <span class="at">color =</span> Temp, <span class="at">size =</span> Solar.R)) <span class="sc">+</span></span>
+<span id="cb38-268"><a href="#cb38-268" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb38-269"><a href="#cb38-269" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"#e74c3c"</span>) <span class="sc">+</span></span>
+<span id="cb38-270"><a href="#cb38-270" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_gradientn</span>(<span class="at">colors =</span> <span class="fu">c</span>(<span class="st">"#3498db"</span>, <span class="st">"#f1c40f"</span>, <span class="st">"#e74c3c"</span>),</span>
+<span id="cb38-271"><a href="#cb38-271" aria-hidden="true" tabindex="-1"></a>                        <span class="at">name =</span> <span class="st">"Temp (°F)"</span>) <span class="sc">+</span></span>
+<span id="cb38-272"><a href="#cb38-272" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_continuous</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">8</span>), <span class="at">name =</span> <span class="st">"Solar Radiation"</span>) <span class="sc">+</span></span>
+<span id="cb38-273"><a href="#cb38-273" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Air Quality Relationships"</span>,</span>
+<span id="cb38-274"><a href="#cb38-274" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Ozone levels vs Wind Speed (Color: Temperature, Size: Solar Radiation)"</span>,</span>
+<span id="cb38-275"><a href="#cb38-275" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Wind Speed (mph)"</span>, <span class="at">y =</span> <span class="st">"Ozone Concentration (ppb)"</span>,</span>
+<span id="cb38-276"><a href="#cb38-276" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Data from May-September 1973 in New York"</span>) <span class="sc">+</span></span>
+<span id="cb38-277"><a href="#cb38-277" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_linedraw</span>() <span class="sc">+</span></span>
+<span id="cb38-278"><a href="#cb38-278" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb38-279"><a href="#cb38-279" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb38-280"><a href="#cb38-280" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.box =</span> <span class="st">"horizontal"</span>,</span>
+<span id="cb38-281"><a href="#cb38-281" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb38-282"><a href="#cb38-282" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">color =</span> <span class="st">"#2c3e50"</span>),</span>
+<span id="cb38-283"><a href="#cb38-283" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"gray90"</span>),</span>
+<span id="cb38-284"><a href="#cb38-284" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#f9f9f9"</span>)</span>
+<span id="cb38-285"><a href="#cb38-285" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-286"><a href="#cb38-286" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(</span>
+<span id="cb38-287"><a href="#cb38-287" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="fu">guide_colorbar</span>(<span class="at">barwidth =</span> <span class="dv">15</span>, <span class="at">title.position =</span> <span class="st">"top"</span>),</span>
+<span id="cb38-288"><a href="#cb38-288" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="fu">guide_legend</span>(<span class="at">nrow =</span> <span class="dv">1</span>, <span class="at">title.position =</span> <span class="st">"top"</span>)</span>
+<span id="cb38-289"><a href="#cb38-289" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-290"><a href="#cb38-290" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>Month, <span class="at">labeller =</span> <span class="fu">labeller</span>(<span class="at">Month =</span> <span class="fu">setNames</span>(month.abb[<span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>], <span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>)))</span>
+<span id="cb38-291"><a href="#cb38-291" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb38-292"><a href="#cb38-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-293"><a href="#cb38-293" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3.3. Publication quality scatter chart</span></span>
+<span id="cb38-294"><a href="#cb38-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-297"><a href="#cb38-297" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb38-298"><a href="#cb38-298" aria-hidden="true" tabindex="-1"></a><span class="co"># Publication-ready scatterplot</span></span>
+<span id="cb38-299"><a href="#cb38-299" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> Wind, <span class="at">y =</span> Ozone)) <span class="sc">+</span></span>
+<span id="cb38-300"><a href="#cb38-300" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-301"><a href="#cb38-301" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Core plot elements</span></span>
+<span id="cb38-302"><a href="#cb38-302" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
+<span id="cb38-303"><a href="#cb38-303" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">color =</span> Temp, <span class="at">size =</span> Solar.R),</span>
+<span id="cb38-304"><a href="#cb38-304" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.7</span>,</span>
+<span id="cb38-305"><a href="#cb38-305" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> <span class="dv">16</span></span>
+<span id="cb38-306"><a href="#cb38-306" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-307"><a href="#cb38-307" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(</span>
+<span id="cb38-308"><a href="#cb38-308" aria-hidden="true" tabindex="-1"></a>    <span class="at">method =</span> <span class="st">"lm"</span>,</span>
+<span id="cb38-309"><a href="#cb38-309" aria-hidden="true" tabindex="-1"></a>    <span class="at">formula =</span> y <span class="sc">~</span> x,</span>
+<span id="cb38-310"><a href="#cb38-310" aria-hidden="true" tabindex="-1"></a>    <span class="at">se =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb38-311"><a href="#cb38-311" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"black"</span>,</span>
+<span id="cb38-312"><a href="#cb38-312" aria-hidden="true" tabindex="-1"></a>    <span class="at">linewidth =</span> <span class="fl">0.5</span>,</span>
+<span id="cb38-313"><a href="#cb38-313" aria-hidden="true" tabindex="-1"></a>    <span class="at">linetype =</span> <span class="st">"dashed"</span></span>
+<span id="cb38-314"><a href="#cb38-314" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-315"><a href="#cb38-315" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-316"><a href="#cb38-316" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Clean scaling</span></span>
+<span id="cb38-317"><a href="#cb38-317" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_gradient</span>(</span>
+<span id="cb38-318"><a href="#cb38-318" aria-hidden="true" tabindex="-1"></a>    <span class="at">low =</span> <span class="st">"#0571b0"</span>,</span>
+<span id="cb38-319"><a href="#cb38-319" aria-hidden="true" tabindex="-1"></a>    <span class="at">high =</span> <span class="st">"#ca0020"</span>,</span>
+<span id="cb38-320"><a href="#cb38-320" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Temperature (°F)"</span>,</span>
+<span id="cb38-321"><a href="#cb38-321" aria-hidden="true" tabindex="-1"></a>    <span class="at">guide =</span> <span class="fu">guide_colorbar</span>(</span>
+<span id="cb38-322"><a href="#cb38-322" aria-hidden="true" tabindex="-1"></a>      <span class="at">barwidth =</span> <span class="fu">unit</span>(<span class="dv">3</span>, <span class="st">"cm"</span>),</span>
+<span id="cb38-323"><a href="#cb38-323" aria-hidden="true" tabindex="-1"></a>      <span class="at">title.position =</span> <span class="st">"top"</span></span>
+<span id="cb38-324"><a href="#cb38-324" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb38-325"><a href="#cb38-325" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-326"><a href="#cb38-326" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_continuous</span>(</span>
+<span id="cb38-327"><a href="#cb38-327" aria-hidden="true" tabindex="-1"></a>    <span class="at">range =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">5</span>),</span>
+<span id="cb38-328"><a href="#cb38-328" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Solar Radiation (lang)"</span>,</span>
+<span id="cb38-329"><a href="#cb38-329" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">200</span>, <span class="dv">300</span>),</span>
+<span id="cb38-330"><a href="#cb38-330" aria-hidden="true" tabindex="-1"></a>    <span class="at">guide =</span> <span class="fu">guide_legend</span>(</span>
+<span id="cb38-331"><a href="#cb38-331" aria-hidden="true" tabindex="-1"></a>      <span class="at">title.position =</span> <span class="st">"top"</span>,</span>
+<span id="cb38-332"><a href="#cb38-332" aria-hidden="true" tabindex="-1"></a>      <span class="at">nrow =</span> <span class="dv">1</span></span>
+<span id="cb38-333"><a href="#cb38-333" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb38-334"><a href="#cb38-334" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-335"><a href="#cb38-335" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-336"><a href="#cb38-336" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Minimal labels</span></span>
+<span id="cb38-337"><a href="#cb38-337" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb38-338"><a href="#cb38-338" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Wind Speed (mph)"</span>,</span>
+<span id="cb38-339"><a href="#cb38-339" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Ozone Concentration (ppb)"</span>,</span>
+<span id="cb38-340"><a href="#cb38-340" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Ozone-Wind Relationship by Month"</span></span>
+<span id="cb38-341"><a href="#cb38-341" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-342"><a href="#cb38-342" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-343"><a href="#cb38-343" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Facet styling</span></span>
+<span id="cb38-344"><a href="#cb38-344" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(</span>
+<span id="cb38-345"><a href="#cb38-345" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>Month,</span>
+<span id="cb38-346"><a href="#cb38-346" aria-hidden="true" tabindex="-1"></a>    <span class="at">ncol =</span> <span class="dv">3</span>,</span>
+<span id="cb38-347"><a href="#cb38-347" aria-hidden="true" tabindex="-1"></a>    <span class="at">labeller =</span> <span class="fu">labeller</span>(<span class="at">Month =</span> <span class="fu">setNames</span>(month.abb[<span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>], <span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>))</span>
+<span id="cb38-348"><a href="#cb38-348" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-349"><a href="#cb38-349" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb38-350"><a href="#cb38-350" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Publication theme</span></span>
+<span id="cb38-351"><a href="#cb38-351" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">10</span>) <span class="sc">+</span></span>
+<span id="cb38-352"><a href="#cb38-352" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb38-353"><a href="#cb38-353" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb38-354"><a href="#cb38-354" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="fl">0.2</span>, <span class="at">color =</span> <span class="st">"grey90"</span>),</span>
+<span id="cb38-355"><a href="#cb38-355" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"grey95"</span>, <span class="at">color =</span> <span class="cn">NA</span>),</span>
+<span id="cb38-356"><a href="#cb38-356" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">9</span>),</span>
+<span id="cb38-357"><a href="#cb38-357" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb38-358"><a href="#cb38-358" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.box =</span> <span class="st">"horizontal"</span>,</span>
+<span id="cb38-359"><a href="#cb38-359" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.spacing.x =</span> <span class="fu">unit</span>(<span class="fl">0.5</span>, <span class="st">"cm"</span>),</span>
+<span id="cb38-360"><a href="#cb38-360" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="dv">11</span>),</span>
+<span id="cb38-361"><a href="#cb38-361" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">9</span>),</span>
+<span id="cb38-362"><a href="#cb38-362" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.spacing =</span> <span class="fu">unit</span>(<span class="fl">0.8</span>, <span class="st">"lines"</span>)</span>
+<span id="cb38-363"><a href="#cb38-363" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb38-364"><a href="#cb38-364" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb38-365"><a href="#cb38-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-366"><a href="#cb38-366" aria-hidden="true" tabindex="-1"></a><span class="fu"># **4. Heatmap**</span></span>
+<span id="cb38-367"><a href="#cb38-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-368"><a href="#cb38-368" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4.1. Basic Heatmap</span></span>
+<span id="cb38-369"><a href="#cb38-369" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-372"><a href="#cb38-372" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb38-373"><a href="#cb38-373" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare heatmap data</span></span>
+<span id="cb38-374"><a href="#cb38-374" aria-hidden="true" tabindex="-1"></a>heat_data <span class="ot">&lt;-</span> airquality <span class="sc">%&gt;%</span></span>
+<span id="cb38-375"><a href="#cb38-375" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Month, Day) <span class="sc">%&gt;%</span></span>
+<span id="cb38-376"><a href="#cb38-376" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">MeanTemp =</span> <span class="fu">mean</span>(Temp, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb38-377"><a href="#cb38-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-378"><a href="#cb38-378" aria-hidden="true" tabindex="-1"></a><span class="co"># Basic heatmap</span></span>
+<span id="cb38-379"><a href="#cb38-379" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(heat_data, <span class="fu">aes</span>(<span class="at">x =</span> Day, <span class="at">y =</span> <span class="fu">factor</span>(Month), <span class="at">fill =</span> MeanTemp)) <span class="sc">+</span></span>
+<span id="cb38-380"><a href="#cb38-380" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
+<span id="cb38-381"><a href="#cb38-381" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Daily Temperature Heatmap"</span>)</span>
+<span id="cb38-382"><a href="#cb38-382" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb38-383"><a href="#cb38-383" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-384"><a href="#cb38-384" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4.2. Customize Heatmap</span></span>
+<span id="cb38-385"><a href="#cb38-385" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-388"><a href="#cb38-388" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb38-389"><a href="#cb38-389" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(heat_data, <span class="fu">aes</span>(<span class="at">x =</span> Day, <span class="at">y =</span> <span class="fu">factor</span>(Month, <span class="at">labels =</span> month.abb[<span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>]), <span class="at">fill =</span> MeanTemp)) <span class="sc">+</span></span>
+<span id="cb38-390"><a href="#cb38-390" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">linewidth =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb38-391"><a href="#cb38-391" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradientn</span>(<span class="at">colors =</span> <span class="fu">c</span>(<span class="st">"#4575b4"</span>, <span class="st">"#ffffbf"</span>, <span class="st">"#d73027"</span>), </span>
+<span id="cb38-392"><a href="#cb38-392" aria-hidden="true" tabindex="-1"></a>                      <span class="at">name =</span> <span class="st">"Temp (°F)"</span>) <span class="sc">+</span></span>
+<span id="cb38-393"><a href="#cb38-393" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">31</span>, <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb38-394"><a href="#cb38-394" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"1973 Temperature Patterns"</span>,</span>
+<span id="cb38-395"><a href="#cb38-395" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Daily temperatures by month"</span>,</span>
+<span id="cb38-396"><a href="#cb38-396" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Day of Month"</span>, <span class="at">y =</span> <span class="st">"Month"</span>) <span class="sc">+</span></span>
+<span id="cb38-397"><a href="#cb38-397" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_fixed</span>(<span class="at">ratio =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb38-398"><a href="#cb38-398" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb38-399"><a href="#cb38-399" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb38-400"><a href="#cb38-400" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">16</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb38-401"><a href="#cb38-401" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"#7f8c8d"</span>),</span>
+<span id="cb38-402"><a href="#cb38-402" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>),</span>
+<span id="cb38-403"><a href="#cb38-403" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"right"</span>,</span>
+<span id="cb38-404"><a href="#cb38-404" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb38-405"><a href="#cb38-405" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb38-406"><a href="#cb38-406" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb38-407"><a href="#cb38-407" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-408"><a href="#cb38-408" aria-hidden="true" tabindex="-1"></a><span class="fu"># 5. Box Plot + Violin Plot</span></span>
+<span id="cb38-409"><a href="#cb38-409" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-410"><a href="#cb38-410" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5.1. Create Box plot with violin</span></span>
+<span id="cb38-411"><a href="#cb38-411" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-414"><a href="#cb38-414" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb38-415"><a href="#cb38-415" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Month, <span class="at">labels =</span> month.abb[<span class="dv">5</span><span class="sc">:</span><span class="dv">9</span>]), <span class="at">y =</span> Ozone, <span class="at">fill =</span> <span class="fu">factor</span>(Month))) <span class="sc">+</span></span>
+<span id="cb38-416"><a href="#cb38-416" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">trim =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb38-417"><a href="#cb38-417" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">outlier.color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb38-418"><a href="#cb38-418" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Set2"</span>, <span class="at">name =</span> <span class="st">"Month"</span>) <span class="sc">+</span></span>
+<span id="cb38-419"><a href="#cb38-419" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Ozone Distribution by Month"</span>,</span>
+<span id="cb38-420"><a href="#cb38-420" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Violin plots show distribution density, boxplots show quartiles"</span>,</span>
+<span id="cb38-421"><a href="#cb38-421" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Month"</span>, <span class="at">y =</span> <span class="st">"Ozone (ppb)"</span>) <span class="sc">+</span></span>
+<span id="cb38-422"><a href="#cb38-422" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb38-423"><a href="#cb38-423" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb38-424"><a href="#cb38-424" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">16</span>),</span>
+<span id="cb38-425"><a href="#cb38-425" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
+<span id="cb38-426"><a href="#cb38-426" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb38-427"><a href="#cb38-427" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>, <span class="at">face =</span> <span class="st">"bold"</span>)</span>
+<span id="cb38-428"><a href="#cb38-428" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-429"><a href="#cb38-429" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"point"</span>, <span class="at">shape =</span> <span class="dv">18</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb38-430"><a href="#cb38-430" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">3</span>, <span class="at">y =</span> <span class="dv">150</span>, <span class="at">label =</span> <span class="st">"Red points = outliers</span><span class="sc">\n</span><span class="st">Diamond = mean"</span>, </span>
+<span id="cb38-431"><a href="#cb38-431" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> <span class="st">"#2c3e50"</span>, <span class="at">size =</span> <span class="fl">3.5</span>)</span>
+<span id="cb38-432"><a href="#cb38-432" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb38-433"><a href="#cb38-433" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-434"><a href="#cb38-434" aria-hidden="true" tabindex="-1"></a><span class="fu"># **6. Faceted Plots**</span></span>
+<span id="cb38-435"><a href="#cb38-435" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-438"><a href="#cb38-438" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb38-439"><a href="#cb38-439" aria-hidden="true" tabindex="-1"></a><span class="co"># Create temperature category</span></span>
+<span id="cb38-440"><a href="#cb38-440" aria-hidden="true" tabindex="-1"></a>airquality <span class="ot">&lt;-</span> airquality <span class="sc">%&gt;%</span></span>
+<span id="cb38-441"><a href="#cb38-441" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">TempCategory =</span> <span class="fu">cut</span>(Temp, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">70</span>, <span class="dv">80</span>, <span class="dv">100</span>),</span>
+<span id="cb38-442"><a href="#cb38-442" aria-hidden="true" tabindex="-1"></a>         <span class="at">TempCategory =</span> <span class="fu">factor</span>(TempCategory, </span>
+<span id="cb38-443"><a href="#cb38-443" aria-hidden="true" tabindex="-1"></a>                              <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Cool (&lt;70°F)"</span>, <span class="st">"Mild (70-80°F)"</span>, <span class="st">"Warm (&gt;80°F)"</span>))))</span>
+<span id="cb38-444"><a href="#cb38-444" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-445"><a href="#cb38-445" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(<span class="at">x =</span> Wind, <span class="at">y =</span> Solar.R, <span class="at">color =</span> Ozone)) <span class="sc">+</span></span>
+<span id="cb38-446"><a href="#cb38-446" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb38-447"><a href="#cb38-447" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb38-448"><a href="#cb38-448" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_gradient</span>(<span class="at">low =</span> <span class="st">"blue"</span>, <span class="at">high =</span> <span class="st">"red"</span>, <span class="at">name =</span> <span class="st">"Ozone Level"</span>) <span class="sc">+</span></span>
+<span id="cb38-449"><a href="#cb38-449" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Solar Radiation vs Wind Speed"</span>,</span>
+<span id="cb38-450"><a href="#cb38-450" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Faceted by temperature ranges"</span>,</span>
+<span id="cb38-451"><a href="#cb38-451" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Wind Speed (mph)"</span>, <span class="at">y =</span> <span class="st">"Solar Radiation (lang)"</span>) <span class="sc">+</span></span>
+<span id="cb38-452"><a href="#cb38-452" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>TempCategory, <span class="at">ncol =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb38-453"><a href="#cb38-453" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb38-454"><a href="#cb38-454" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb38-455"><a href="#cb38-455" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#2c3e50"</span>),</span>
+<span id="cb38-456"><a href="#cb38-456" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb38-457"><a href="#cb38-457" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.spacing =</span> <span class="fu">unit</span>(<span class="dv">1</span>, <span class="st">"lines"</span>),</span>
+<span id="cb38-458"><a href="#cb38-458" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span></span>
+<span id="cb38-459"><a href="#cb38-459" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb38-460"><a href="#cb38-460" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_colorbar</span>(<span class="at">barwidth =</span> <span class="dv">15</span>, <span class="at">title.position =</span> <span class="st">"top"</span>))</span>
+<span id="cb38-461"><a href="#cb38-461" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
