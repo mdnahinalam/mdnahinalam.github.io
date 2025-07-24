@@ -379,7 +379,7 @@ ggplot(heat_data, aes(x = Day, y = factor(Month, labels = month.abb[5:9]), fill 
   )
 ```
 
-# 5. Box Plot + Violin Plot
+# **5. Box Plot + Violin Plot**
 
 ## 5.1. Create Box plot with violin
 
