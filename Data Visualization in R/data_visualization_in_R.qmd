@@ -27,7 +27,7 @@ This tutorial demonstrates data visualization techniques using the `ggplot2` pac
 
 First, we load the necessary libraries and the dataset.
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(tidyr)
 data(airquality)
@@ -46,7 +46,7 @@ The airquality dataset includes the following variables:
 
 Let's view the first few rows and a summary of the dataset.
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 head(airquality)
 summary(airquality)
 ```
@@ -66,7 +66,7 @@ We will create several types of plots to explore the dataset:
 
 ## 1.1. Basic Bar Chart
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 # Monthly ozone averages
 monthly_ozone <- airquality %>%
   group_by(Month) %>%
@@ -81,7 +81,7 @@ ggplot(monthly_ozone, aes(x = factor(Month), y = MeanOzone)) +
 
 ## 1.2. Customize Bar Chart
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 ggplot(monthly_ozone, aes(x = factor(Month, labels = month.abb[5:9]), 
                           y = MeanOzone, 
                           fill = MeanOzone)) +
@@ -106,7 +106,7 @@ ggplot(monthly_ozone, aes(x = factor(Month, labels = month.abb[5:9]),
 
 ## 1.3. Publication quality bar chart
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 # Prepare data
 monthly_ozone <- airquality %>%
   group_by(Month) %>%
@@ -147,7 +147,7 @@ ggplot(monthly_ozone, aes(x = Month, y = MeanOzone)) +
 
 ## 2.1. Basic Line Charts
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 # Create date variable
 airquality$Date <- as.Date(paste(1973, airquality$Month, airquality$Day, sep = "-"))
 
@@ -159,7 +159,7 @@ ggplot(airquality, aes(x = Date, y = Temp)) +
 
 ## 2.2. Customize Line Chart
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 ggplot(airquality, aes(x = Date, y = Temp)) +
   geom_line(color = "#3498db", linewidth = 1, alpha = 0.8) +
   geom_point(data = subset(airquality, Temp > 90), 
@@ -185,7 +185,7 @@ ggplot(airquality, aes(x = Date, y = Temp)) +
 
 ## 2.3. Publication quality line chart
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 # Create proper Date using lubridate
 airquality <- airquality %>%
   mutate(Date = ymd(paste(1973, Month, Day, sep = "-")))
@@ -234,7 +234,7 @@ ggplot(airquality, aes(x = Date, y = Temp)) +
 
 ## 3.1. Basic **Scatter Plot**
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 # Basic scatter plot
 ggplot(airquality, aes(x = Wind, y = Ozone)) +
   geom_point() +
@@ -243,7 +243,7 @@ ggplot(airquality, aes(x = Wind, y = Ozone)) +
 
 ## 3.2. Customize Scatter Chart
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 ggplot(airquality, aes(x = Wind, y = Ozone, color = Temp, size = Solar.R)) +
   geom_point(alpha = 0.8, size = 2) +
   geom_smooth(method = "lm", se = FALSE, color = "#e74c3c") +
@@ -272,7 +272,7 @@ ggplot(airquality, aes(x = Wind, y = Ozone, color = Temp, size = Solar.R)) +
 
 ## 3.3. Publication quality scatter chart
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 # Publication-ready scatterplot
 ggplot(airquality, aes(x = Wind, y = Ozone)) +
   
@@ -345,7 +345,7 @@ ggplot(airquality, aes(x = Wind, y = Ozone)) +
 
 ## 4.1. Basic Heatmap
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 # Prepare heatmap data
 heat_data <- airquality %>%
   group_by(Month, Day) %>%
@@ -359,7 +359,7 @@ ggplot(heat_data, aes(x = Day, y = factor(Month), fill = MeanTemp)) +
 
 ## 4.2. Customize Heatmap
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 ggplot(heat_data, aes(x = Day, y = factor(Month, labels = month.abb[5:9]), fill = MeanTemp)) +
   geom_tile(color = "white", linewidth = 0.3) +
   scale_fill_gradientn(colors = c("#4575b4", "#ffffbf", "#d73027"), 
@@ -383,7 +383,7 @@ ggplot(heat_data, aes(x = Day, y = factor(Month, labels = month.abb[5:9]), fill 
 
 ## 5.1. Create Box plot with violin
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 ggplot(airquality, aes(x = factor(Month, labels = month.abb[5:9]), y = Ozone, fill = factor(Month))) +
   geom_violin(alpha = 0.7, trim = FALSE) +
   geom_boxplot(width = 0.2, fill = "white", alpha = 0.7, outlier.color = "red") +
@@ -405,7 +405,7 @@ ggplot(airquality, aes(x = factor(Month, labels = month.abb[5:9]), y = Ozone, fi
 
 # **6. Faceted Plots**
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 # Create temperature category
 airquality <- airquality %>%
   mutate(TempCategory = cut(Temp, breaks = c(0, 70, 80, 100),
