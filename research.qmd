@@ -20,6 +20,10 @@ Mehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hana
 :::
 
 ::: publication
+Md Leion Hassan, Md. Enamul Hoque, <b>Md Nahin Alam</b>, Md. Ibrahim, Sheikh Aftab Uddin, Abdullah Al Mamun (2024). Climate variability and nutrients availability drove phytoplankton bloom phenology in the northern Bay of Bengal: a nineteen years study from satellite data — <span style="color:darkblue; font-weight:bold;">Manuscript submitted</span>.
+:::
+
+::: publication
 **Poster**
 
 Leion Hassan, Md. Enamul Hoque, <b>Nahin Alam</b>, Md. Ibrahim (2024). Understanding Fishing Prospects: Satellite-Based Evaluation of Phytoplankton Phenology in the Northern Bay of Bengal.\
@@ -35,7 +39,6 @@ Conference: ICO 2024: International Conference on OceanographyAt: Bangladesh Oce
 Mehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, <b>Nahin Alam</b>, Ataher Ali (2022). Human interaction caused land cover changes of Chakaria Sundarban mangrove forest in Bangladesh: a fifty-years study (2022).\
 <a href="https://www.researchgate.net/publication/362837157_Human_interaction_caused_land_cover_changes_of_Chakaria_Sundarban_mangrove_forest_in_Bangladesh_a_fifty-years_study" target="_blank">PDF</a>
 :::
-
 
 
 
