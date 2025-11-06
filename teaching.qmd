@@ -24,7 +24,7 @@ I enjoy teaching technical subjects that blend theory with real-world applicatio
 **Audience**: Undergraduate and graduate students  
 **Focus**: ArcGIS, raster/vector processing, data analysis in R
 
-### 🌐 Online International Teaching  
+### 🌐 Online Teaching  
 **Topic**: R for Beginners, Data Cleaning, and Visual Communication  
 **Format**: Online sessions with international participants  
 **Audience**: Learners from Europe, Southeast Asia, and North America  
