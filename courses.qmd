@@ -37,6 +37,14 @@ cv:
 }
 ```
 
+# Oceanographic Data Analysis using R
+
+```{=html}
+<div class="embed-container">
+  <iframe src="/courses/Oceanographic Data Analysis using R.pdf"></iframe>
+</div>
+```
+
 # Basic R Programming
 
 ```{=html}
@@ -54,10 +62,4 @@ cv:
 ```
 
 
-# Oceanographic Data Analysis using R
 
-```{=html}
-<div class="embed-container">
-  <iframe src="/courses/Oceanographic Data Analysis using R.pdf"></iframe>
-</div>
-```
