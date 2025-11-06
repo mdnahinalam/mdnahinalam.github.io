@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>oceanographic_r_course – Md Nahin Alam</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./nahin.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-53f539a478d6ecd1be31ce9fd30fd81c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-3e3370d44295d9fa30cc16d77ad785c2.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-53f539a478d6ecd1be31ce9fd30fd81c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-1f625eacd515cdb9e1e1d54186c07bdf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-512d43709fa6a6896e2b06a19517e938.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-1f625eacd515cdb9e1e1d54186c07bdf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    window.setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      window.setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    window.hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(darkModeDefault) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const darkModeDefault = false;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !window.hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+    };
+    // Switch to dark mode if need be
+    if (window.hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Md Nahin Alam</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./courses.html"> 
+<span class="menu-text">Courses</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="./www.linkedin.com/in/md-nahin-alam"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Md-Nahin-Alam"> 
+<span class="menu-text"><img src="./images/researchgate.svg" alt="ResearchGate" style="height:1.2em; margin-top:-0.2em;"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#oceanographic-data-analysis-using-r---2-week-course-module" id="toc-oceanographic-data-analysis-using-r---2-week-course-module" class="nav-link active" data-scroll-target="#oceanographic-data-analysis-using-r---2-week-course-module">Oceanographic Data Analysis using R - 2-Week Course Module</a>
+  <ul class="collapse">
+  <li><a href="#course-overview" id="toc-course-overview" class="nav-link" data-scroll-target="#course-overview">Course Overview</a></li>
+  <li><a href="#week-1-foundations-data-preparation" id="toc-week-1-foundations-data-preparation" class="nav-link" data-scroll-target="#week-1-foundations-data-preparation">Week 1: Foundations &amp; Data Preparation</a>
+  <ul class="collapse">
+  <li><a href="#day-1-r-basics-environment-setup" id="toc-day-1-r-basics-environment-setup" class="nav-link" data-scroll-target="#day-1-r-basics-environment-setup">Day 1: R Basics &amp; Environment Setup</a></li>
+  <li><a href="#day-2-data-structures-data-exploration" id="toc-day-2-data-structures-data-exploration" class="nav-link" data-scroll-target="#day-2-data-structures-data-exploration">Day 2: Data Structures &amp; Data Exploration</a></li>
+  <li><a href="#day-3-data-cleaning-transformation-with-dplyr" id="toc-day-3-data-cleaning-transformation-with-dplyr" class="nav-link" data-scroll-target="#day-3-data-cleaning-transformation-with-dplyr">Day 3: Data Cleaning &amp; Transformation with dplyr</a></li>
+  <li><a href="#day-4-data-visualization-fundamentals" id="toc-day-4-data-visualization-fundamentals" class="nav-link" data-scroll-target="#day-4-data-visualization-fundamentals">Day 4: Data Visualization Fundamentals</a></li>
+  <li><a href="#day-5-oceanographic-parameters-advanced-data-import" id="toc-day-5-oceanographic-parameters-advanced-data-import" class="nav-link" data-scroll-target="#day-5-oceanographic-parameters-advanced-data-import">Day 5: Oceanographic Parameters &amp; Advanced Data Import</a></li>
+  </ul></li>
+  <li><a href="#week-2-analysis-advanced-applications" id="toc-week-2-analysis-advanced-applications" class="nav-link" data-scroll-target="#week-2-analysis-advanced-applications">Week 2: Analysis &amp; Advanced Applications</a>
+  <ul class="collapse">
+  <li><a href="#day-6-time-series-analysis-foundations" id="toc-day-6-time-series-analysis-foundations" class="nav-link" data-scroll-target="#day-6-time-series-analysis-foundations">Day 6: Time Series Analysis Foundations</a></li>
+  <li><a href="#day-7-descriptive-statistics-hypothesis-testing" id="toc-day-7-descriptive-statistics-hypothesis-testing" class="nav-link" data-scroll-target="#day-7-descriptive-statistics-hypothesis-testing">Day 7: Descriptive Statistics &amp; Hypothesis Testing</a></li>
+  <li><a href="#day-8-multivariate-analysis-water-mass-classification" id="toc-day-8-multivariate-analysis-water-mass-classification" class="nav-link" data-scroll-target="#day-8-multivariate-analysis-water-mass-classification">Day 8: Multivariate Analysis &amp; Water Mass Classification</a></li>
+  <li><a href="#day-9-spatial-analysis-oceanographic-mapping" id="toc-day-9-spatial-analysis-oceanographic-mapping" class="nav-link" data-scroll-target="#day-9-spatial-analysis-oceanographic-mapping">Day 9: Spatial Analysis &amp; Oceanographic Mapping</a></li>
+  <li><a href="#day-10-capstone-project-reproducible-research-best-practices" id="toc-day-10-capstone-project-reproducible-research-best-practices" class="nav-link" data-scroll-target="#day-10-capstone-project-reproducible-research-best-practices">Day 10: Capstone Project &amp; Reproducible Research Best Practices</a></li>
+  </ul></li>
+  <li><a href="#course-learning-objectives-summary" id="toc-course-learning-objectives-summary" class="nav-link" data-scroll-target="#course-learning-objectives-summary">Course Learning Objectives Summary</a>
+  <ul class="collapse">
+  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills">Technical Skills</a></li>
+  <li><a href="#conceptual-understanding" id="toc-conceptual-understanding" class="nav-link" data-scroll-target="#conceptual-understanding">Conceptual Understanding</a></li>
+  <li><a href="#professional-competencies" id="toc-professional-competencies" class="nav-link" data-scroll-target="#professional-competencies">Professional Competencies</a></li>
+  </ul></li>
+  <li><a href="#assessment-strategy" id="toc-assessment-strategy" class="nav-link" data-scroll-target="#assessment-strategy">Assessment Strategy</a>
+  <ul class="collapse">
+  <li><a href="#formative-assessment-ongoing" id="toc-formative-assessment-ongoing" class="nav-link" data-scroll-target="#formative-assessment-ongoing">Formative Assessment (Ongoing)</a></li>
+  <li><a href="#summative-assessment-end-of-course" id="toc-summative-assessment-end-of-course" class="nav-link" data-scroll-target="#summative-assessment-end-of-course">Summative Assessment (End of Course)</a></li>
+  </ul></li>
+  <li><a href="#software-data-requirements" id="toc-software-data-requirements" class="nav-link" data-scroll-target="#software-data-requirements">Software &amp; Data Requirements</a>
+  <ul class="collapse">
+  <li><a href="#software-freeopen-source" id="toc-software-freeopen-source" class="nav-link" data-scroll-target="#software-freeopen-source">Software (Free/Open Source)</a></li>
+  <li><a href="#r-packages-core" id="toc-r-packages-core" class="nav-link" data-scroll-target="#r-packages-core">R Packages (Core)</a></li>
+  <li><a href="#datasets-provided" id="toc-datasets-provided" class="nav-link" data-scroll-target="#datasets-provided">Datasets Provided</a></li>
+  </ul></li>
+  <li><a href="#prerequisites-target-audience" id="toc-prerequisites-target-audience" class="nav-link" data-scroll-target="#prerequisites-target-audience">Prerequisites &amp; Target Audience</a></li>
+  <li><a href="#course-materials-resources" id="toc-course-materials-resources" class="nav-link" data-scroll-target="#course-materials-resources">Course Materials &amp; Resources</a>
+  <ul class="collapse">
+  <li><a href="#provided-materials" id="toc-provided-materials" class="nav-link" data-scroll-target="#provided-materials">Provided Materials</a></li>
+  <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources">Recommended Resources</a></li>
+  <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
+  </ul></li>
+  <li><a href="#schedule-notes" id="toc-schedule-notes" class="nav-link" data-scroll-target="#schedule-notes">Schedule Notes</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+
+<section id="oceanographic-data-analysis-using-r---2-week-course-module" class="level1">
+<h1>Oceanographic Data Analysis using R - 2-Week Course Module</h1>
+<section id="course-overview" class="level2">
+<h2 class="anchored" data-anchor-id="course-overview">Course Overview</h2>
+<p><strong>Duration:</strong> 2 weeks (10 working days)<br>
+<strong>Total Hours:</strong> 40 hours (4 hours per day)<br>
+<strong>Target Audience:</strong> Beginners with no prior R or programming experience<br>
+<strong>Prerequisites:</strong> Basic computer literacy<br>
+<strong>Mode:</strong> Hands-on practical training with real oceanographic datasets</p>
+<hr>
+</section>
+<section id="week-1-foundations-data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="week-1-foundations-data-preparation">Week 1: Foundations &amp; Data Preparation</h2>
+<section id="day-1-r-basics-environment-setup" class="level3">
+<h3 class="anchored" data-anchor-id="day-1-r-basics-environment-setup">Day 1: R Basics &amp; Environment Setup</h3>
+<p><strong>Duration:</strong> 4 hours</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Learning Outcomes</strong></td>
+<td>• Install and configure R and RStudio<br>• Understand R interface and console basics<br>• Learn fundamental R syntax and operations<br>• Create and execute first R scripts</td>
+</tr>
+<tr class="even">
+<td><strong>Content Topics</strong></td>
+<td>• R installation and RStudio environment<br>• Console, script editor, and workspace<br>• R markdown introduction<br>• Basic operators and syntax<br>• Variables, data types (numeric, character, logical)</td>
+</tr>
+<tr class="odd">
+<td><strong>Practical Activities</strong></td>
+<td>• Install R and RStudio on personal computer<br>• Explore RStudio layout and features<br>• Write and execute basic calculations<br>• Create and run a simple R script<br>• Use help and documentation functions</td>
+</tr>
+<tr class="even">
+<td><strong>Key R Packages</strong></td>
+<td>tidyverse (overview), base R</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment</strong></td>
+<td>Hands-on verification: Successful installation and execution of demo script</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-2-data-structures-data-exploration" class="level3">
+<h3 class="anchored" data-anchor-id="day-2-data-structures-data-exploration">Day 2: Data Structures &amp; Data Exploration</h3>
+<p><strong>Duration:</strong> 4 hours</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Learning Outcomes</strong></td>
+<td>• Create and manipulate vectors, matrices, lists, and data frames<br>• Load and explore oceanographic datasets<br>• Understand tidy data principles<br>• Apply summary and exploration functions</td>
+</tr>
+<tr class="even">
+<td><strong>Content Topics</strong></td>
+<td>• Vectors and their operations<br>• Matrices and lists<br>• Data frames structure and properties<br>• Reading CSV and Excel files<br>• Data exploration functions (str, head, summary, glimpse)<br>• Intro to tidy data principles</td>
+</tr>
+<tr class="odd">
+<td><strong>Practical Activities</strong></td>
+<td>• Create different data structures<br>• Load sample oceanographic CTD data (CSV)<br>• Examine data structure with str() and summary()<br>• Identify variable types and distributions<br>• Handle basic missing values (NA)<br>• Calculate basic statistics</td>
+</tr>
+<tr class="even">
+<td><strong>Key R Packages</strong></td>
+<td>readr, base R, tibble</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment</strong></td>
+<td>Lab exercise: Load provided CTD dataset, explore structure, document findings</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-3-data-cleaning-transformation-with-dplyr" class="level3">
+<h3 class="anchored" data-anchor-id="day-3-data-cleaning-transformation-with-dplyr">Day 3: Data Cleaning &amp; Transformation with dplyr</h3>
+<p><strong>Duration:</strong> 4 hours</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Learning Outcomes</strong></td>
+<td>• Master dplyr’s key verbs (select, filter, arrange, mutate)<br>• Use pipe operator for chained operations<br>• Aggregate and summarize data<br>• Prepare data for analysis</td>
+</tr>
+<tr class="even">
+<td><strong>Content Topics</strong></td>
+<td>• dplyr verbs: select, filter, arrange, mutate, summarize<br>• Pipe operator (%&gt;%) and workflow<br>• Group operations (group_by)<br>• Data aggregation and summarization<br>• Handling duplicates and outliers<br>• Creating derived variables</td>
+</tr>
+<tr class="odd">
+<td><strong>Practical Activities</strong></td>
+<td>• Select relevant oceanographic variables<br>• Filter data by depth, quality, or other criteria<br>• Arrange observations chronologically<br>• Calculate density from temperature and salinity<br>• Group data by sampling locations/depths<br>• Summarize by groups (mean, SD by layer)<br>• Remove or flag questionable data</td>
+</tr>
+<tr class="even">
+<td><strong>Key R Packages</strong></td>
+<td>dplyr, tidyr, tidyverse</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment</strong></td>
+<td>Lab exercise: Clean and transform real oceanographic dataset; create analysis-ready data frame</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-4-data-visualization-fundamentals" class="level3">
+<h3 class="anchored" data-anchor-id="day-4-data-visualization-fundamentals">Day 4: Data Visualization Fundamentals</h3>
+<p><strong>Duration:</strong> 4 hours</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Learning Outcomes</strong></td>
+<td>• Create publication-quality plots with ggplot2<br>• Visualize different data types appropriately<br>• Customize plots with themes and aesthetics<br>• Understand grammar of graphics</td>
+</tr>
+<tr class="even">
+<td><strong>Content Topics</strong></td>
+<td>• ggplot2 fundamentals and layered architecture<br>• Geoms (geom_point, geom_line, geom_boxplot, etc.)<br>• Aesthetics mapping (color, size, shape, fill)<br>• Faceting and subplots<br>• Themes and customization<br>• Color palettes and scales</td>
+</tr>
+<tr class="odd">
+<td><strong>Practical Activities</strong></td>
+<td>• Plot scatter plots (temperature vs.&nbsp;salinity)<br>• Create line plots (parameter vs.&nbsp;depth)<br>• Generate distribution plots (histograms, boxplots)<br>• Use faceting for multiple locations/conditions<br>• Customize colors, labels, and legends<br>• Combine multiple plots with gridExtra<br>• Export high-resolution figures for publication</td>
+</tr>
+<tr class="even">
+<td><strong>Key R Packages</strong></td>
+<td>ggplot2, gridExtra, tidyverse</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment</strong></td>
+<td>Lab exercise: Create 3+ exploratory plots from oceanographic dataset; export publication-ready figures</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-5-oceanographic-parameters-advanced-data-import" class="level3">
+<h3 class="anchored" data-anchor-id="day-5-oceanographic-parameters-advanced-data-import">Day 5: Oceanographic Parameters &amp; Advanced Data Import</h3>
+<p><strong>Duration:</strong> 4 hours</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Learning Outcomes</strong></td>
+<td>• Understand key oceanographic parameters and measurement techniques<br>• Import complex data formats (netCDF, HDF5)<br>• Process CTD and ADCP data<br>• Work with oceanographic data sources</td>
+</tr>
+<tr class="even">
+<td><strong>Content Topics</strong></td>
+<td>• Physical parameters: temperature, salinity, pressure, density<br>• Biological parameters: dissolved oxygen, chlorophyll-a, fluorescence<br>• CTD instrument principles and profiles<br>• ADCP acoustic measurements<br>• netCDF and HDF5 file structures<br>• Data sources: ERDDAP, NASA Oceancolor, CMEMS<br>• Data quality flags and validation</td>
+</tr>
+<tr class="odd">
+<td><strong>Practical Activities</strong></td>
+<td>• Import netCDF oceanographic data<br>• Read and process CTD depth profiles<br>• Extract specific layers (surface, intermediate, deep)<br>• Apply quality flags and filters<br>• Convert units (e.g., pressure to depth)<br>• Handle missing data markers<br>• Create visualizations from multi-dimensional data</td>
+</tr>
+<tr class="even">
+<td><strong>Key R Packages</strong></td>
+<td>oce (oceanographic analysis), ncdf4, rhdf5, stars, tidyverse</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment</strong></td>
+<td>Lab exercise: Import and explore multi-format oceanographic data; compare different data types</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="week-2-analysis-advanced-applications" class="level2">
+<h2 class="anchored" data-anchor-id="week-2-analysis-advanced-applications">Week 2: Analysis &amp; Advanced Applications</h2>
+<section id="day-6-time-series-analysis-foundations" class="level3">
+<h3 class="anchored" data-anchor-id="day-6-time-series-analysis-foundations">Day 6: Time Series Analysis Foundations</h3>
+<p><strong>Duration:</strong> 4 hours</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Learning Outcomes</strong></td>
+<td>• Create and work with time series objects<br>• Detect trends and seasonal patterns<br>• Perform time-based aggregation<br>• Visualize temporal patterns in oceanographic data</td>
+</tr>
+<tr class="even">
+<td><strong>Content Topics</strong></td>
+<td>• Time series object creation and properties<br>• Frequency and temporal resolution<br>• Resampling and interpolation methods<br>• Trend detection and decomposition<br>• Seasonal pattern identification<br>• Gap handling in time series</td>
+</tr>
+<tr class="odd">
+<td><strong>Practical Activities</strong></td>
+<td>• Create time series from in-situ measurements<br>• Aggregate data at different temporal scales (hourly, daily)<br>• Interpolate gaps in measurements<br>• Decompose series into trend and seasonal components<br>• Plot multi-parameter time series<br>• Identify anomalies and extreme events<br>• Compare seasonal variations across years</td>
+</tr>
+<tr class="even">
+<td><strong>Key R Packages</strong></td>
+<td>ts, zoo, lubridate, tseries, tidyverse</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment</strong></td>
+<td>Lab exercise: Time series analysis of oceanographic monitoring data with trend and seasonal decomposition</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-7-descriptive-statistics-hypothesis-testing" class="level3">
+<h3 class="anchored" data-anchor-id="day-7-descriptive-statistics-hypothesis-testing">Day 7: Descriptive Statistics &amp; Hypothesis Testing</h3>
+<p><strong>Duration:</strong> 4 hours</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Learning Outcomes</strong></td>
+<td>• Calculate and interpret descriptive statistics<br>• Test statistical assumptions<br>• Perform correlation and regression analysis<br>• Make inference from oceanographic data</td>
+</tr>
+<tr class="even">
+<td><strong>Content Topics</strong></td>
+<td>• Descriptive statistics (mean, median, SD, IQR)<br>• Distribution properties and visualization<br>• Normality testing (Shapiro-Wilk, Q-Q plots)<br>• Correlation analysis (Pearson, Spearman)<br>• Hypothesis testing framework<br>• Linear regression models<br>• Model diagnostics and interpretation</td>
+</tr>
+<tr class="odd">
+<td><strong>Practical Activities</strong></td>
+<td>• Summarize oceanographic variables by groups<br>• Test normality of key parameters<br>• Analyze correlations between T, S, DO<br>• Test hypotheses (e.g., differences between water masses)<br>• Fit linear models (temperature vs.&nbsp;depth)<br>• Assess statistical significance<br>• Interpret oceanographic relationships</td>
+</tr>
+<tr class="even">
+<td><strong>Key R Packages</strong></td>
+<td>stats, broom, tidyverse</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment</strong></td>
+<td>Lab exercise: Conduct statistical analysis with hypothesis testing and regression; interpret results</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-8-multivariate-analysis-water-mass-classification" class="level3">
+<h3 class="anchored" data-anchor-id="day-8-multivariate-analysis-water-mass-classification">Day 8: Multivariate Analysis &amp; Water Mass Classification</h3>
+<p><strong>Duration:</strong> 4 hours</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Learning Outcomes</strong></td>
+<td>• Perform Principal Component Analysis (PCA)<br>• Apply clustering techniques<br>• Identify and classify water masses<br>• Interpret multivariate oceanographic patterns</td>
+</tr>
+<tr class="even">
+<td><strong>Content Topics</strong></td>
+<td>• Principal Component Analysis (PCA) principles<br>• Variance explained and component interpretation<br>• Hierarchical clustering methods<br>• k-means and fuzzy clustering<br>• Water mass properties and classification<br>• Multivariate visualization techniques<br>• Biplot interpretation</td>
+</tr>
+<tr class="odd">
+<td><strong>Practical Activities</strong></td>
+<td>• Perform PCA on multi-parameter CTD datasets<br>• Create and interpret biplots<br>• Cluster water samples by physical/chemical properties<br>• Identify distinct water masses from profiles<br>• Validate clustering results<br>• Compare clustering methods (hierarchical vs.&nbsp;k-means)<br>• Visualize water mass distributions</td>
+</tr>
+<tr class="even">
+<td><strong>Key R Packages</strong></td>
+<td>vegan, FactoMineR, factoextra, ggplot2</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment</strong></td>
+<td>Lab exercise: Multivariate analysis identifying water masses; clustering and PCA visualization</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-9-spatial-analysis-oceanographic-mapping" class="level3">
+<h3 class="anchored" data-anchor-id="day-9-spatial-analysis-oceanographic-mapping">Day 9: Spatial Analysis &amp; Oceanographic Mapping</h3>
+<p><strong>Duration:</strong> 4 hours</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Learning Outcomes</strong></td>
+<td>• Create professional oceanographic maps<br>• Perform spatial interpolation<br>• Visualize spatial patterns and distributions<br>• Work with geographical coordinate systems</td>
+</tr>
+<tr class="even">
+<td><strong>Content Topics</strong></td>
+<td>• Coordinate systems and map projections<br>• Spatial data types (sf, raster)<br>• Bathymetric data and bottom topography<br>• Spatial interpolation (Kriging, IDW)<br>• Oceanographic mapping conventions<br>• Satellite and modeled data visualization<br>• Station plots and contour maps</td>
+</tr>
+<tr class="odd">
+<td><strong>Practical Activities</strong></td>
+<td>• Create oceanographic maps with ggOceanMaps<br>• Plot survey station locations with measurements<br>• Interpolate CTD profiles across space<br>• Create contour/heatmaps of parameters<br>• Map water mass distributions<br>• Overlay bathymetry and data<br>• Create multi-panel oceanographic visualizations<br>• Export map products for publication/reports</td>
+</tr>
+<tr class="even">
+<td><strong>Key R Packages</strong></td>
+<td>ggOceanMaps, sf, stars, ggplot2, raster</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment</strong></td>
+<td>Lab exercise: Create 2-3 publication-quality oceanographic maps showing spatial patterns</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-10-capstone-project-reproducible-research-best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="day-10-capstone-project-reproducible-research-best-practices">Day 10: Capstone Project &amp; Reproducible Research Best Practices</h3>
+<p><strong>Duration:</strong> 4 hours</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Learning Outcomes</strong></td>
+<td>• Integrate all course concepts in comprehensive analysis<br>• Implement reproducible research workflow<br>• Communicate findings effectively<br>• Create professional data analysis reports</td>
+</tr>
+<tr class="even">
+<td><strong>Content Topics</strong></td>
+<td>• Reproducible research principles and workflows<br>• R markdown dynamic document generation<br>• Project organization and file structure<br>• Code documentation and commenting<br>• Version control basics (git/GitHub overview)<br>• Presenting oceanographic analysis results<br>• Creating comprehensive data reports</td>
+</tr>
+<tr class="odd">
+<td><strong>Practical Activities</strong></td>
+<td>• Conduct capstone analysis integrating 2+ weeks of learning<br>• Generate R markdown report with embedded analysis<br>• Create professional tables and figures<br>• Document data processing steps<br>• Write methods and results sections<br>• Create automated report generation<br>• Present findings to peers with Q&amp;A<br>• Receive and give feedback</td>
+</tr>
+<tr class="even">
+<td><strong>Key R Packages</strong></td>
+<td>rmarkdown, knitr, tidyverse, oce</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment</strong></td>
+<td>Capstone project: Comprehensive analysis report including data, code, methodology, visualizations, and conclusions</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="course-learning-objectives-summary" class="level2">
+<h2 class="anchored" data-anchor-id="course-learning-objectives-summary">Course Learning Objectives Summary</h2>
+<p>By the end of this 2-week course, participants will be able to:</p>
+<section id="technical-skills" class="level3">
+<h3 class="anchored" data-anchor-id="technical-skills">Technical Skills</h3>
+<ul>
+<li>Set up and use R and RStudio efficiently</li>
+<li>Load, clean, and transform oceanographic datasets</li>
+<li>Create publication-quality visualizations and maps</li>
+<li>Perform descriptive statistics and hypothesis testing</li>
+<li>Conduct multivariate analysis on oceanographic data</li>
+<li>Work with complex data formats (netCDF, HDF5)</li>
+<li>Perform spatial analysis and oceanographic mapping</li>
+<li>Generate reproducible research reports</li>
+</ul>
+</section>
+<section id="conceptual-understanding" class="level3">
+<h3 class="anchored" data-anchor-id="conceptual-understanding">Conceptual Understanding</h3>
+<ul>
+<li>Understand key oceanographic parameters and their relationships</li>
+<li>Recognize appropriate statistical methods for oceanographic data</li>
+<li>Interpret water mass characteristics from CTD profiles</li>
+<li>Apply remote sensing concepts to ocean analysis</li>
+<li>Evaluate data quality and limitations</li>
+</ul>
+</section>
+<section id="professional-competencies" class="level3">
+<h3 class="anchored" data-anchor-id="professional-competencies">Professional Competencies</h3>
+<ul>
+<li>Organize and document oceanographic data analysis projects</li>
+<li>Create reproducible analytical workflows</li>
+<li>Communicate scientific findings effectively</li>
+<li>Follow best practices in scientific computing</li>
+<li>Apply domain knowledge to real oceanographic problems</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="assessment-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="assessment-strategy">Assessment Strategy</h2>
+<section id="formative-assessment-ongoing" class="level3">
+<h3 class="anchored" data-anchor-id="formative-assessment-ongoing">Formative Assessment (Ongoing)</h3>
+<ul>
+<li>Daily hands-on lab exercises with real oceanographic data</li>
+<li>Peer review of visualizations and analysis approaches</li>
+<li>Q&amp;A sessions and troubleshooting</li>
+<li>Progress checks using provided datasets</li>
+</ul>
+</section>
+<section id="summative-assessment-end-of-course" class="level3">
+<h3 class="anchored" data-anchor-id="summative-assessment-end-of-course">Summative Assessment (End of Course)</h3>
+<ul>
+<li><strong>Week 1:</strong> Individual data cleaning and visualization projects</li>
+<li><strong>Week 2:</strong> Multivariate and spatial analysis labs</li>
+<li><strong>Capstone Project:</strong> Comprehensive oceanographic analysis report (30-50 pages)
+<ul>
+<li>Includes data documentation, methodology, R code, figures, and conclusions</li>
+<li>Must integrate concepts from multiple course modules</li>
+<li>Professional presentation quality</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="software-data-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="software-data-requirements">Software &amp; Data Requirements</h2>
+<section id="software-freeopen-source" class="level3">
+<h3 class="anchored" data-anchor-id="software-freeopen-source">Software (Free/Open Source)</h3>
+<ul>
+<li>R (v4.1.0 or higher)</li>
+<li>RStudio (free version)</li>
+<li>Git/GitHub (optional, for version control)</li>
+</ul>
+</section>
+<section id="r-packages-core" class="level3">
+<h3 class="anchored" data-anchor-id="r-packages-core">R Packages (Core)</h3>
+<ul>
+<li><strong>Data Management:</strong> tidyverse, dplyr, tidyr, readr</li>
+<li><strong>Oceanographic Analysis:</strong> oce, gsw</li>
+<li><strong>Visualization:</strong> ggplot2, ggOceanMaps, gridExtra</li>
+<li><strong>Spatial Analysis:</strong> sf, stars, raster</li>
+<li><strong>Statistical Analysis:</strong> vegan, FactoMineR, stats, broom</li>
+<li><strong>Time Series:</strong> zoo, ts, lubridate, tseries</li>
+<li><strong>Data Import:</strong> ncdf4, rhdf5</li>
+<li><strong>Reporting:</strong> rmarkdown, knitr</li>
+</ul>
+</section>
+<section id="datasets-provided" class="level3">
+<h3 class="anchored" data-anchor-id="datasets-provided">Datasets Provided</h3>
+<ul>
+<li>Sample CTD profiles (temperature, salinity, dissolved oxygen)</li>
+<li>ADCP current measurements</li>
+<li>Ocean color data (chlorophyll-a, SST)</li>
+<li>Sea level time series</li>
+<li>Historical oceanographic databases</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="prerequisites-target-audience" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites-target-audience">Prerequisites &amp; Target Audience</h2>
+<p><strong>Ideal for:</strong> - Oceanography and marine science students - Environmental/climate researchers - Oceanographic data managers - Marine resource professionals - Anyone interested in R for scientific data analysis</p>
+<p><strong>No prior experience required in:</strong> - R or Python programming - Statistical analysis - Oceanography (though basic understanding of ocean physics helpful)</p>
+<p><strong>Required:</strong> - Computer with internet access - Ability to install software - Willingness to engage with coding and data analysis - Time commitment (40 hours over 2 weeks)</p>
+<hr>
+</section>
+<section id="course-materials-resources" class="level2">
+<h2 class="anchored" data-anchor-id="course-materials-resources">Course Materials &amp; Resources</h2>
+<section id="provided-materials" class="level3">
+<h3 class="anchored" data-anchor-id="provided-materials">Provided Materials</h3>
+<ul>
+<li>R scripts and templates for all lessons</li>
+<li>Oceanographic datasets in multiple formats</li>
+<li>R cheat sheets (dplyr, ggplot2, etc.)</li>
+<li>RMarkdown templates</li>
+<li>Reference documentation for all packages</li>
+</ul>
+</section>
+<section id="recommended-resources" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-resources">Recommended Resources</h3>
+<ul>
+<li>“Oceanographic Analysis with R” by Kelley (2018)</li>
+<li>“R for Data Science” by Wickham &amp; Grolemund</li>
+<li>NOAA CoastWatch satellite data tutorials</li>
+<li>Oceanographic data portals documentation</li>
+</ul>
+</section>
+<section id="support" class="level3">
+<h3 class="anchored" data-anchor-id="support">Support</h3>
+<ul>
+<li>Daily instructor support during lab sessions</li>
+<li>Email/Slack help desk for troubleshooting</li>
+<li>Peer collaboration during group exercises</li>
+<li>Access to compiled course notes and recordings (where applicable)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="schedule-notes" class="level2">
+<h2 class="anchored" data-anchor-id="schedule-notes">Schedule Notes</h2>
+<ul>
+<li><strong>Daily Structure:</strong> 4 hours per day with 15-minute breaks</li>
+<li><strong>Flexibility:</strong> Topics can be adjusted based on participant experience level</li>
+<li><strong>Pace:</strong> Designed for beginners; advanced participants can explore additional topics</li>
+<li><strong>Software:</strong> All software is free and cross-platform (Windows, Mac, Linux)</li>
+<li><strong>Post-Course:</strong> Graduates can access course materials and updates for reference</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    window.setColorSchemeToggle(window.hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>All rights reserved © 2024 Md Nahin Alam</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

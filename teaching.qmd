@@ -30,9 +30,6 @@ I enjoy teaching technical subjects that blend theory with real-world applicatio
 **Audience**: Learners from Europe, Southeast Asia, and North America  
 **Focus**: Personalized training, live coding, reproducibility
 
-## Teaching Philosophy
-
-I believe teaching is most impactful when it’s interactive, inclusive, and built on clear communication. My goal is to empower learners to not just use tools, but to understand the thinking behind them.
 
 
 
