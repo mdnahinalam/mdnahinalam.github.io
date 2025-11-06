@@ -19,12 +19,6 @@ University of Chittagong
 Center for Advanced Research and Innovation (CARI)\
 November 2024 – Present
 
-**Research Assistant**\
-National Oceanographic and Maritime Institute (NOAMI)\
-April 2024 – Present\
-*Project:* Comprehensive Assessment of Marine Biodiversity Vulnerability in Bangladesh's Coastal Regions\
-*Project Investigator:* Dr. Samarendra Karmakar (Ex. Director, BMD)
-
 ## Publications
 
 **Co-authored Article**\
@@ -32,6 +26,14 @@ Mehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hana
 "Human intervention caused massive destruction of the second largest mangrove forest, Chakaria Sundarbans, Bangladesh."\
 *Environ Sci Pollut Res* 31, 25329–25341 (2024).\
 DOI: [10.1007/s11356-024-32792-2](https://link.springer.com/article/10.1007/s11356-024-32792-2)
+
+## Ongoing Projects
+
+-   ***PhenoPhyto***- Developing a Python and R Library for Detecting Phytoplankton Blooms from Remote Sensing Data
+
+-   Assessing Phytoplankton Variability in Response to The Extreme Sea Surface Temperature in the Bay of Bengal: An Approach of Satellite Oceanography
+
+-   Comprehensive Assessment of Marine Biodiversity Vulnerability in Bangladesh’s Coastal Regions.
 
 ## Technical Skills
 
