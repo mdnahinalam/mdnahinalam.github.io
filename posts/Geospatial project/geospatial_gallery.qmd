@@ -4,7 +4,7 @@ format:
   html:
     lightbox: true
 page-layout: full
-date: "2024-01-20"
+date: "2025-10-20"
 categories: [GIS, Oceanography, Spatial Data Analysis, Ocean color, Remote sensing]
 ---
 
