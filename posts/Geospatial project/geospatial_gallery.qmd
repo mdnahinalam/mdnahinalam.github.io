@@ -1,0 +1,45 @@
+---
+title: "Geospatial Mapping Gallery"
+format:
+  html:
+    lightbox: true
+page-layout: full
+---
+
+::: {layout-ncol=4}
+
+![](images/Fatikchari_Visited_Sites_Map_Nahin_resized.jpg) 
+
+
+![](images/2019MNDWIallmaps.png)
+
+![](images/ChangeDetectionMapwithpiechart.jpg)
+
+![](images/eastern_coastal_zone.png)
+
+![](images/growth_of_salt_or_shrimp_firm-1.png)
+
+![](images/karnaphuli_sampling_stations.png)
+
+![](images/karnaphuli_sampling_stations_4.png)
+
+![](images/lianjiang_2.png)
+
+![](images/LULC_of_Ktubdia.jpg)
+
+![](images/oct21.png)
+
+![](images/sitakunda_paurashava.png)
+
+![](images/sitpau_mndwi_2020.png)
+
+![](images/SSpH2021and1990.png)
+
+![](images/study_area.png)
+
+![](images/study_area_map_2.png)
+
+![](images/study_area_meridian_hatchery.png)
+![](images/landareachangebetween20172022.jpg)
+
+:::

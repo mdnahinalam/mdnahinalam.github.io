@@ -19,7 +19,7 @@ University of Chittagong
 Center for Advanced Research and Innovation (CARI)\
 November 2024 – Present
 
-### Responsibilities 
+### Responsibilities
 
 -   Conduct data analysis using R and Python to support oceanographic research.
 
