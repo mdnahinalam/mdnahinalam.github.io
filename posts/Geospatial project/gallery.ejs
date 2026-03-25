@@ -1,36 +1,32 @@
-<style>
+```{=html}
+<style type="text/css">
 .grid-gallery {
   columns: 5 200px;
   column-gap: 0.5rem;
   width: 90%;
   margin: 0 auto;
 }
-
 .grid-item {
+  width: 150px;
+  margin: 0 0.5rem 0.5rem 0;
   display: inline-block;
   width: 100%;
   border-radius: 5px;
-  margin-bottom: 0.5rem;
 }
-
 img.grid-item {
   width: 100%;
   transition: all .25s ease-in-out;
 }
-
 img.grid-item:hover {
   transform: scale(1.025);
 }
 </style>
+```
 
-<div class="grid-gallery">
-
+::: {.grid-gallery}
 <% for (const item of items) { %>
-
-<img src="<%= item.path %>"
-     class="grid-item lightbox"
-     loading="lazy">
-
+::: {}
+![](<%= item.path %>){.grid-item .lightbox loading="lazy" group="quarto-grid-gallery"}
+:::
 <% } %>
-
-</div>
+:::

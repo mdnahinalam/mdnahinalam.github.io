@@ -11,6 +11,13 @@ format:
       - research.css
 ---
 
+## 2026
+
+::: publication
+Hassan, M. L., Hoque, M. E., <b>Alam, M. N.</b>, Ibrahim, M., AftabUddin, S., Rahman, M. F., & Al Mamun, A. (2026). Evaluation of phytoplankton phenology in the northern Bay of Bengal using ocean color remote sensing — <span style="color:darkblue; font-weight:bold;">Continental Shelf Research, 105663</span>. https://doi.org/10.1016/j.csr.2026.105663
+:::
+
+
 ## 2025
 
 ::: publication

@@ -151,21 +151,21 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Md Leion Hassan, Md. Enamul Hoque, Md Nahin Alam, Md. Ibrahim, Sheikh Aftab Uddin, Abdullah Al Mamun (2024). Climate variability and nutrients availability drove phytoplankton bloom phenology in the northern Bay of Bengal: a nineteen years study from satellite data — Manuscript submitted."
+    "text": "Hassan, M. L., Hoque, M. E., Alam, M. N., Ibrahim, M., AftabUddin, S., Rahman, M. F., & Al Mamun, A. (2026). Evaluation of phytoplankton phenology in the northern Bay of Bengal using ocean color remote sensing — Continental Shelf Research, 105663. https://doi.org/10.1016/j.csr.2026.105663"
   },
   {
     "objectID": "research.html#section",
     "href": "research.html#section",
     "title": "Research",
     "section": "",
-    "text": "Md Leion Hassan, Md. Enamul Hoque, Md Nahin Alam, Md. Ibrahim, Sheikh Aftab Uddin, Abdullah Al Mamun (2024). Climate variability and nutrients availability drove phytoplankton bloom phenology in the northern Bay of Bengal: a nineteen years study from satellite data — Manuscript submitted."
+    "text": "Hassan, M. L., Hoque, M. E., Alam, M. N., Ibrahim, M., AftabUddin, S., Rahman, M. F., & Al Mamun, A. (2026). Evaluation of phytoplankton phenology in the northern Bay of Bengal using ocean color remote sensing — Continental Shelf Research, 105663. https://doi.org/10.1016/j.csr.2026.105663"
   },
   {
     "objectID": "research.html#section-1",
     "href": "research.html#section-1",
     "title": "Research",
-    "section": "2024",
-    "text": "2024\n\nMehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, Nahin Alam, Ataher Ali (2024). Human intervention caused massive destruction of the second largest mangrove forest, Chakaria Sundarbans, Bangladesh.\nEnvironmental Science and Pollution Research, 31, 25329–25341 (2024).\nPDF\n\n\nPoster\nLeion Hassan, Md. Enamul Hoque, Nahin Alam, Md. Ibrahim (2024). Understanding Fishing Prospects: Satellite-Based Evaluation of Phytoplankton Phenology in the Northern Bay of Bengal.\nConference: ICO 2024: International Conference on OceanographyAt: Bangladesh Oceanographic Research Institute, Bangladesh.\nPDF"
+    "section": "2025",
+    "text": "2025\n\nMd Leion Hassan, Md. Enamul Hoque, Md Nahin Alam, Md. Ibrahim, Sheikh Aftab Uddin, Abdullah Al Mamun (2024). Climate variability and nutrients availability drove phytoplankton bloom phenology in the northern Bay of Bengal: a nineteen years study from satellite data — Manuscript submitted."
   },
   {
     "objectID": "posts/Importance_of_R/r-oceanography.html",
@@ -633,8 +633,8 @@
     "objectID": "research.html#section-2",
     "href": "research.html#section-2",
     "title": "Research",
-    "section": "2022",
-    "text": "2022\n\nConference Paper\nMehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, Nahin Alam, Ataher Ali (2022). Human interaction caused land cover changes of Chakaria Sundarban mangrove forest in Bangladesh: a fifty-years study (2022).\nPDF"
+    "section": "2024",
+    "text": "2024\n\nMehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, Nahin Alam, Ataher Ali (2024). Human intervention caused massive destruction of the second largest mangrove forest, Chakaria Sundarbans, Bangladesh.\nEnvironmental Science and Pollution Research, 31, 25329–25341 (2024).\nPDF\n\n\nPoster\nLeion Hassan, Md. Enamul Hoque, Nahin Alam, Md. Ibrahim (2024). Understanding Fishing Prospects: Satellite-Based Evaluation of Phytoplankton Phenology in the Northern Bay of Bengal.\nConference: ICO 2024: International Conference on OceanographyAt: Bangladesh Oceanographic Research Institute, Bangladesh.\nPDF"
   },
   {
     "objectID": "cv.html#ongoing-projects",
@@ -726,5 +726,12 @@
     "title": "Geospatial Mapping Gallery",
     "section": "",
     "text": ":::\n#| label: generate-gallery #| echo: false #| results: asis"
+  },
+  {
+    "objectID": "research.html#section-3",
+    "href": "research.html#section-3",
+    "title": "Research",
+    "section": "2022",
+    "text": "2022\n\nConference Paper\nMehedi Hasan, Leion Hassan, Mamun Abdullah Al, Abu Hena Mustafa Kamal, Mohd Hanafi Idris, Muhammad Ziaul Hoque, Riffat Mahmood, Nahin Alam, Ataher Ali (2022). Human interaction caused land cover changes of Chakaria Sundarban mangrove forest in Bangladesh: a fifty-years study (2022).\nPDF"
   }
 ]
